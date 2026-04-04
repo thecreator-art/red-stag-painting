@@ -1,13 +1,21 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { PHONE_HREF, PHONE_NUMBER, CTA_PRIMARY, RESPONSE_TIME } from '@/lib/constants';
 
 export default function StickyHeader() {
   const [visible, setVisible] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
+    if (pathname !== '/') {
+      setVisible(false);
+      return;
+    }
+
     const hero = document.getElementById('hero');
     if (!hero) return;
 
@@ -20,7 +28,11 @@ export default function StickyHeader() {
 
     observer.observe(hero);
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
+
+  if (pathname !== '/') {
+    return null;
+  }
 
   return (
     <header
@@ -43,12 +55,12 @@ export default function StickyHeader() {
           {PHONE_NUMBER}
         </a>
         <span className="text-xs text-text-muted">{RESPONSE_TIME}</span>
-        <a
-          href="#contact"
+        <Link
+          href="/#contact"
           className="px-5 py-2 bg-accent hover:bg-accent-hover text-white text-sm font-semibold rounded-sm transition-all duration-300"
         >
           {CTA_PRIMARY}
-        </a>
+        </Link>
       </div>
     </header>
   );

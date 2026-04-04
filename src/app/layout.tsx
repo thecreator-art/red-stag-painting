@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans, DM_Sans } from 'next/font/google';
 import './globals.css';
-import Navbar from '@/components/layout/Navbar';
-import StickyHeader from '@/components/layout/StickyHeader';
+import SiteHeader from '@/components/layout/SiteHeader';
 import StickyMobileBar from '@/components/layout/StickyMobileBar';
 import Footer from '@/components/layout/Footer';
 import ScrollProgress from '@/components/ui/ScrollProgress';
@@ -66,8 +65,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen font-body text-text-body bg-bg-primary antialiased pb-[60px] md:pb-0">
         <ScrollProgress />
-        <Navbar />
-        <StickyHeader />
+        <SiteHeader />
         <main>{children}</main>
         <Footer />
         <StickyMobileBar />

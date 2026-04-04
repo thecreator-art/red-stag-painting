@@ -104,7 +104,7 @@ export default async function MatrixPage({ params }: PageProps) {
     },
     {
       label: `Painters in ${cityEntry?.name ?? data.cityName}`,
-      href: `/${data.parentCity}`,
+      href: `/areas/${data.parentCity}`,
       description: `All painting services in ${data.cityName}`,
     },
     ...data.relatedMatrixPages.map((slug) => {

@@ -121,7 +121,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       const c = CITIES.find((ct) => ct.slug === citySlug);
       return {
         label: c ? `Painters in ${c.name}` : citySlug,
-        href: `/${citySlug}`,
+        href: `/areas/${citySlug}`,
       };
     }),
     ...data.relatedPosts.map((postSlug) => {

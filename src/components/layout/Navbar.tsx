@@ -1,20 +1,36 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { SERVICES, PHONE_HREF, PHONE_NUMBER, CTA_PRIMARY } from '@/lib/constants';
 
-export default function Navbar() {
+interface NavbarProps {
+  sticky?: boolean;
+}
+
+export default function Navbar({ sticky = false }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const pathname = usePathname();
+  const onHomePage = pathname === '/';
+
+  useEffect(() => {
+    setMobileOpen(false);
+    setServicesOpen(false);
+  }, [pathname]);
+
+  function sectionHref(id: string) {
+    return onHomePage ? `#${id}` : `/#${id}`;
+  }
 
   return (
-    <>
+    <div className={sticky ? 'sticky top-0 z-50' : ''}>
       {/* Terracotta accent line */}
       <div className="h-[3px] bg-accent" />
 
-      <nav className="relative bg-bg-primary z-40">
+      <nav className={`relative z-40 ${sticky ? 'bg-bg-primary/95 backdrop-blur border-b border-border/50' : 'bg-bg-primary'}`}>
         <div className="mx-auto max-w-[1200px] px-6 md:px-10 flex items-center justify-between py-5">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 text-xl font-heading text-text-primary">
@@ -58,16 +74,16 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            <Link href="#our-work" className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
+            <Link href={sectionHref('our-work')} className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
               Our Work
             </Link>
-            <Link href="#service-area" className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
+            <Link href={sectionHref('service-area')} className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
               Areas We Serve
             </Link>
-            <Link href="#faq" className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
+            <Link href={sectionHref('faq')} className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
               About
             </Link>
-            <Link href="#contact" className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
+            <Link href={sectionHref('contact')} className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
               Contact
             </Link>
           </div>
@@ -77,12 +93,12 @@ export default function Navbar() {
             <a href={PHONE_HREF} className="text-sm text-text-body hover:text-text-primary transition-colors duration-300">
               {PHONE_NUMBER}
             </a>
-            <a
-              href="#contact"
+            <Link
+              href={sectionHref('contact')}
               className="px-5 py-2 bg-accent hover:bg-accent-hover text-white text-sm font-semibold rounded-sm transition-all duration-300"
             >
               {CTA_PRIMARY}
-            </a>
+            </Link>
           </div>
 
           {/* Mobile hamburger */}
@@ -122,35 +138,35 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="border-t border-border pt-6 space-y-4">
-                <a href="#our-work" className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
+                <Link href={sectionHref('our-work')} className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
                   Our Work
-                </a>
-                <a href="#service-area" className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
+                </Link>
+                <Link href={sectionHref('service-area')} className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
                   Areas We Serve
-                </a>
-                <a href="#faq" className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
+                </Link>
+                <Link href={sectionHref('faq')} className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
                   About
-                </a>
-                <a href="#contact" className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
+                </Link>
+                <Link href={sectionHref('contact')} className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
                   Contact
-                </a>
+                </Link>
               </div>
               <div className="border-t border-border pt-6">
                 <a href={PHONE_HREF} className="block text-lg font-semibold text-text-primary mb-4">
                   {PHONE_NUMBER}
                 </a>
-                <a
-                  href="#contact"
+                <Link
+                  href={sectionHref('contact')}
                   className="block w-full py-3 bg-accent text-white text-center font-semibold rounded-sm"
                   onClick={() => setMobileOpen(false)}
                 >
                   {CTA_PRIMARY}
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         )}
       </nav>
-    </>
+    </div>
   );
 }

@@ -1,6 +1,13 @@
+ 'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { PHONE_HREF } from '@/lib/constants';
 
 export default function StickyMobileBar() {
+  const pathname = usePathname();
+  const contactHref = pathname === '/' ? '#contact' : '/#contact';
+
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-bg-dark h-[60px] flex">
       <a
@@ -17,12 +24,12 @@ export default function StickyMobileBar() {
         Call Now
       </a>
       <div className="w-px bg-text-on-dark/20" />
-      <a
-        href="#contact"
+      <Link
+        href={contactHref}
         className="flex-1 flex items-center justify-center text-white text-sm font-semibold bg-accent pulse-once"
       >
         Get My Price
-      </a>
+      </Link>
     </div>
   );
 }
