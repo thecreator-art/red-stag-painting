@@ -36,7 +36,7 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1556909045-f4c7f1f6d71d?auto=format&fit=crop&w=1600&q=80",
+      "src": "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1600&q=80",
       "alt": "Cabinet doors removed and labeled for painting",
       "width": 1600,
       "height": 900

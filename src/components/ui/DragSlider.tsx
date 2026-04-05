@@ -121,6 +121,7 @@ export default function DragSlider({
         alt={beforeAlt}
         fill
         sizes="(max-width: 768px) 100vw, 50vw"
+        loading="eager"
         className="object-cover"
         placeholder="blur"
         blurDataURL={BLUR_PLACEHOLDER}
@@ -137,6 +138,7 @@ export default function DragSlider({
           alt={afterAlt}
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
+          loading="eager"
           className="object-cover"
           placeholder="blur"
           blurDataURL={BLUR_PLACEHOLDER}

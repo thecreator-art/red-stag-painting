@@ -42,6 +42,7 @@ export default function ContactForm() {
         alt="Painted home exterior"
         fill
         sizes="100vw"
+        loading="eager"
         className="object-cover"
         placeholder="blur"
         blurDataURL={BLUR_PLACEHOLDER}

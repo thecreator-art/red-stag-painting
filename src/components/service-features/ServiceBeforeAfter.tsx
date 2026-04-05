@@ -51,6 +51,7 @@ export default function ServiceBeforeAfter({ data, serviceName }: ServiceBeforeA
             alt={data.before.alt}
             fill
             sizes="(max-width: 1024px) 100vw, 1200px"
+            loading="eager"
             className={`object-cover transition-opacity duration-500 ${showBefore ? 'opacity-100' : 'opacity-0'}`}
             placeholder="blur"
             blurDataURL={BLUR_PLACEHOLDER}
@@ -60,6 +61,7 @@ export default function ServiceBeforeAfter({ data, serviceName }: ServiceBeforeA
             alt={data.after.alt}
             fill
             sizes="(max-width: 1024px) 100vw, 1200px"
+            loading="eager"
             className={`object-cover transition-opacity duration-500 ${showBefore ? 'opacity-0' : 'opacity-100'}`}
             placeholder="blur"
             blurDataURL={BLUR_PLACEHOLDER}

@@ -34,6 +34,7 @@ export default function BrandStatement() {
         alt="Bright freshly painted living room interior"
         fill
         sizes="100vw"
+        loading="eager"
         className="object-cover"
         placeholder="blur"
         blurDataURL={BLUR_PLACEHOLDER}

@@ -6,7 +6,7 @@ export default function FullBleedBeforeAfter() {
       {/* Full-bleed slider */}
       <div className="w-screen relative left-1/2 right-1/2 -mx-[50vw]">
         <DragSlider
-          beforeImage="https://images.unsplash.com/photo-1560185127-6ed9919d945b?auto=format&fit=crop&w=1800&q=80"
+          beforeImage="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1800&q=80"
           afterImage="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1800&q=80"
           beforeAlt="Before: home exterior in Calabasas before painting"
           afterAlt="After: freshly painted home exterior in Calabasas by Red Stag Painting"

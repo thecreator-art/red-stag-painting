@@ -40,6 +40,7 @@ function InlineImageBlock({ image, serviceName }: { image: ImageAsset; serviceNa
             alt={image.alt || `${serviceName} project photo`}
             fill
             sizes="(max-width: 1280px) 100vw, 1200px"
+            loading="eager"
             className="object-cover"
             placeholder="blur"
             blurDataURL={BLUR_PLACEHOLDER}
@@ -74,6 +75,7 @@ function BodySectionBlock({ section }: { section: ContentSection }) {
               alt={section.image.alt}
               width={section.image.width}
               height={section.image.height}
+              loading="eager"
               className="h-auto w-full object-cover"
               placeholder="blur"
               blurDataURL={BLUR_PLACEHOLDER}

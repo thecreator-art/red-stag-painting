@@ -21,7 +21,7 @@ const data: ServicePageData = {
   "heroSubtitle": "Stucco, siding, trim, fascia, eaves, and doors painted as one system so the job wears evenly under LA sun.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1560185127-6ed9919d945b?auto=format&fit=crop&w=1600&q=80",
+      "src": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=80",
       "alt": "Faded stucco exterior before repaint",
       "width": 1600,
       "height": 900

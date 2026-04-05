@@ -642,7 +642,7 @@ const SERVICE_VISUALS = {
   },
   'exterior-painting': {
     beforeAfter: {
-      before: imageAsset('https://images.unsplash.com/photo-1560185127-6ed9919d945b?auto=format&fit=crop&w=1600&q=80', 'Faded stucco exterior before repaint'),
+      before: imageAsset('https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=80', 'Faded stucco exterior before repaint'),
       after: imageAsset('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80', 'Freshly painted white stucco exterior in Los Angeles'),
       caption: 'Sun-faded stucco, chalking, and tired trim were rebuilt into a cleaner exterior with sharper body color and a stronger trim contrast.',
     },
@@ -664,7 +664,7 @@ const SERVICE_VISUALS = {
       caption: 'The original boxes stayed, but the finish changed completely once the doors were sprayed, the grain was managed, and the hardware layout was cleaned up.',
     },
     inlineImages: [
-      imageAsset('https://images.unsplash.com/photo-1556909045-f4c7f1f6d71d?auto=format&fit=crop&w=1600&q=80', 'Cabinet doors removed and labeled for painting'),
+      imageAsset('https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1600&q=80', 'Cabinet doors removed and labeled for painting'),
       imageAsset('https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1600&q=80', 'Freshly painted kitchen cabinets and island'),
       imageAsset('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80', 'Luxury painted cabinetry in estate kitchen'),
     ],

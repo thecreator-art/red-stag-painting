@@ -143,7 +143,7 @@ export const CALCULATOR_SERVICES = [
 export const PROJECTS: Project[] = [
   {
     afterImage: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=800&q=80',
-    beforeImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=800&q=80',
+    beforeImage: 'https://images.unsplash.com/photo-1560448075-bb485b067938?auto=format&fit=crop&w=800&q=80',
     serviceType: 'Interior Repaint',
     city: 'Encino',
     description: '4-day full repaint. Sherwin-Williams Emerald. Zero touch-ups.',
@@ -181,7 +181,7 @@ export const PROJECTS: Project[] = [
   },
   {
     afterImage: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80',
-    beforeImage: 'https://images.unsplash.com/photo-1560185127-6ed9919d945b?auto=format&fit=crop&w=800&q=80',
+    beforeImage: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=800&q=80',
     serviceType: 'Exterior Painting',
     city: 'Calabasas',
     description: '4,200 sqft home. Stucco repair and full repaint. 7 days.',
