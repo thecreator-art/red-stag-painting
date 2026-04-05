@@ -19,6 +19,106 @@ const data: ServicePageData = {
   "heroImage": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1800&q=80",
   "heroImageAlt": "Sprayed kitchen cabinet doors drying to a smooth painted finish",
   "heroSubtitle": "Doors and drawers come off, hardware gets cataloged, and the finish is sprayed to lay down smooth instead of brush-marked.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1560448075-bb485b067938?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Dark dated kitchen cabinets before repaint",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Bright white sprayed kitchen cabinets after painting",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "The original boxes stayed, but the finish changed completely once the doors were sprayed, the grain was managed, and the hardware layout was cleaned up."
+  },
+  "inlineImages": [
+    {
+      "src": "https://images.unsplash.com/photo-1556909045-f4c7f1f6d71d?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Cabinet doors removed and labeled for painting",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Freshly painted kitchen cabinets and island",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Luxury painted cabinetry in estate kitchen",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "homeownerReviews": [
+    {
+      "quote": "They cataloged every hinge and drawer front, and the kitchen went back together tighter than it started.",
+      "reviewer": "Sonia L.",
+      "city": "Beverly Hills"
+    },
+    {
+      "quote": "We kept our counters, kept the layout, and still got the look of a full kitchen update for a fraction of replacement.",
+      "reviewer": "Mark E.",
+      "city": "Sherman Oaks"
+    },
+    {
+      "quote": "The sprayed finish laid down smooth enough that guests assume we replaced the cabinets outright.",
+      "reviewer": "Julia N.",
+      "city": "Bel Air"
+    }
+  ],
+  "whyChooseCards": [
+    {
+      "stat": "500+",
+      "title": "Cabinet Painting jobs across LA housing stock",
+      "body": "We handle this scope on estate kitchens in Beverly Hills, 1990s builder oak in Sherman Oaks, and compact galley kitchens in West Hollywood condos, so the plan fits the house instead of fighting it."
+    },
+    {
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like oak grain showing through cheap paint jobs and hinge ghosting around old hardware locations, not by guessing from a few photos."
+    },
+    {
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around remove and label every door and drawer, degrease cooking residue and hand oils, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
+  ],
+  "serviceFeature": {
+    "type": "paintingVsReplacing",
+    "title": "Painting vs Replacing",
+    "subtitle": "See why repainting wins when the boxes are still solid",
+    "options": [
+      {
+        "title": "Paint Your Cabinets",
+        "price": "$2,500-$10,000",
+        "timeline": "5-7 days",
+        "notes": [
+          "Kitchen stays usable throughout the project",
+          "Zero demolition",
+          "Keep your counters, plumbing, and layout",
+          "Sprayed finish on doors and drawer fronts"
+        ],
+        "highlighted": true
+      },
+      {
+        "title": "Replace Your Cabinets",
+        "price": "$15,000-$40,000",
+        "timeline": "3-6 weeks",
+        "notes": [
+          "Kitchen is largely unusable during the remodel",
+          "Full demolition required",
+          "Trades stack behind one another",
+          "Higher spend before the room is even finished"
+        ],
+        "muted": true
+      }
+    ]
+  },
   "introAnswer": "Cabinet Painting in Los Angeles usually starts around $2,500 to $4,500 for a basic small kitchen scope. Larger projects land closer to $6,500 to $10,000+, depending on prep, access, and how much of the surface package we are touching in one visit.",
   "sections": [
     {

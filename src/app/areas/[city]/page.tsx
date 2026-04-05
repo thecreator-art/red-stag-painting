@@ -10,6 +10,11 @@ import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import FAQAccordion from '@/components/shared/FAQAccordion';
 import CTABanner from '@/components/shared/CTABanner';
 import RelatedLinks from '@/components/shared/RelatedLinks';
+import InfoCardGrid from '@/components/shared/InfoCardGrid';
+import InlineQuotePanel from '@/components/shared/InlineQuotePanel';
+import SectionJumpNav from '@/components/shared/SectionJumpNav';
+
+const SECTION_BACKGROUNDS = ['bg-bg-primary', 'bg-bg-secondary'] as const;
 
 // ─── Static Params ──────────────────────────────────────────────────────────
 
@@ -61,6 +66,33 @@ function getStartingPrice(serviceSlug: string, priceModifier: number): string | 
   return `$${adjusted.toLocaleString()}`;
 }
 
+function modifierLabel(modifier: number): string {
+  if (modifier > 1) return `${Math.round((modifier - 1) * 100)}% above LA base`;
+  if (modifier < 1) return `${Math.round((1 - modifier) * 100)}% below LA base`;
+  return 'Aligned with LA base';
+}
+
+function slugify(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function stripHtml(value: string): string {
+  return value
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function excerpt(value: string, maxLength = 150): string {
+  const sentence = stripHtml(value).split(/(?<=[.!?])\s/)[0] ?? '';
+  if (sentence.length <= maxLength) return sentence;
+  return `${sentence.slice(0, maxLength).trimEnd()}...`;
+}
+
 // ─── Page ───────────────────────────────────────────────────────────────────
 
 export default async function CityPage({ params }: Props) {
@@ -92,6 +124,45 @@ export default async function CityPage({ params }: Props) {
       href: `/areas/${nearbySlug}`,
     };
   });
+
+  const cityCards = [
+    {
+      value: modifierLabel(data.priceModifier),
+      title: `${data.name} pricing modifier`,
+      body: 'This page uses local pricing logic instead of flattening every Los Angeles neighborhood into the same cost range.',
+    },
+    {
+      value: `${data.neighborhoods.length}`,
+      title: 'Neighborhoods covered',
+      body: data.neighborhoods.slice(0, 3).join(', '),
+    },
+    {
+      value: `${data.housingStock.length}`,
+      title: 'Common home styles',
+      body: data.housingStock.slice(0, 3).join(', '),
+    },
+  ];
+
+  if (data.hoaContext) {
+    cityCards.push({
+      value: 'HOA',
+      title: 'Access and approval context',
+      body: data.hoaContext,
+    });
+  }
+
+  const summaryCards = data.sections.slice(0, 3).map((section) => ({
+    title: section.heading,
+    body: excerpt(section.body),
+  }));
+
+  const jumpItems = [
+    ...data.sections.slice(0, 4).map((section) => ({
+      id: `section-${slugify(section.heading)}`,
+      label: section.heading,
+    })),
+    { id: 'city-quote-form', label: 'Get Estimate' },
+  ];
 
   return (
     <>
@@ -135,7 +206,7 @@ export default async function CityPage({ params }: Props) {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="#contact"
+              href="#city-quote-form"
               className="inline-flex px-8 py-4 bg-accent hover:bg-accent-hover text-white font-semibold tracking-wide rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_rgba(194,59,43,0.3)] hover:-translate-y-0.5"
             >
               {CTA_PRIMARY}
@@ -152,47 +223,69 @@ export default async function CityPage({ params }: Props) {
 
       {/* Intro Answer */}
       <section className="mx-auto max-w-[1200px] px-6 md:px-10 py-12 md:py-16">
-        <p className="text-lg md:text-xl text-text-body leading-relaxed max-w-3xl">
-          {data.introAnswer}
-        </p>
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
+          <p className="text-lg md:text-xl text-text-body leading-relaxed max-w-3xl">
+            {data.introAnswer}
+          </p>
+          <SectionJumpNav heading="On this page" items={jumpItems} />
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-[1200px] px-6 md:px-10 pb-12 md:pb-16">
+        <InfoCardGrid
+          eyebrow="Local Market Snapshot"
+          heading={`What changes the scope in ${data.name}`}
+          cards={cityCards}
+        />
+      </section>
+
+      <section className="mx-auto max-w-[1200px] px-6 md:px-10 pb-12 md:pb-16">
+        <InfoCardGrid
+          eyebrow="Quick Read"
+          heading={`What this ${data.name} guide covers`}
+          cards={summaryCards}
+        />
       </section>
 
       {/* Body Sections */}
-      <div className="mx-auto max-w-[1200px] px-6 md:px-10 space-y-12 md:space-y-16">
-        {data.sections.map((section, i) => {
-          const Heading = section.level === 'h2' ? 'h2' : 'h3';
-          return (
-            <section key={i}>
-              <Heading
-                className={
-                  section.level === 'h2'
-                    ? 'text-2xl md:text-3xl font-heading text-text-primary mb-4'
-                    : 'text-xl md:text-2xl font-heading text-text-primary mb-3'
-                }
-              >
-                {section.heading}
-              </Heading>
-              <div
-                className="prose prose-sm md:prose-base text-text-body max-w-none [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mb-1 [&_a]:text-accent [&_a]:underline"
-                dangerouslySetInnerHTML={{ __html: section.body }}
-              />
-              {section.image && (
-                <div className="mt-6 rounded-sm overflow-hidden">
-                  <Image
-                    src={section.image.src}
-                    alt={section.image.alt}
-                    width={section.image.width}
-                    height={section.image.height}
-                    className="w-full h-auto"
-                    placeholder="blur"
-                    blurDataURL={BLUR_PLACEHOLDER}
-                  />
-                </div>
-              )}
-            </section>
-          );
-        })}
-      </div>
+      {data.sections.map((section, i) => {
+        const Heading = section.level === 'h2' ? 'h2' : 'h3';
+        const sectionId = `section-${slugify(section.heading)}`;
+        return (
+          <section key={sectionId} className={`${SECTION_BACKGROUNDS[i % SECTION_BACKGROUNDS.length]} py-12 md:py-16`}>
+            <div id={sectionId} className="mx-auto max-w-[1200px] px-6 md:px-10 scroll-mt-28">
+              <div className="max-w-3xl">
+                <Heading
+                  className={
+                    section.level === 'h2'
+                      ? 'text-2xl md:text-3xl font-heading text-text-primary mb-4'
+                      : 'text-xl md:text-2xl font-heading text-text-primary mb-3'
+                  }
+                >
+                  {section.heading}
+                </Heading>
+                <div
+                  className="prose prose-sm md:prose-base text-text-body max-w-none [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mb-1 [&_a]:text-accent [&_a]:underline"
+                  dangerouslySetInnerHTML={{ __html: section.body }}
+                />
+                {section.image && (
+                  <div className="mt-6 rounded-sm overflow-hidden border border-border card-depth">
+                    <Image
+                      src={section.image.src}
+                      alt={section.image.alt}
+                      width={section.image.width}
+                      height={section.image.height}
+                      className="w-full h-auto"
+                      placeholder="blur"
+                      blurDataURL={BLUR_PLACEHOLDER}
+                    />
+                  </div>
+                )}
+              </div>
+            </div>
+          </section>
+        );
+      })}
 
       {/* Service Links Grid */}
       <section className="mx-auto max-w-[1200px] px-6 md:px-10 py-16 md:py-20">
@@ -242,12 +335,26 @@ export default async function CityPage({ params }: Props) {
         <FAQAccordion faqs={data.faqs} />
       </section>
 
+      <section className="mx-auto max-w-[1200px] px-6 md:px-10 py-12 md:py-16">
+        <InlineQuotePanel
+          id="city-quote-form"
+          eyebrow="Free Estimate"
+          heading={`Talk through your ${data.name} painting project`}
+          body={`If you are comparing painters in ${data.name}, start here and Red Stag will come back with a real next step based on your scope, access, and neighborhood conditions.`}
+          bullets={[
+            `Best fit for homeowners, landlords, and property managers in ${data.name}.`,
+            `Use it to price interiors, exteriors, cabinets, ceilings, and more.`,
+          ]}
+          submitLabel="Get My Free Estimate"
+        />
+      </section>
+
       {/* CTA Banner */}
       <CTABanner
         heading={`Ready to Transform Your ${data.name} Home?`}
         subtitle={`Get a free, detailed quote for your painting project in ${data.name}. We respond within 2 hours.`}
         ctaText={CTA_PRIMARY}
-        ctaHref="#contact"
+        ctaHref="#city-quote-form"
       />
     </>
   );

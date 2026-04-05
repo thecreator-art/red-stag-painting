@@ -19,6 +19,138 @@ const data: ServicePageData = {
   "heroImage": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1800&q=80",
   "heroImageAlt": "Freshly painted Los Angeles house exterior with crisp trim and smooth stucco walls",
   "heroSubtitle": "Stucco, siding, trim, fascia, eaves, and doors painted as one system so the job wears evenly under LA sun.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1560185127-6ed9919d945b?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Faded stucco exterior before repaint",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Freshly painted white stucco exterior in Los Angeles",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "Sun-faded stucco, chalking, and tired trim were rebuilt into a cleaner exterior with sharper body color and a stronger trim contrast."
+  },
+  "inlineImages": [
+    {
+      "src": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Los Angeles exterior painter on stucco home",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Freshly painted two-story exterior with crisp trim",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Bright exterior repaint on Southern California home",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "homeownerReviews": [
+    {
+      "quote": "South and west walls were cooked from years of sun, and they still got the finish uniform from the curb.",
+      "reviewer": "Chris T.",
+      "city": "Pacific Palisades"
+    },
+    {
+      "quote": "They caught rotten trim and failed caulk before paint went on, which saved us from paying twice later.",
+      "reviewer": "Anita R.",
+      "city": "Woodland Hills"
+    },
+    {
+      "quote": "Five days, full exterior, daily cleanup, and the house looked sharper than any repaint we have done before.",
+      "reviewer": "Joel M.",
+      "city": "Manhattan Beach"
+    }
+  ],
+  "whyChooseCards": [
+    {
+      "stat": "500+",
+      "title": "Exterior Painting jobs across LA housing stock",
+      "body": "We handle this scope on sunny canyon homes in Brentwood, salt-air exteriors near the beach in Malibu, and post-war tract homes in Burbank with aging eaves, so the plan fits the house instead of fighting it."
+    },
+    {
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like sun-baked south walls fading before the north side and failed caulk at window perimeters, not by guessing from a few photos."
+    },
+    {
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around pressure wash or soft wash depending on substrate, scrape loose paint and feather sand edges, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
+  ],
+  "serviceFeature": {
+    "type": "homeSizeEstimator",
+    "title": "Home Size Estimator",
+    "subtitle": "Pick the house size and see how the exterior scope usually lands",
+    "options": [
+      {
+        "id": "small-ranch",
+        "title": "Small Ranch",
+        "description": "Single-story homes with straightforward access and lighter trim packages.",
+        "priceMin": 2500,
+        "priceMax": 5000,
+        "timeline": "3-4 days",
+        "included": [
+          "Wash and surface prep",
+          "Stucco and trim spot repairs",
+          "Prime repaired areas",
+          "Body, trim, fascia, and doors"
+        ]
+      },
+      {
+        "id": "medium-two-story",
+        "title": "Medium Two-Story",
+        "description": "Typical Los Angeles family homes with ladders, longer elevations, and more window trim.",
+        "priceMin": 4000,
+        "priceMax": 8000,
+        "timeline": "4-5 days",
+        "included": [
+          "Soft wash or pressure wash",
+          "Crack and caulk repair",
+          "Masking and protection",
+          "Two finish coats on main surfaces"
+        ]
+      },
+      {
+        "id": "large-estate",
+        "title": "Large Estate",
+        "description": "Bigger footprints, detached structures, longer trim runs, and higher finish expectations.",
+        "priceMin": 6000,
+        "priceMax": 12000,
+        "timeline": "5-7 days",
+        "included": [
+          "Detailed prep across multiple elevations",
+          "Extensive fascia, eaves, and trim coverage",
+          "Prime bare wood and patched stucco",
+          "Daily cleanup and walkthrough pacing"
+        ]
+      },
+      {
+        "id": "custom-estate",
+        "title": "Custom Estate",
+        "description": "Hillside, gated, or heavily detailed homes where access and staging drive the production plan.",
+        "priceMin": 10000,
+        "priceMax": 18000,
+        "timeline": "1-2 weeks",
+        "included": [
+          "Complex staging and protection",
+          "Detailed trim, doors, and accent surfaces",
+          "Access coordination for large lots",
+          "Full exterior system pricing with premium prep"
+        ]
+      }
+    ]
+  },
   "introAnswer": "Exterior Painting in Los Angeles usually starts around $2,500 to $5,000 for a basic under 1500 sqft scope. Larger projects land closer to $10,000 to $18,000+, depending on prep, access, and how much of the surface package we are touching in one visit.",
   "sections": [
     {

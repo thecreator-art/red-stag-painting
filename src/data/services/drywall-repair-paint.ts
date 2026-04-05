@@ -19,6 +19,100 @@ const data: ServicePageData = {
   "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1800&q=80",
   "heroImageAlt": "Drywall repair patch sanded smooth before priming and painting",
   "heroSubtitle": "We do the patching and the painting in one scope so repaired walls do not flash or crater under the finish coat.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Drywall damage and cracked wall before repair",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Smooth repaired wall ready after paint",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "Old cracks, sloppy patching, and leak stains were cut out, floated wider, primed correctly, and repainted so the wall reads flat again."
+  },
+  "inlineImages": [
+    {
+      "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Drywall repair tools and patch work in progress",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Painter sanding a drywall patch before primer",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Finished repaired wall with fresh paint",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "homeownerReviews": [
+    {
+      "quote": "They fixed three ugly doorknob holes and a ceiling seam, then painted wide enough that the repairs disappeared in side light.",
+      "reviewer": "Nadia C.",
+      "city": "Burbank"
+    },
+    {
+      "quote": "We had old leak scars over the dining room and they blocked every stain before the topcoat went on.",
+      "reviewer": "Victor H.",
+      "city": "Altadena"
+    },
+    {
+      "quote": "This looked like a patchwork wall when they arrived and like one continuous surface when they left.",
+      "reviewer": "Elena G.",
+      "city": "Culver City"
+    }
+  ],
+  "whyChooseCards": [
+    {
+      "stat": "500+",
+      "title": "Drywall Repair & Paint jobs across LA housing stock",
+      "body": "We handle this scope on older plaster-over-drywall transitions in Los Feliz, post-remodel punch lists in Santa Monica, and move-out wall damage in rental units across the Valley, so the plan fits the house instead of fighting it."
+    },
+    {
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like old leaks leaving yellowed rings and stress cracks over doors and windows, not by guessing from a few photos."
+    },
+    {
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around cut out loose material and secure the field, tape, mud, and sand in the right sequence, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
+  ],
+  "serviceFeature": {
+    "type": "damageSizeGuide",
+    "title": "Damage Size Guide",
+    "subtitle": "See the repair level most homeowners are actually dealing with",
+    "levels": [
+      {
+        "title": "Small",
+        "description": "Nail holes, screw pops, and little dings that need patching before repaint.",
+        "price": "$50-$75 per patch",
+        "size": "small"
+      },
+      {
+        "title": "Medium",
+        "description": "Doorknob holes, stress cracks, and wider repairs that need more floating.",
+        "price": "$100-$200 per repair",
+        "size": "medium"
+      },
+      {
+        "title": "Large",
+        "description": "Sections over 6 inches, water damage cutouts, and bigger wall failures.",
+        "price": "$200-$500 per area",
+        "size": "large"
+      }
+    ]
+  },
   "introAnswer": "Drywall Repair & Paint in Los Angeles usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",
   "sections": [
     {

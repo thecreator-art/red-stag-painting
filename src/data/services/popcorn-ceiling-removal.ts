@@ -19,6 +19,87 @@ const data: ServicePageData = {
   "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
   "heroImageAlt": "Smooth ceiling after popcorn texture removal and fresh paint",
   "heroSubtitle": "Ceilings get tested, protected, scraped, skimmed, sanded, primed, and painted so the room looks new instead of half-finished.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Popcorn ceiling before removal in older Los Angeles home",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Smooth skim-coated ceiling after popcorn removal",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "The old texture came down, the ceiling was skimmed and sanded flat, and the room immediately felt brighter and newer."
+  },
+  "inlineImages": [
+    {
+      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Painter protecting a room for popcorn ceiling removal",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Smooth white ceiling after texture removal",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Ceiling texture removal setup in living room",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "homeownerReviews": [
+    {
+      "quote": "The house went from late-1970s to current the second the texture came down and the ceilings went flat white.",
+      "reviewer": "Kara F.",
+      "city": "Studio City"
+    },
+    {
+      "quote": "They handled the testing, the dust control, and the skim coat without turning the whole place into a mess.",
+      "reviewer": "Ben W.",
+      "city": "Pasadena"
+    },
+    {
+      "quote": "We expected a chaotic demo. What we got was a controlled two-day process and ceilings that finally look clean.",
+      "reviewer": "Tina J.",
+      "city": "Glendale"
+    }
+  ],
+  "whyChooseCards": [
+    {
+      "stat": "500+",
+      "title": "Popcorn Ceiling Removal jobs across LA housing stock",
+      "body": "We handle this scope on 1970s living rooms in Studio City, Valley tract bedrooms in Burbank, and townhome ceilings in Pasadena with tight dust control requirements, so the plan fits the house instead of fighting it."
+    },
+    {
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like texture hiding old patch lines and cracked taped joints underneath the popcorn, not by guessing from a few photos."
+    },
+    {
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around contain the room and protect floors and furniture, test suspect texture before disturbing it, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
+  ],
+  "serviceFeature": {
+    "type": "asbestosNotice",
+    "title": "Safety First",
+    "subtitle": "Older ceiling texture needs the right process before anyone starts scraping",
+    "heading": "Homes built before 1980: testing required before removal.",
+    "details": [
+      "Older Los Angeles homes can have asbestos in the popcorn texture.",
+      "Testing usually runs $25-$75 per sample.",
+      "Lab results typically come back in 3-5 days.",
+      "Red Stag handles the sampling, the paperwork, and the next step once the report comes in."
+    ]
+  },
   "introAnswer": "Popcorn Ceiling Removal in Los Angeles usually starts around $600 to $1,400 for a basic 1-2 rooms scope. Larger projects land closer to $2,000 to $4,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",
   "sections": [
     {

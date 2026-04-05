@@ -19,6 +19,100 @@ const data: ServicePageData = {
   "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
   "heroImageAlt": "Wallpaper stripped from an interior wall before skim coating and paint",
   "heroSubtitle": "We remove the paper, clean the adhesive, repair the wall, and repaint so the room does not stop halfway at demo.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Wallpapered room before removal and repaint",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Smooth painted wall after wallpaper removal",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "Old paper and adhesive came off first, the torn walls were skimmed and primed, and the room finally reads like painted plaster again."
+  },
+  "inlineImages": [
+    {
+      "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Wall surface being smoothed after wallpaper removal",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Paint-ready wall after wallpaper removal work",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Bright finished room after wallpaper removal and paint",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "homeownerReviews": [
+    {
+      "quote": "They stripped two layers in the powder room, cleaned the glue off correctly, and the walls did not bubble under paint later.",
+      "reviewer": "Caitlin M.",
+      "city": "Los Feliz"
+    },
+    {
+      "quote": "We were sure the drywall was going to get destroyed. Instead they floated the damaged spots and left us smooth walls.",
+      "reviewer": "Harold Q.",
+      "city": "Pasadena"
+    },
+    {
+      "quote": "The dining room went from heavy old floral paper to a clean painted finish that fits the house again.",
+      "reviewer": "Nina D.",
+      "city": "Eagle Rock"
+    }
+  ],
+  "whyChooseCards": [
+    {
+      "stat": "500+",
+      "title": "Wallpaper Removal jobs across LA housing stock",
+      "body": "We handle this scope on older formal dining rooms in Pasadena, designer feature walls in Beverly Hills powder rooms, and rental resets in Eagle Rock and Highland Park, so the plan fits the house instead of fighting it."
+    },
+    {
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like paper installed over unprimed drywall and glue residue telegraphing through paint, not by guessing from a few photos."
+    },
+    {
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around soften and strip paper without gouging the wall, wash or scrape off adhesive residue, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
+  ],
+  "serviceFeature": {
+    "type": "wallpaperLayerEstimate",
+    "title": "Wallpaper Layer Estimate",
+    "subtitle": "Removal time changes fast once you know what is actually on the wall",
+    "layers": [
+      {
+        "title": "Single Layer",
+        "price": "$3-$4/sqft",
+        "timeline": "Usually 1 room in 1 day",
+        "description": "Fastest removal when the paper releases cleanly and adhesive cleanup stays light."
+      },
+      {
+        "title": "Double Layer",
+        "price": "$4-$5/sqft",
+        "timeline": "Usually 1 room in 1-2 days",
+        "description": "Longer soak time, more scraping, and more glue cleanup before the wall is ready."
+      },
+      {
+        "title": "Painted Over Wallpaper",
+        "price": "$5-$7/sqft",
+        "timeline": "Usually 1 room in 2 days",
+        "description": "Hardest removal path because the paint traps moisture and makes the release slower."
+      }
+    ]
+  },
   "introAnswer": "Wallpaper Removal in Los Angeles usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",
   "sections": [
     {

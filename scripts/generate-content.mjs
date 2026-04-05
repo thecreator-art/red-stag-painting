@@ -613,9 +613,526 @@ function buildServiceFaqs(slug, name, PRICING) {
   ];
 }
 
+function imageAsset(src, alt) {
+  return {
+    src,
+    alt,
+    width: 1600,
+    height: 900,
+  };
+}
+
+const SERVICE_VISUALS = {
+  'interior-painting': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80', 'Outdated beige Los Angeles living room before repaint'),
+      after: imageAsset('https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1600&q=80', 'Bright freshly painted living room after interior repaint'),
+      caption: 'Old beige walls, patched corners, and dull ceilings were reset with warm white walls, flat bright ceilings, and clean trim lines.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80', 'Interior painter working in a bright bedroom'),
+      imageAsset('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80', 'Freshly painted hallway and staircase in Los Angeles home'),
+      imageAsset('https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80', 'Warm white living room repaint with clean trim'),
+    ],
+    reviews: [
+      { quote: 'They patched a decade of wall damage, kept the floors spotless, and the cut lines around the crown came out dead straight.', reviewer: 'Megan P.', city: 'Brentwood' },
+      { quote: 'The crew moved everything, painted the upstairs in two days, and put the house back together without us chasing a single touch-up.', reviewer: 'Darren K.', city: 'Studio City' },
+      { quote: 'We went from yellow builder paint to a clean warm white and the whole house finally feels current.', reviewer: 'Leah S.', city: 'Pasadena' },
+    ],
+  },
+  'exterior-painting': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1560185127-6ed9919d945b?auto=format&fit=crop&w=1600&q=80', 'Faded stucco exterior before repaint'),
+      after: imageAsset('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80', 'Freshly painted white stucco exterior in Los Angeles'),
+      caption: 'Sun-faded stucco, chalking, and tired trim were rebuilt into a cleaner exterior with sharper body color and a stronger trim contrast.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80', 'Los Angeles exterior painter on stucco home'),
+      imageAsset('https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1600&q=80', 'Freshly painted two-story exterior with crisp trim'),
+      imageAsset('https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1600&q=80', 'Bright exterior repaint on Southern California home'),
+    ],
+    reviews: [
+      { quote: 'South and west walls were cooked from years of sun, and they still got the finish uniform from the curb.', reviewer: 'Chris T.', city: 'Pacific Palisades' },
+      { quote: 'They caught rotten trim and failed caulk before paint went on, which saved us from paying twice later.', reviewer: 'Anita R.', city: 'Woodland Hills' },
+      { quote: 'Five days, full exterior, daily cleanup, and the house looked sharper than any repaint we have done before.', reviewer: 'Joel M.', city: 'Manhattan Beach' },
+    ],
+  },
+  'cabinet-painting': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1560448075-bb485b067938?auto=format&fit=crop&w=1600&q=80', 'Dark dated kitchen cabinets before repaint'),
+      after: imageAsset('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1600&q=80', 'Bright white sprayed kitchen cabinets after painting'),
+      caption: 'The original boxes stayed, but the finish changed completely once the doors were sprayed, the grain was managed, and the hardware layout was cleaned up.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1556909045-f4c7f1f6d71d?auto=format&fit=crop&w=1600&q=80', 'Cabinet doors removed and labeled for painting'),
+      imageAsset('https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1600&q=80', 'Freshly painted kitchen cabinets and island'),
+      imageAsset('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80', 'Luxury painted cabinetry in estate kitchen'),
+    ],
+    reviews: [
+      { quote: 'They cataloged every hinge and drawer front, and the kitchen went back together tighter than it started.', reviewer: 'Sonia L.', city: 'Beverly Hills' },
+      { quote: 'We kept our counters, kept the layout, and still got the look of a full kitchen update for a fraction of replacement.', reviewer: 'Mark E.', city: 'Sherman Oaks' },
+      { quote: 'The sprayed finish laid down smooth enough that guests assume we replaced the cabinets outright.', reviewer: 'Julia N.', city: 'Bel Air' },
+    ],
+  },
+  'drywall-repair-paint': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80', 'Drywall damage and cracked wall before repair'),
+      after: imageAsset('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80', 'Smooth repaired wall ready after paint'),
+      caption: 'Old cracks, sloppy patching, and leak stains were cut out, floated wider, primed correctly, and repainted so the wall reads flat again.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80', 'Drywall repair tools and patch work in progress'),
+      imageAsset('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80', 'Painter sanding a drywall patch before primer'),
+      imageAsset('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80', 'Finished repaired wall with fresh paint'),
+    ],
+    reviews: [
+      { quote: 'They fixed three ugly doorknob holes and a ceiling seam, then painted wide enough that the repairs disappeared in side light.', reviewer: 'Nadia C.', city: 'Burbank' },
+      { quote: 'We had old leak scars over the dining room and they blocked every stain before the topcoat went on.', reviewer: 'Victor H.', city: 'Altadena' },
+      { quote: 'This looked like a patchwork wall when they arrived and like one continuous surface when they left.', reviewer: 'Elena G.', city: 'Culver City' },
+    ],
+  },
+  'popcorn-ceiling-removal': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=1600&q=80', 'Popcorn ceiling before removal in older Los Angeles home'),
+      after: imageAsset('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80', 'Smooth skim-coated ceiling after popcorn removal'),
+      caption: 'The old texture came down, the ceiling was skimmed and sanded flat, and the room immediately felt brighter and newer.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80', 'Painter protecting a room for popcorn ceiling removal'),
+      imageAsset('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80', 'Smooth white ceiling after texture removal'),
+      imageAsset('https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=1600&q=80', 'Ceiling texture removal setup in living room'),
+    ],
+    reviews: [
+      { quote: 'The house went from late-1970s to current the second the texture came down and the ceilings went flat white.', reviewer: 'Kara F.', city: 'Studio City' },
+      { quote: 'They handled the testing, the dust control, and the skim coat without turning the whole place into a mess.', reviewer: 'Ben W.', city: 'Pasadena' },
+      { quote: 'We expected a chaotic demo. What we got was a controlled two-day process and ceilings that finally look clean.', reviewer: 'Tina J.', city: 'Glendale' },
+    ],
+  },
+  'stucco-painting': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=80', 'Cracked stucco exterior before painting'),
+      after: imageAsset('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80', 'Fresh stucco exterior coating after repaint'),
+      caption: 'Hairline cracks, faded body color, and patched wall areas were stabilized first so the finish coat could read even across the whole elevation.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1600&q=80', 'Stucco exterior prep on Southern California home'),
+      imageAsset('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80', 'Freshly painted stucco home with clean lines'),
+      imageAsset('https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1600&q=80', 'Large stucco residence after exterior repaint'),
+    ],
+    reviews: [
+      { quote: 'They did not just roll over the cracks. They chased every bad spot first and the walls now read consistent from end to end.', reviewer: 'Paul D.', city: 'Brentwood' },
+      { quote: 'Our stucco had years of chalking on the south wall and the finish still came out rich and even.', reviewer: 'Mia O.', city: 'Malibu' },
+      { quote: 'The crew matched the repaired texture, coated the whole facade, and the house looks tighter from the street than it has in years.', reviewer: 'Ramon A.', city: 'Pasadena' },
+    ],
+  },
+  'trim-baseboard-painting': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80', 'Scuffed baseboards and trim before repaint'),
+      after: imageAsset('https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80', 'Freshly painted baseboards and trim after finish work'),
+      caption: 'Scuffed baseboards, yellowed casings, and beat-up door frames were reset with straighter caulk lines and a harder enamel finish.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80', 'Fresh trim paint around doors and windows'),
+      imageAsset('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80', 'Painter detailing trim inside Los Angeles home'),
+      imageAsset('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80', 'Finished millwork and baseboards in warm neutral room'),
+    ],
+    reviews: [
+      { quote: 'The walls looked fine, but the trim was dragging the whole house down. Once they reset it, every room looked sharper.', reviewer: 'Gina B.', city: 'Encino' },
+      { quote: 'They fixed the caulk gaps, sanded the old drips off the casings, and left the doors and trim looking clean instead of overpainted.', reviewer: 'Trevor S.', city: 'Toluca Lake' },
+      { quote: 'Our staircase trim and baseboards took a beating from kids and dogs, and now it all reads crisp again.', reviewer: 'Helena V.', city: 'Manhattan Beach' },
+    ],
+  },
+  'color-change-repaint': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80', 'Dark dated paint color before color change repaint'),
+      after: imageAsset('https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1600&q=80', 'Warm neutral interior after color change repaint'),
+      caption: 'A heavy, dated palette was blocked out, re-primed where needed, and turned into a lighter scheme that makes the rooms feel calmer and more current.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80', 'Fresh neutral interior after major color change'),
+      imageAsset('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80', 'Painter rolling over old dark wall color'),
+      imageAsset('https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1600&q=80', 'Light bright room after repainting from darker tones'),
+    ],
+    reviews: [
+      { quote: 'They took out three dark accent walls and the place instantly felt twice as bright without looking washed out.', reviewer: 'Rachel I.', city: 'West Hollywood' },
+      { quote: 'We bought a house full of yellow undertones and they got it to a clean warm neutral without ghosting from the old colors.', reviewer: 'Eddie P.', city: 'Silver Lake' },
+      { quote: 'The primer plan mattered. You cannot tell where the old navy walls were anymore.', reviewer: 'Simone T.', city: 'Santa Monica' },
+    ],
+  },
+  'rental-turnover-painting': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=1600&q=80', 'Vacant rental unit before turnover painting'),
+      after: imageAsset('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80', 'Fresh rental turnover repaint ready for listing photos'),
+      caption: 'Lease wear, wall damage, and kitchen grime were reset fast so the unit could be photographed clean and put back on the market.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=1600&q=80', 'Vacant apartment prepared for turnover painting'),
+      imageAsset('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80', 'Freshly painted rental interior ready for move-in'),
+      imageAsset('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80', 'Painter patching and repainting rental hallway'),
+    ],
+    reviews: [
+      { quote: 'They turned our vacant unit in two days and it looked clean enough for listing photos the same afternoon.', reviewer: 'Donna K.', city: 'Culver City' },
+      { quote: 'Patch work, wall repaint, trim cleanup, and no drama with the tenant turnover calendar.', reviewer: 'Samir Y.', city: 'West Hollywood' },
+      { quote: 'This is the first turnover crew we have used that actually understood speed without leaving us a punch list behind.', reviewer: 'Greg N.', city: 'Highland Park' },
+    ],
+  },
+  'wallpaper-removal': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80', 'Wallpapered room before removal and repaint'),
+      after: imageAsset('https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80', 'Smooth painted wall after wallpaper removal'),
+      caption: 'Old paper and adhesive came off first, the torn walls were skimmed and primed, and the room finally reads like painted plaster again.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80', 'Wall surface being smoothed after wallpaper removal'),
+      imageAsset('https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80', 'Paint-ready wall after wallpaper removal work'),
+      imageAsset('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80', 'Bright finished room after wallpaper removal and paint'),
+    ],
+    reviews: [
+      { quote: 'They stripped two layers in the powder room, cleaned the glue off correctly, and the walls did not bubble under paint later.', reviewer: 'Caitlin M.', city: 'Los Feliz' },
+      { quote: 'We were sure the drywall was going to get destroyed. Instead they floated the damaged spots and left us smooth walls.', reviewer: 'Harold Q.', city: 'Pasadena' },
+      { quote: 'The dining room went from heavy old floral paper to a clean painted finish that fits the house again.', reviewer: 'Nina D.', city: 'Eagle Rock' },
+    ],
+  },
+  'ceiling-painting': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80', 'Stained ceiling before repaint'),
+      after: imageAsset('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80', 'Bright clean ceiling after repaint'),
+      caption: 'Old stains, dingy white, and rough cut lines were blocked, re-cut, and rolled flat so the room picks up light correctly again.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80', 'Ceiling painting setup in occupied room'),
+      imageAsset('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80', 'Bright flat white ceiling after repaint'),
+      imageAsset('https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80', 'Fresh tray ceiling and walls in Los Angeles home'),
+    ],
+    reviews: [
+      { quote: 'We thought the ceilings were fine until they repainted them and the whole house suddenly felt brighter.', reviewer: 'Tessa U.', city: 'Sherman Oaks' },
+      { quote: 'They blocked an old leak ring in the kitchen ceiling and it has not flashed back through.', reviewer: 'Albert F.', city: 'Glendale' },
+      { quote: 'The line where the walls meet the ceiling is cleaner now than it was when we bought the house.', reviewer: 'Monica Z.', city: 'Brentwood' },
+    ],
+  },
+  'garage-painting': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80', 'Dusty garage before paint and coating'),
+      after: imageAsset('https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1600&q=80', 'Bright organized garage after painting'),
+      caption: 'The old garage started dusty and unfinished. Once the walls, ceiling, and working surfaces were coated, it felt like usable square footage again.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1600&q=80', 'Freshly painted organized garage interior'),
+      imageAsset('https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1600&q=80', 'Garage walls and ceiling painted bright white'),
+      imageAsset('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80', 'Residential garage project in Los Angeles home'),
+    ],
+    reviews: [
+      { quote: 'They turned a dusty storage garage into a clean room we actually want to walk into now.', reviewer: 'Peter L.', city: 'Calabasas' },
+      { quote: 'Walls, ceiling, stem walls, and floor prep were handled in one schedule instead of making us coordinate separate trades.', reviewer: 'Janel R.', city: 'Granada Hills' },
+      { quote: 'The brighter walls made a bigger difference than we expected, and the space finally feels organized.', reviewer: 'Oscar C.', city: 'Encino' },
+    ],
+  },
+  'wood-deck-staining': {
+    beforeAfter: {
+      before: imageAsset('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80', 'Weathered wood deck before staining'),
+      after: imageAsset('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1600&q=80', 'Freshly stained backyard wood deck after refinishing'),
+      caption: 'Sun-bleached boards and dry rails were washed, sanded, and stained so the grain reads richer and the wood is protected again.',
+    },
+    inlineImages: [
+      imageAsset('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1600&q=80', 'Freshly stained wood deck in backyard'),
+      imageAsset('https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1600&q=80', 'Exterior wood railing and deck staining project'),
+      imageAsset('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80', 'Outdoor wood fence and deck stained warm brown'),
+    ],
+    reviews: [
+      { quote: 'They did the wash and dry time the right way, so the stain actually soaked in instead of sitting on top of the wood.', reviewer: 'Heidi G.', city: 'Malibu' },
+      { quote: 'Our fence and deck looked silver and tired before. Now the wood grain shows again and the backyard looks finished.', reviewer: 'Noah B.', city: 'La Canada Flintridge' },
+      { quote: 'The crew explained the difference between transparent and solid stain clearly and the result fits the wood perfectly.', reviewer: 'Camila E.', city: 'Pacific Palisades' },
+    ],
+  },
+};
+
+function buildWhyChooseCards(slug, name) {
+  const detail = SERVICE_DETAILS[slug];
+  return [
+    {
+      stat: '500+',
+      title: `${name} jobs across LA housing stock`,
+      body: `We handle this scope on ${detail.localExamples[0]}, ${detail.localExamples[1]}, and ${detail.localExamples[2]}, so the plan fits the house instead of fighting it.`,
+    },
+    {
+      stat: '24 hr',
+      title: 'Quotes built around real prep',
+      body: `We price the work after looking at things like ${detail.problems[0]} and ${detail.problems[1]}, not by guessing from a few photos.`,
+    },
+    {
+      stat: 'Clean',
+      title: 'Sequencing that keeps the site under control',
+      body: `The production plan is built around ${detail.prep[0]}, ${detail.prep[1]}, and daily cleanup so the finish still reads right when the room or exterior goes back into service.`,
+    },
+  ];
+}
+
+function buildServiceFeature(slug, PRICING) {
+  const exteriorTiers = getServiceTiers('exterior-painting', PRICING);
+  switch (slug) {
+    case 'interior-painting':
+      return {
+        type: 'roomCalculator',
+        title: 'Room Cost Calculator',
+        subtitle: 'Get a fast interior range before the walkthrough',
+        baseMin: 400,
+        baseMax: 900,
+        roomOptions: [1, 2, 3, 4, 5, 6, 7, 8],
+        heightOptions: [
+          { value: 'standard', label: 'Standard 8ft', multiplier: 1 },
+          { value: 'tall', label: 'Tall 9-10ft', multiplier: 1.15 },
+          { value: 'vaulted', label: 'Vaulted 10ft+', multiplier: 1.3 },
+        ],
+      };
+    case 'exterior-painting':
+      return {
+        type: 'homeSizeEstimator',
+        title: 'Home Size Estimator',
+        subtitle: 'Pick the house size and see how the exterior scope usually lands',
+        options: [
+          {
+            id: 'small-ranch',
+            title: 'Small Ranch',
+            description: 'Single-story homes with straightforward access and lighter trim packages.',
+            priceMin: exteriorTiers[0].min,
+            priceMax: exteriorTiers[0].max,
+            timeline: '3-4 days',
+            included: ['Wash and surface prep', 'Stucco and trim spot repairs', 'Prime repaired areas', 'Body, trim, fascia, and doors'],
+          },
+          {
+            id: 'medium-two-story',
+            title: 'Medium Two-Story',
+            description: 'Typical Los Angeles family homes with ladders, longer elevations, and more window trim.',
+            priceMin: exteriorTiers[1].min,
+            priceMax: exteriorTiers[1].max,
+            timeline: '4-5 days',
+            included: ['Soft wash or pressure wash', 'Crack and caulk repair', 'Masking and protection', 'Two finish coats on main surfaces'],
+          },
+          {
+            id: 'large-estate',
+            title: 'Large Estate',
+            description: 'Bigger footprints, detached structures, longer trim runs, and higher finish expectations.',
+            priceMin: exteriorTiers[2].min,
+            priceMax: exteriorTiers[2].max,
+            timeline: '5-7 days',
+            included: ['Detailed prep across multiple elevations', 'Extensive fascia, eaves, and trim coverage', 'Prime bare wood and patched stucco', 'Daily cleanup and walkthrough pacing'],
+          },
+          {
+            id: 'custom-estate',
+            title: 'Custom Estate',
+            description: 'Hillside, gated, or heavily detailed homes where access and staging drive the production plan.',
+            priceMin: exteriorTiers[3].min,
+            priceMax: exteriorTiers[3].max,
+            timeline: '1-2 weeks',
+            included: ['Complex staging and protection', 'Detailed trim, doors, and accent surfaces', 'Access coordination for large lots', 'Full exterior system pricing with premium prep'],
+          },
+        ],
+      };
+    case 'cabinet-painting':
+      return {
+        type: 'paintingVsReplacing',
+        title: 'Painting vs Replacing',
+        subtitle: 'See why repainting wins when the boxes are still solid',
+        options: [
+          {
+            title: 'Paint Your Cabinets',
+            price: '$2,500-$10,000',
+            timeline: '5-7 days',
+            notes: ['Kitchen stays usable throughout the project', 'Zero demolition', 'Keep your counters, plumbing, and layout', 'Sprayed finish on doors and drawer fronts'],
+            highlighted: true,
+          },
+          {
+            title: 'Replace Your Cabinets',
+            price: '$15,000-$40,000',
+            timeline: '3-6 weeks',
+            notes: ['Kitchen is largely unusable during the remodel', 'Full demolition required', 'Trades stack behind one another', 'Higher spend before the room is even finished'],
+            muted: true,
+          },
+        ],
+      };
+    case 'drywall-repair-paint':
+      return {
+        type: 'damageSizeGuide',
+        title: 'Damage Size Guide',
+        subtitle: 'See the repair level most homeowners are actually dealing with',
+        levels: [
+          { title: 'Small', description: 'Nail holes, screw pops, and little dings that need patching before repaint.', price: '$50-$75 per patch', size: 'small' },
+          { title: 'Medium', description: 'Doorknob holes, stress cracks, and wider repairs that need more floating.', price: '$100-$200 per repair', size: 'medium' },
+          { title: 'Large', description: 'Sections over 6 inches, water damage cutouts, and bigger wall failures.', price: '$200-$500 per area', size: 'large' },
+        ],
+      };
+    case 'popcorn-ceiling-removal':
+      return {
+        type: 'asbestosNotice',
+        title: 'Safety First',
+        subtitle: 'Older ceiling texture needs the right process before anyone starts scraping',
+        heading: 'Homes built before 1980: testing required before removal.',
+        details: [
+          'Older Los Angeles homes can have asbestos in the popcorn texture.',
+          'Testing usually runs $25-$75 per sample.',
+          'Lab results typically come back in 3-5 days.',
+          'Red Stag handles the sampling, the paperwork, and the next step once the report comes in.',
+        ],
+      };
+    case 'stucco-painting':
+      return {
+        type: 'stuccoConditionAssessment',
+        title: 'Stucco Condition Assessment',
+        subtitle: 'Condition changes both the coating system and what the quote needs to include',
+        conditions: [
+          {
+            title: 'Good Condition',
+            accent: 'green',
+            description: 'Minor fading and light wear. The stucco is stable and mostly ready for prep plus paint.',
+            includes: ['Wash and chalk removal', 'Spot caulking', 'Prime repairs', 'Standard premium exterior coating'],
+          },
+          {
+            title: 'Fair Condition',
+            accent: 'amber',
+            description: 'Hairline cracking and more visible age. This usually calls for heavier prep and elastomeric planning.',
+            includes: ['Crack repair and wider patch blending', 'Elastomeric-compatible primer plan', 'More detailed masking', 'Higher-build coating where needed'],
+          },
+          {
+            title: 'Poor Condition',
+            accent: 'red',
+            description: 'Large cracks, failed patches, or bigger surface movement. Repair comes first, paint second.',
+            includes: ['Repair-first scope review', 'Larger crack and patch stabilization', 'Prime all repaired zones', 'Finish pricing after the substrate is made sound'],
+          },
+        ],
+      };
+    case 'trim-baseboard-painting':
+      return {
+        type: 'trimChecklist',
+        title: 'What We Paint',
+        subtitle: 'Trim work is usually bigger than homeowners first assume',
+        items: [
+          'Baseboards',
+          'Crown molding',
+          'Door frames',
+          'Window casings',
+          'Chair rails',
+          'Wainscoting',
+          'Built-in shelving',
+          'Fireplace mantels',
+          'Stair railings',
+          'Cabinet trim',
+        ],
+      };
+    case 'color-change-repaint':
+      return {
+        type: 'colorDirectionGuide',
+        title: 'Color Direction Guide',
+        subtitle: 'The price changes when the old color has to disappear under the new one',
+        directions: [
+          {
+            title: 'Going Lighter',
+            price: '$3-$5/sqft',
+            details: ['Dark to light usually needs a tinted primer', 'Expect 2-3 finish coats for true hide', 'Deep reds, blues, and charcoals take the most correction'],
+            gradient: 'light',
+          },
+          {
+            title: 'Going Darker',
+            price: '$2.50-$4/sqft',
+            details: ['A primer coat may still be needed depending on the starting color', 'Two finish coats are common', 'Edges and old sample blocks need extra cleanup'],
+            gradient: 'dark',
+          },
+        ],
+      };
+    case 'rental-turnover-painting':
+      return {
+        type: 'turnoverPackageBuilder',
+        title: 'Turnover Package Builder',
+        subtitle: 'Build the make-ready scope and watch the planning range update instantly',
+        items: [
+          { label: 'Patch all holes', min: 200, max: 400 },
+          { label: 'Repaint all walls', min: 1500, max: 3000 },
+          { label: 'Paint trim and doors', min: 400, max: 800 },
+          { label: 'Clean and paint kitchen', min: 300, max: 600 },
+          { label: 'Clean and paint bathrooms', min: 200, max: 400 },
+        ],
+      };
+    case 'wallpaper-removal':
+      return {
+        type: 'wallpaperLayerEstimate',
+        title: 'Wallpaper Layer Estimate',
+        subtitle: 'Removal time changes fast once you know what is actually on the wall',
+        layers: [
+          { title: 'Single Layer', price: '$3-$4/sqft', timeline: 'Usually 1 room in 1 day', description: 'Fastest removal when the paper releases cleanly and adhesive cleanup stays light.' },
+          { title: 'Double Layer', price: '$4-$5/sqft', timeline: 'Usually 1 room in 1-2 days', description: 'Longer soak time, more scraping, and more glue cleanup before the wall is ready.' },
+          { title: 'Painted Over Wallpaper', price: '$5-$7/sqft', timeline: 'Usually 1 room in 2 days', description: 'Hardest removal path because the paint traps moisture and makes the release slower.' },
+        ],
+      };
+    case 'ceiling-painting':
+      return {
+        type: 'ceilingTypes',
+        title: 'Ceiling Types We Handle',
+        subtitle: 'Different ceilings need different setup, access, and paint planning',
+        types: [
+          { title: 'Flat / Smooth Ceilings', price: '$200-$600 per room', description: 'Standard ceiling resets with clean cut lines and full-room rolling.' },
+          { title: 'Textured Ceilings', price: '$250-$700 per room', description: 'Requires better roller control and more care around high spots.' },
+          { title: 'Popcorn Ceilings', price: '$200-$500 per room to paint over', description: 'For painting over existing texture, not removing it.' },
+          { title: 'Vaulted Ceilings', price: '$400-$900 per room', description: 'More ladder setup, longer cuts, and more total production time.' },
+          { title: 'Tray Ceilings', price: '$350-$800 per room', description: 'Extra corners and level changes mean more detail work.' },
+          { title: 'Exposed Beam Ceilings', price: '$500-$1,200 per room', description: 'Beam edges and field areas are treated as separate finish surfaces.' },
+        ],
+      };
+    case 'garage-painting':
+      return {
+        type: 'garagePackageOptions',
+        title: 'Garage Package Options',
+        subtitle: 'Pick the level of finish that matches how you use the space',
+        options: [
+          {
+            title: 'Walls & Ceiling Only',
+            price: '$1,500-$3,500',
+            included: ['Surface prep and crack filling', 'Premium wall and ceiling paint', 'Bright clean finish for better visibility', 'Interior side of the garage brought back into shape'],
+          },
+          {
+            title: 'Full Garage Package',
+            price: '$2,500-$5,500',
+            included: ['Walls and ceiling repaint', 'Epoxy floor coating', 'Stem wall cleanup and detailing', 'Best fit for garages that need to feel like usable square footage'],
+            recommended: true,
+          },
+        ],
+      };
+    case 'wood-deck-staining':
+      return {
+        type: 'stainTypeSelector',
+        title: 'Stain Type Selector',
+        subtitle: 'Choose how much grain you want to see and how much UV protection you need',
+        options: [
+          {
+            title: 'Transparent',
+            description: 'Shows the full wood grain and keeps the most natural look.',
+            protection: 'Least UV protection. Best when the wood is beautiful and you are ready for more maintenance.',
+            lifespan: 'Reapply every 1-2 years',
+            swatch: 'from-[#C58D54] to-[#8B5A2B]',
+          },
+          {
+            title: 'Semi-Transparent',
+            description: 'Lets part of the grain show while adding more color and protection.',
+            protection: 'Moderate UV protection and a strong middle ground for decks and fences.',
+            lifespan: 'Reapply every 2-3 years',
+            swatch: 'from-[#C79B64] to-[#6B4423]',
+          },
+          {
+            title: 'Solid Stain',
+            description: 'Covers the grain and gives the wood the strongest color hold.',
+            protection: 'Maximum UV protection when the wood is more weathered and needs more hiding power.',
+            lifespan: 'Reapply every 3-5 years',
+            swatch: 'from-[#9A6A45] to-[#4A2F1C]',
+          },
+        ],
+      };
+    default:
+      return null;
+  }
+}
+
 function buildServicePage(slug, SERVICES, PRICING, PRICE_ANCHORS) {
   const name = serviceNameBySlug(SERVICES, slug);
   const detail = SERVICE_DETAILS[slug];
+  const visuals = SERVICE_VISUALS[slug];
   const tiers = getServiceTiers(slug, PRICING);
   const introAnswer = introFromTiers(name, 'Los Angeles', tiers);
   const sections = buildServiceSections(slug, name, PRICING, PRICE_ANCHORS);
@@ -644,6 +1161,11 @@ function buildServicePage(slug, SERVICES, PRICING, PRICE_ANCHORS) {
     heroImage: detail.heroImage,
     heroImageAlt: detail.heroImageAlt,
     heroSubtitle: detail.heroSubtitle,
+    beforeAfter: visuals.beforeAfter,
+    inlineImages: visuals.inlineImages,
+    homeownerReviews: visuals.reviews,
+    whyChooseCards: buildWhyChooseCards(slug, name),
+    serviceFeature: buildServiceFeature(slug, PRICING),
     introAnswer,
     sections,
     pricePerSqFt: detail.pricePerSqFt,
@@ -1246,8 +1768,7 @@ async function generate() {
   globalServices = SERVICES;
   globalCities = CITIES;
 
-  const servicesToGenerate = SERVICES.map((service) => service.slug).filter((slug) => slug !== 'interior-painting');
-  const servicePages = servicesToGenerate.map((slug) => buildServicePage(slug, SERVICES, PRICING, PRICE_ANCHORS));
+  const servicePages = SERVICES.map((service) => buildServicePage(service.slug, SERVICES, PRICING, PRICE_ANCHORS));
   const cityPages = CITIES.map((city) => buildCityPage(city.slug, CITIES, SERVICES, PRICING));
   const matrixPages = SERVICES.flatMap((service) => CITIES.map((city) => buildMatrixPage(service.slug, city.slug, SERVICES, CITIES, PRICING)));
   const blogPosts = BLOG_TOPICS.map((topic) => buildBlogPost(topic, SERVICES, CITIES, PRICING));
@@ -1278,16 +1799,11 @@ async function generate() {
     assert(post.faqs.length >= 3 && post.faqs.length <= 4, `blog ${post.slug} FAQ count invalid`);
   }
 
-  const existingInterior = await fs.readFile(path.join(servicesDir, 'interior-painting.ts'), 'utf8');
-  const exampleTitle = existingInterior.match(/titleTag:\s*'([^']+)'/)?.[1];
-  const exampleMeta = existingInterior.match(/metaDescription:\s*'([^']+)'/)?.[1];
-  const exampleH1 = existingInterior.match(/h1:\s*'([^']+)'/)?.[1];
   validateSeoUniqueness([
     ...servicePages,
     ...cityPages,
     ...matrixPages,
     ...blogPosts,
-    { titleTag: exampleTitle, metaDescription: exampleMeta, h1: exampleH1 },
   ]);
 
   for (const page of servicePages) {

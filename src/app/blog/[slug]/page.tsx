@@ -15,6 +15,32 @@ import PricingTable from '@/components/shared/PricingTable';
 import FAQAccordion from '@/components/shared/FAQAccordion';
 import RelatedLinks from '@/components/shared/RelatedLinks';
 import CTABanner from '@/components/shared/CTABanner';
+import SectionJumpNav from '@/components/shared/SectionJumpNav';
+import InlineQuotePanel from '@/components/shared/InlineQuotePanel';
+import InfoCardGrid from '@/components/shared/InfoCardGrid';
+
+const SECTION_BACKGROUNDS = ['bg-bg-primary', 'bg-bg-secondary'] as const;
+
+function slugify(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function stripHtml(value: string): string {
+  return value
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function excerpt(value: string, maxLength = 150): string {
+  const sentence = stripHtml(value).split(/(?<=[.!?])\s/)[0] ?? '';
+  if (sentence.length <= maxLength) return sentence;
+  return `${sentence.slice(0, maxLength).trimEnd()}...`;
+}
 
 // ---------------------------------------------------------------------------
 // Static params
@@ -133,6 +159,21 @@ export default async function BlogPostPage({ params }: PageProps) {
     }),
   ];
 
+  const jumpItems = [
+    ...data.sections.slice(0, 5).map((section) => ({
+      id: `section-${slugify(section.heading)}`,
+      label: section.heading,
+    })),
+    ...(data.faqs.length > 0 ? [{ id: 'blog-faq', label: 'FAQ' }] : []),
+    { id: 'blog-quote-form', label: 'Get Estimate' },
+  ];
+  const primaryRelatedServiceSlug = data.relatedServices[0];
+  const primaryRelatedServiceName = SERVICES.find((service) => service.slug === primaryRelatedServiceSlug)?.name;
+  const summaryCards = data.sections.slice(0, 3).map((section) => ({
+    title: section.heading,
+    body: excerpt(section.body),
+  }));
+
   return (
     <>
       {/* JSON-LD */}
@@ -213,19 +254,36 @@ export default async function BlogPostPage({ params }: PageProps) {
       {/* Intro answer (GEO) */}
       <article className="bg-bg-primary py-16 md:py-24">
         <div className="mx-auto max-w-[1200px] px-6 md:px-10">
-          <p className="text-lg md:text-xl text-text-body leading-relaxed max-w-3xl">
-            {data.introAnswer}
-          </p>
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
+            <p className="text-lg md:text-xl text-text-body leading-relaxed max-w-3xl">
+              {data.introAnswer}
+            </p>
+            <SectionJumpNav heading="In this guide" items={jumpItems} />
+          </div>
         </div>
       </article>
 
+      <section className="bg-bg-secondary py-16 md:py-20">
+        <div className="mx-auto max-w-[1200px] px-6 md:px-10">
+          <InfoCardGrid
+            eyebrow="Quick Read"
+            heading="What this guide covers"
+            cards={summaryCards}
+          />
+        </div>
+      </section>
+
       {/* Body sections */}
-      <section className="bg-bg-primary pb-16 md:pb-24">
-        <div className="mx-auto max-w-[1200px] px-6 md:px-10 space-y-12 md:space-y-16">
-          {data.sections.map((section, i) => {
-            const Heading = section.level === 'h2' ? 'h2' : 'h3';
-            return (
-              <div key={i}>
+      {data.sections.map((section, i) => {
+        const Heading = section.level === 'h2' ? 'h2' : 'h3';
+        const sectionId = `section-${slugify(section.heading)}`;
+        return (
+          <section
+            key={sectionId}
+            className={`${SECTION_BACKGROUNDS[i % SECTION_BACKGROUNDS.length]} py-16 md:py-20`}
+          >
+            <div id={sectionId} className="mx-auto max-w-[1200px] px-6 md:px-10 scroll-mt-28">
+              <div className="max-w-3xl">
                 <Heading
                   className={
                     section.level === 'h2'
@@ -237,7 +295,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 </Heading>
 
                 {section.image && (
-                  <div className="mb-6 rounded-sm overflow-hidden">
+                  <div className="mb-6 rounded-sm overflow-hidden border border-border card-depth">
                     <Image
                       src={section.image.src}
                       alt={section.image.alt}
@@ -263,14 +321,31 @@ export default async function BlogPostPage({ params }: PageProps) {
                   </div>
                 )}
               </div>
-            );
-          })}
+            </div>
+          </section>
+        );
+      })}
+
+      <section className="bg-bg-secondary py-16 md:py-20">
+        <div className="mx-auto max-w-[1200px] px-6 md:px-10">
+          <InlineQuotePanel
+            id="blog-quote-form"
+            eyebrow="Need Pricing Help?"
+            heading="Turn this guide into a real project number"
+            body="If you are done researching and want a real quote, send the basics here and Red Stag will reply with a practical next step based on your actual project."
+            bullets={[
+              'Good fit if you are moving from reading to booking.',
+              'Use it to turn cost guides into a real scope conversation.',
+            ]}
+            initialService={primaryRelatedServiceName}
+            submitLabel="Get My Free Estimate"
+          />
         </div>
       </section>
 
       {/* FAQ */}
       {data.faqs.length > 0 && (
-        <section className="bg-bg-primary pb-16 md:pb-24">
+        <section id="blog-faq" className="bg-bg-primary pb-16 md:pb-24 scroll-mt-28">
           <div className="mx-auto max-w-[1200px] px-6 md:px-10">
             <p className="section-label">FAQ</p>
             <h2 className="text-2xl md:text-3xl font-heading text-text-primary mb-8">
@@ -295,7 +370,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         heading="Ready to Transform Your Space?"
         subtitle="We respond within 2 hours. Exact pricing after a free walkthrough."
         ctaText={CTA_PRIMARY}
-        ctaHref="/#contact"
+        ctaHref="#blog-quote-form"
       />
     </>
   );

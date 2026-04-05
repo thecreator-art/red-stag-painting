@@ -19,6 +19,92 @@ const data: ServicePageData = {
   "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
   "heroImageAlt": "Cleanly painted white baseboards and door trim in a Los Angeles home",
   "heroSubtitle": "Baseboards, casings, doors, and trim look sharp only when the prep is careful and the sheen is laid down without runs.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Scuffed baseboards and trim before repaint",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Freshly painted baseboards and trim after finish work",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "Scuffed baseboards, yellowed casings, and beat-up door frames were reset with straighter caulk lines and a harder enamel finish."
+  },
+  "inlineImages": [
+    {
+      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Fresh trim paint around doors and windows",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Painter detailing trim inside Los Angeles home",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Finished millwork and baseboards in warm neutral room",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "homeownerReviews": [
+    {
+      "quote": "The walls looked fine, but the trim was dragging the whole house down. Once they reset it, every room looked sharper.",
+      "reviewer": "Gina B.",
+      "city": "Encino"
+    },
+    {
+      "quote": "They fixed the caulk gaps, sanded the old drips off the casings, and left the doors and trim looking clean instead of overpainted.",
+      "reviewer": "Trevor S.",
+      "city": "Toluca Lake"
+    },
+    {
+      "quote": "Our staircase trim and baseboards took a beating from kids and dogs, and now it all reads crisp again.",
+      "reviewer": "Helena V.",
+      "city": "Manhattan Beach"
+    }
+  ],
+  "whyChooseCards": [
+    {
+      "stat": "500+",
+      "title": "Trim & Baseboard Painting jobs across LA housing stock",
+      "body": "We handle this scope on period moulding in Pasadena Craftsman homes, tall modern casing packages in Brentwood, and simple ranch trim packages in Woodland Hills, so the plan fits the house instead of fighting it."
+    },
+    {
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like old caulk lines splitting open and roller stipple on trim that should read smooth, not by guessing from a few photos."
+    },
+    {
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around degloss and sand the profile, caulk gaps and fill dents, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
+  ],
+  "serviceFeature": {
+    "type": "trimChecklist",
+    "title": "What We Paint",
+    "subtitle": "Trim work is usually bigger than homeowners first assume",
+    "items": [
+      "Baseboards",
+      "Crown molding",
+      "Door frames",
+      "Window casings",
+      "Chair rails",
+      "Wainscoting",
+      "Built-in shelving",
+      "Fireplace mantels",
+      "Stair railings",
+      "Cabinet trim"
+    ]
+  },
   "introAnswer": "Trim & Baseboard Painting in Los Angeles usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",
   "sections": [
     {

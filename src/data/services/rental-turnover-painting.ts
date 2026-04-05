@@ -19,6 +19,107 @@ const data: ServicePageData = {
   "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
   "heroImageAlt": "Freshly repainted rental unit ready for the next tenant",
   "heroSubtitle": "We handle vacancy turnovers fast, patch the real damage, and leave a durable finish that photographs clean for leasing.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Vacant rental unit before turnover painting",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Fresh rental turnover repaint ready for listing photos",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "Lease wear, wall damage, and kitchen grime were reset fast so the unit could be photographed clean and put back on the market."
+  },
+  "inlineImages": [
+    {
+      "src": "https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Vacant apartment prepared for turnover painting",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Freshly painted rental interior ready for move-in",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Painter patching and repainting rental hallway",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "homeownerReviews": [
+    {
+      "quote": "They turned our vacant unit in two days and it looked clean enough for listing photos the same afternoon.",
+      "reviewer": "Donna K.",
+      "city": "Culver City"
+    },
+    {
+      "quote": "Patch work, wall repaint, trim cleanup, and no drama with the tenant turnover calendar.",
+      "reviewer": "Samir Y.",
+      "city": "West Hollywood"
+    },
+    {
+      "quote": "This is the first turnover crew we have used that actually understood speed without leaving us a punch list behind.",
+      "reviewer": "Greg N.",
+      "city": "Highland Park"
+    }
+  ],
+  "whyChooseCards": [
+    {
+      "stat": "500+",
+      "title": "Rental Turnover Painting jobs across LA housing stock",
+      "body": "We handle this scope on duplex turns in Culver City, small-unit portfolios in West Hollywood, and single-family move-outs in Highland Park, so the plan fits the house instead of fighting it."
+    },
+    {
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like grease and smoke staining and anchor holes from TV mounts and shelving, not by guessing from a few photos."
+    },
+    {
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around walk the unit and separate touch-up from full repaint work, patch and sand high-wear damage, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
+  ],
+  "serviceFeature": {
+    "type": "turnoverPackageBuilder",
+    "title": "Turnover Package Builder",
+    "subtitle": "Build the make-ready scope and watch the planning range update instantly",
+    "items": [
+      {
+        "label": "Patch all holes",
+        "min": 200,
+        "max": 400
+      },
+      {
+        "label": "Repaint all walls",
+        "min": 1500,
+        "max": 3000
+      },
+      {
+        "label": "Paint trim and doors",
+        "min": 400,
+        "max": 800
+      },
+      {
+        "label": "Clean and paint kitchen",
+        "min": 300,
+        "max": 600
+      },
+      {
+        "label": "Clean and paint bathrooms",
+        "min": 200,
+        "max": 400
+      }
+    ]
+  },
   "introAnswer": "Rental Turnover Painting in Los Angeles usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",
   "sections": [
     {

@@ -37,6 +37,16 @@ export interface ServicePageData {
   heroImageAlt: string;
   /** Short hero subtitle (1-2 sentences). */
   heroSubtitle: string;
+  /** Before/after image pair displayed near the top of the page. */
+  beforeAfter: BeforeAfterPair;
+  /** Full-width inline images inserted between body sections. */
+  inlineImages: ImageAsset[];
+  /** Review cards unique to this service page. */
+  homeownerReviews: ServiceReview[];
+  /** Visual proof points shown as a 3-card grid. */
+  whyChooseCards: WhyChooseCard[];
+  /** Service-specific interactive or visual feature module. */
+  serviceFeature: ServiceFeatureData;
 
   // Body content — answer-first, 2,000+ words split into sections
   /** Direct answer in first 40-60 words for GEO. */
@@ -234,14 +244,34 @@ export interface ContentSection {
   /** HTML-safe body content. Can include <strong>, <em>, <a>, <ul>, <li>. */
   body: string;
   /** Optional image for this section. */
-  image?: {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
+  image?: ImageAsset;
   /** Optional pricing table embedded in this section. */
   pricingTable?: PricingTier[];
+}
+
+export interface ImageAsset {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
+export interface BeforeAfterPair {
+  before: ImageAsset;
+  after: ImageAsset;
+  caption: string;
+}
+
+export interface ServiceReview {
+  quote: string;
+  reviewer: string;
+  city: string;
+}
+
+export interface WhyChooseCard {
+  stat: string;
+  title: string;
+  body: string;
 }
 
 export interface PricingTier {
@@ -260,4 +290,151 @@ export interface FAQEntry {
   question: string;
   /** Answer with real numbers and specific details. */
   answer: string;
+}
+
+export type ServiceFeatureData =
+  | RoomCostCalculatorFeature
+  | HomeSizeEstimatorFeature
+  | PaintingVsReplacingFeature
+  | DamageSizeGuideFeature
+  | AsbestosNoticeFeature
+  | StuccoConditionAssessmentFeature
+  | TrimChecklistFeature
+  | ColorDirectionGuideFeature
+  | TurnoverPackageBuilderFeature
+  | WallpaperLayerEstimateFeature
+  | CeilingTypesFeature
+  | GaragePackageOptionsFeature
+  | StainTypeSelectorFeature;
+
+export interface BaseServiceFeature {
+  title: string;
+  subtitle: string;
+}
+
+export interface RoomCostCalculatorFeature extends BaseServiceFeature {
+  type: 'roomCalculator';
+  baseMin: number;
+  baseMax: number;
+  roomOptions: number[];
+  heightOptions: {
+    value: string;
+    label: string;
+    multiplier: number;
+  }[];
+}
+
+export interface HomeSizeEstimatorFeature extends BaseServiceFeature {
+  type: 'homeSizeEstimator';
+  options: {
+    id: string;
+    title: string;
+    priceMin: number;
+    priceMax: number;
+    timeline: string;
+    description: string;
+    included: string[];
+  }[];
+}
+
+export interface PaintingVsReplacingFeature extends BaseServiceFeature {
+  type: 'paintingVsReplacing';
+  options: {
+    title: string;
+    price: string;
+    timeline: string;
+    notes: string[];
+    highlighted?: boolean;
+    muted?: boolean;
+  }[];
+}
+
+export interface DamageSizeGuideFeature extends BaseServiceFeature {
+  type: 'damageSizeGuide';
+  levels: {
+    title: string;
+    description: string;
+    price: string;
+    size: 'small' | 'medium' | 'large';
+  }[];
+}
+
+export interface AsbestosNoticeFeature extends BaseServiceFeature {
+  type: 'asbestosNotice';
+  heading: string;
+  details: string[];
+}
+
+export interface StuccoConditionAssessmentFeature extends BaseServiceFeature {
+  type: 'stuccoConditionAssessment';
+  conditions: {
+    title: string;
+    accent: 'green' | 'amber' | 'red';
+    description: string;
+    includes: string[];
+  }[];
+}
+
+export interface TrimChecklistFeature extends BaseServiceFeature {
+  type: 'trimChecklist';
+  items: string[];
+}
+
+export interface ColorDirectionGuideFeature extends BaseServiceFeature {
+  type: 'colorDirectionGuide';
+  directions: {
+    title: string;
+    price: string;
+    details: string[];
+    gradient: 'light' | 'dark';
+  }[];
+}
+
+export interface TurnoverPackageBuilderFeature extends BaseServiceFeature {
+  type: 'turnoverPackageBuilder';
+  items: {
+    label: string;
+    min: number;
+    max: number;
+  }[];
+}
+
+export interface WallpaperLayerEstimateFeature extends BaseServiceFeature {
+  type: 'wallpaperLayerEstimate';
+  layers: {
+    title: string;
+    price: string;
+    timeline: string;
+    description: string;
+  }[];
+}
+
+export interface CeilingTypesFeature extends BaseServiceFeature {
+  type: 'ceilingTypes';
+  types: {
+    title: string;
+    price: string;
+    description: string;
+  }[];
+}
+
+export interface GaragePackageOptionsFeature extends BaseServiceFeature {
+  type: 'garagePackageOptions';
+  options: {
+    title: string;
+    price: string;
+    included: string[];
+    recommended?: boolean;
+  }[];
+}
+
+export interface StainTypeSelectorFeature extends BaseServiceFeature {
+  type: 'stainTypeSelector';
+  options: {
+    title: string;
+    lifespan: string;
+    description: string;
+    protection: string;
+    swatch: string;
+  }[];
 }

@@ -17,14 +17,14 @@ function formatPrice(n: number): string {
 
 export default function PricingTable({ tiers, title, pricePerSqFt }: PricingTableProps) {
   return (
-    <div className="card-depth rounded-sm border border-border bg-white overflow-hidden">
+    <div className="overflow-hidden rounded-xl border border-[#E8E3DE] bg-white p-8 shadow-sm">
       {(title || pricePerSqFt) && (
-        <div className="px-6 py-4 border-b border-border">
+        <div className="border-b border-[#E8E3DE] px-1 pb-5">
           {title && (
-            <h3 className="text-lg font-heading text-text-primary">{title}</h3>
+            <h3 className="text-xl font-heading text-text-primary">{title}</h3>
           )}
           {pricePerSqFt && (
-            <p className="text-xs text-text-muted mt-1">
+            <p className="mt-2 text-sm text-text-muted">
               Estimated at {pricePerSqFt} per sq ft
             </p>
           )}
@@ -32,20 +32,20 @@ export default function PricingTable({ tiers, title, pricePerSqFt }: PricingTabl
       )}
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b border-border bg-bg-secondary/50">
-            <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-text-muted">
+          <tr className="border-b border-[#E8E3DE] bg-[#F7F2EE]">
+            <th className="px-6 py-4 text-left text-xs font-semibold uppercase tracking-[0.18em] text-text-muted">
               Service
             </th>
-            <th className="px-6 py-3 text-right text-xs font-semibold uppercase tracking-wider text-text-muted">
+            <th className="px-6 py-4 text-right text-xs font-semibold uppercase tracking-[0.18em] text-text-muted">
               Price Range
             </th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-border">
+        <tbody className="divide-y divide-[#E8E3DE]">
           {tiers.map((tier, i) => (
-            <tr key={i} className="hover:bg-bg-secondary/30 transition-colors duration-150">
+            <tr key={i} className="transition-colors duration-150 hover:bg-[#FDFCFA]">
               <td className="px-6 py-4 text-text-body">{tier.label}</td>
-              <td className="px-6 py-4 text-right font-bold text-accent">
+              <td className="px-6 py-4 text-right font-semibold text-accent">
                 {formatPrice(tier.min)} &ndash; {formatPrice(tier.max)}
                 {tier.plus && '+'}
               </td>

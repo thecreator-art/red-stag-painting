@@ -19,6 +19,103 @@ const data: ServicePageData = {
   "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
   "heroImageAlt": "Clean painted garage with coated floor and bright walls",
   "heroSubtitle": "Garage jobs work best when the floor, walls, storage layout, and cure time are planned together instead of as separate punch-list items.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Dusty garage before paint and coating",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Bright organized garage after painting",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "The old garage started dusty and unfinished. Once the walls, ceiling, and working surfaces were coated, it felt like usable square footage again."
+  },
+  "inlineImages": [
+    {
+      "src": "https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Freshly painted organized garage interior",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Garage walls and ceiling painted bright white",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Residential garage project in Los Angeles home",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "homeownerReviews": [
+    {
+      "quote": "They turned a dusty storage garage into a clean room we actually want to walk into now.",
+      "reviewer": "Peter L.",
+      "city": "Calabasas"
+    },
+    {
+      "quote": "Walls, ceiling, stem walls, and floor prep were handled in one schedule instead of making us coordinate separate trades.",
+      "reviewer": "Janel R.",
+      "city": "Granada Hills"
+    },
+    {
+      "quote": "The brighter walls made a bigger difference than we expected, and the space finally feels organized.",
+      "reviewer": "Oscar C.",
+      "city": "Encino"
+    }
+  ],
+  "whyChooseCards": [
+    {
+      "stat": "500+",
+      "title": "Garage Painting jobs across LA housing stock",
+      "body": "We handle this scope on home gyms in Calabasas garages, surf and bike storage garages in Manhattan Beach, and workshop garages in Granada Hills, so the plan fits the house instead of fighting it."
+    },
+    {
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like oil spots bleeding through floor coatings and dusty drywall and exposed patching, not by guessing from a few photos."
+    },
+    {
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around clear and stage the garage before work starts, degrease and mechanically prep the slab, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
+  ],
+  "serviceFeature": {
+    "type": "garagePackageOptions",
+    "title": "Garage Package Options",
+    "subtitle": "Pick the level of finish that matches how you use the space",
+    "options": [
+      {
+        "title": "Walls & Ceiling Only",
+        "price": "$1,500-$3,500",
+        "included": [
+          "Surface prep and crack filling",
+          "Premium wall and ceiling paint",
+          "Bright clean finish for better visibility",
+          "Interior side of the garage brought back into shape"
+        ]
+      },
+      {
+        "title": "Full Garage Package",
+        "price": "$2,500-$5,500",
+        "included": [
+          "Walls and ceiling repaint",
+          "Epoxy floor coating",
+          "Stem wall cleanup and detailing",
+          "Best fit for garages that need to feel like usable square footage"
+        ],
+        "recommended": true
+      }
+    ]
+  },
   "introAnswer": "Garage Painting in Los Angeles usually starts around $800 to $2,000 for a basic floor coating only scope. Larger projects land closer to $2,000 to $4,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",
   "sections": [
     {

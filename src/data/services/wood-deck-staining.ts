@@ -19,6 +19,103 @@ const data: ServicePageData = {
   "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
   "heroImageAlt": "Freshly stained wood deck and fence in a Southern California backyard",
   "heroSubtitle": "We wash, sand, dry, and stain decks and fences so the finish soaks in evenly instead of flashing or peeling early.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Weathered wood deck before staining",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Freshly stained backyard wood deck after refinishing",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "Sun-bleached boards and dry rails were washed, sanded, and stained so the grain reads richer and the wood is protected again."
+  },
+  "inlineImages": [
+    {
+      "src": "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Freshly stained wood deck in backyard",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Exterior wood railing and deck staining project",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Outdoor wood fence and deck stained warm brown",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "homeownerReviews": [
+    {
+      "quote": "They did the wash and dry time the right way, so the stain actually soaked in instead of sitting on top of the wood.",
+      "reviewer": "Heidi G.",
+      "city": "Malibu"
+    },
+    {
+      "quote": "Our fence and deck looked silver and tired before. Now the wood grain shows again and the backyard looks finished.",
+      "reviewer": "Noah B.",
+      "city": "La Canada Flintridge"
+    },
+    {
+      "quote": "The crew explained the difference between transparent and solid stain clearly and the result fits the wood perfectly.",
+      "reviewer": "Camila E.",
+      "city": "Pacific Palisades"
+    }
+  ],
+  "whyChooseCards": [
+    {
+      "stat": "500+",
+      "title": "Wood & Deck Staining jobs across LA housing stock",
+      "body": "We handle this scope on ocean-exposed decks in Malibu, hillside fences in Pacific Palisades, and sun-beaten pergolas in Woodland Hills, so the plan fits the house instead of fighting it."
+    },
+    {
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like gray UV damage on walking surfaces and water beading failure after the old stain died out, not by guessing from a few photos."
+    },
+    {
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around wash without furrowing the wood, sand worn traffic lanes, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
+  ],
+  "serviceFeature": {
+    "type": "stainTypeSelector",
+    "title": "Stain Type Selector",
+    "subtitle": "Choose how much grain you want to see and how much UV protection you need",
+    "options": [
+      {
+        "title": "Transparent",
+        "description": "Shows the full wood grain and keeps the most natural look.",
+        "protection": "Least UV protection. Best when the wood is beautiful and you are ready for more maintenance.",
+        "lifespan": "Reapply every 1-2 years",
+        "swatch": "from-[#C58D54] to-[#8B5A2B]"
+      },
+      {
+        "title": "Semi-Transparent",
+        "description": "Lets part of the grain show while adding more color and protection.",
+        "protection": "Moderate UV protection and a strong middle ground for decks and fences.",
+        "lifespan": "Reapply every 2-3 years",
+        "swatch": "from-[#C79B64] to-[#6B4423]"
+      },
+      {
+        "title": "Solid Stain",
+        "description": "Covers the grain and gives the wood the strongest color hold.",
+        "protection": "Maximum UV protection when the wood is more weathered and needs more hiding power.",
+        "lifespan": "Reapply every 3-5 years",
+        "swatch": "from-[#9A6A45] to-[#4A2F1C]"
+      }
+    ]
+  },
   "introAnswer": "Wood & Deck Staining in Los Angeles usually starts around $800 to $2,500 for a basic fence staining scope. Larger projects land closer to $3,000 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",
   "sections": [
     {

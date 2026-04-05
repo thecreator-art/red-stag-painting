@@ -16,11 +16,19 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
 
   return (
     <div className="divide-y divide-border">
-      {faqs.map((faq, i) => (
+      {faqs.map((faq, i) => {
+        const buttonId = `faq-trigger-${i}`;
+        const panelId = `faq-panel-${i}`;
+        const isOpen = openIndex === i;
+
+        return (
         <div key={i}>
           <button
+            id={buttonId}
             type="button"
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
+            aria-expanded={isOpen}
+            aria-controls={panelId}
             className="w-full flex items-center justify-between gap-4 py-5 md:py-6 text-left cursor-pointer group"
           >
             <h3 className="text-base md:text-lg font-semibold text-text-primary leading-snug group-hover:text-accent transition-colors duration-300">
@@ -28,14 +36,14 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
             </h3>
             <span
               className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
-                openIndex === i
+                isOpen
                   ? 'bg-accent text-white'
                   : 'bg-transparent text-text-muted'
               }`}
             >
               <svg
                 className={`w-4 h-4 transition-transform duration-300 ${
-                  openIndex === i ? 'rotate-180' : ''
+                  isOpen ? 'rotate-180' : ''
                 }`}
                 fill="none"
                 viewBox="0 0 24 24"
@@ -51,8 +59,11 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
             </span>
           </button>
           <div
+            id={panelId}
+            role="region"
+            aria-labelledby={buttonId}
             className={`overflow-hidden transition-all duration-300 ease-in-out ${
-              openIndex === i
+              isOpen
                 ? 'max-h-96 opacity-100'
                 : 'max-h-0 opacity-0'
             }`}
@@ -64,7 +75,8 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
             </div>
           </div>
         </div>
-      ))}
+        );
+      })}
     </div>
   );
 }

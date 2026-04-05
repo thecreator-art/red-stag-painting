@@ -19,6 +19,112 @@ const data: ServicePageData = {
   "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
   "heroImageAlt": "Freshly painted smooth white ceiling in a Los Angeles home",
   "heroSubtitle": "We reset ceilings that are dingy, stained, patched, or cut by old paint lines and leave them flat from corner to corner.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Stained ceiling before repaint",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Bright clean ceiling after repaint",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "Old stains, dingy white, and rough cut lines were blocked, re-cut, and rolled flat so the room picks up light correctly again."
+  },
+  "inlineImages": [
+    {
+      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Ceiling painting setup in occupied room",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Bright flat white ceiling after repaint",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Fresh tray ceiling and walls in Los Angeles home",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "homeownerReviews": [
+    {
+      "quote": "We thought the ceilings were fine until they repainted them and the whole house suddenly felt brighter.",
+      "reviewer": "Tessa U.",
+      "city": "Sherman Oaks"
+    },
+    {
+      "quote": "They blocked an old leak ring in the kitchen ceiling and it has not flashed back through.",
+      "reviewer": "Albert F.",
+      "city": "Glendale"
+    },
+    {
+      "quote": "The line where the walls meet the ceiling is cleaner now than it was when we bought the house.",
+      "reviewer": "Monica Z.",
+      "city": "Brentwood"
+    }
+  ],
+  "whyChooseCards": [
+    {
+      "stat": "500+",
+      "title": "Ceiling Painting jobs across LA housing stock",
+      "body": "We handle this scope on high side-light rooms in Manhattan Beach, older plaster ceilings in Pasadena, and darkened kitchen ceilings in Sherman Oaks, so the plan fits the house instead of fighting it."
+    },
+    {
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like water stains from old roof or plumbing leaks and roller lap marks catching side light, not by guessing from a few photos."
+    },
+    {
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around protect floors and furniture under the whole room, stain-block before finish paint where needed, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
+  ],
+  "serviceFeature": {
+    "type": "ceilingTypes",
+    "title": "Ceiling Types We Handle",
+    "subtitle": "Different ceilings need different setup, access, and paint planning",
+    "types": [
+      {
+        "title": "Flat / Smooth Ceilings",
+        "price": "$200-$600 per room",
+        "description": "Standard ceiling resets with clean cut lines and full-room rolling."
+      },
+      {
+        "title": "Textured Ceilings",
+        "price": "$250-$700 per room",
+        "description": "Requires better roller control and more care around high spots."
+      },
+      {
+        "title": "Popcorn Ceilings",
+        "price": "$200-$500 per room to paint over",
+        "description": "For painting over existing texture, not removing it."
+      },
+      {
+        "title": "Vaulted Ceilings",
+        "price": "$400-$900 per room",
+        "description": "More ladder setup, longer cuts, and more total production time."
+      },
+      {
+        "title": "Tray Ceilings",
+        "price": "$350-$800 per room",
+        "description": "Extra corners and level changes mean more detail work."
+      },
+      {
+        "title": "Exposed Beam Ceilings",
+        "price": "$500-$1,200 per room",
+        "description": "Beam edges and field areas are treated as separate finish surfaces."
+      }
+    ]
+  },
   "introAnswer": "Ceiling Painting in Los Angeles usually starts around $200 to $600 for a basic 1-2 rooms scope. Larger projects land closer to $1,000 to $2,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",
   "sections": [
     {

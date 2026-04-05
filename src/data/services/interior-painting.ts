@@ -1,121 +1,238 @@
-/**
- * EXAMPLE SERVICE DATA FILE — Interior Painting
- * Codex: Produce one file like this per service slug.
- * File name must match the slug: interior-painting.ts
- */
 import type { ServicePageData } from '@/data/types';
 
 const data: ServicePageData = {
-  slug: 'interior-painting',
-  name: 'Interior Painting',
-
-  // SEO
-  titleTag: 'Interior Painting Los Angeles | Red Stag Painting',
-  metaDescription: 'Professional interior painting in Los Angeles. $400-$900 per room, $2,500-$6,500 whole house. Sherwin-Williams & Benjamin Moore. Free estimate — call today.',
-  h1: 'Interior House Painting in Los Angeles',
-  primaryKeyword: 'interior painting Los Angeles',
-  secondaryKeywords: [
-    'house painter Los Angeles',
-    'interior painter near me',
-    'room painting cost LA',
-    'best interior painters Los Angeles',
+  "slug": "interior-painting",
+  "name": "Interior Painting",
+  "titleTag": "Interior Painting Los Angeles | Red Stag",
+  "metaDescription": "Interior Painting in Los Angeles. $400-$900 1 room, $2,500-$6,500+ larger scopes. Free walkthrough today.",
+  "h1": "Interior Painting in Los Angeles",
+  "primaryKeyword": "interior painting Los Angeles",
+  "secondaryKeywords": [
+    "interior painting near me",
+    "interior painting cost LA",
+    "best interior painting Los Angeles",
+    "interior painting contractor Los Angeles"
   ],
-  canonical: '/interior-painting',
-  ogTitle: 'Interior Painting Los Angeles | Red Stag Painting',
-  ogDescription: 'Professional interior painting across Greater LA. Premium paint, clean crews, 2-year warranty. Get your free estimate.',
-
-  // Hero
-  heroImage: 'https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80',
-  heroImageAlt: 'Freshly painted bright white living room interior in Los Angeles home',
-  heroSubtitle: 'Walls, ceilings, and trim — done in days, not weeks. Sherwin-Williams and Benjamin Moore exclusively.',
-
-  // Body content — answer-first, 2,000+ words
-  introAnswer: 'Interior painting in Los Angeles typically costs $2 to $4 per square foot, or $400 to $900 per room. A full house interior runs $2,500 to $6,500 depending on room count, ceiling height, and prep work. Red Stag Painting uses Sherwin-Williams and Benjamin Moore exclusively and backs every project with a 2-year warranty.',
-
-  sections: [
+  "canonical": "/interior-painting",
+  "ogTitle": "Interior Painting Los Angeles | Red Stag Painting",
+  "ogDescription": "Interior Painting across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
+  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImageAlt": "Freshly painted living room with clean white walls in a Los Angeles home",
+  "heroSubtitle": "Walls, ceilings, trim, and patching handled in the right order so the finish stays sharp after furniture moves back in.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Outdated beige Los Angeles living room before repaint",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Bright freshly painted living room after interior repaint",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "Old beige walls, patched corners, and dull ceilings were reset with warm white walls, flat bright ceilings, and clean trim lines."
+  },
+  "inlineImages": [
     {
-      heading: 'What Does Interior Painting Cost in Los Angeles?',
-      level: 'h2',
-      body: '<p>Most LA homeowners pay between <strong>$2 and $4 per square foot</strong> for interior painting. That breaks down to roughly <strong>$400 to $900 per room</strong> for a standard bedroom or living room, including walls and ceiling.</p><p>A full house interior — 3 to 5 bedrooms, hallways, and common areas — typically runs <strong>$2,500 to $6,500</strong>. The final number depends on ceiling height (vaulted ceilings cost 20-30% more), the amount of prep work (patching, sanding, priming), and whether you\'re doing a simple refresh or a full color change.</p><p>Color changes cost more than same-color repaints because they require additional coats. Going from dark to light (or light to dark) adds roughly <strong>$1 to $2 per square foot</strong> to the total.</p>',
+      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Interior painter working in a bright bedroom",
+      "width": 1600,
+      "height": 900
     },
     {
-      heading: 'What\'s Included in Our Interior Painting Service',
-      level: 'h2',
-      body: '<p>Every Red Stag interior paint job includes furniture moving, floor protection with drop cloths, surface prep (patching small holes, sanding, caulking gaps), priming where needed, two coats of premium paint, and daily cleanup. We put everything back where we found it when we\'re done.</p><p>We don\'t cut corners on prep. Bad prep is the #1 reason paint jobs fail within a year. We fill every nail hole, sand every patch, and prime every repaired surface before paint touches it.</p>',
+      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Freshly painted hallway and staircase in Los Angeles home",
+      "width": 1600,
+      "height": 900
     },
     {
-      heading: 'Paint Brands We Use',
-      level: 'h2',
-      body: '<p>We use <strong>Sherwin-Williams</strong> and <strong>Benjamin Moore</strong> exclusively. No builder-grade paint. No big-box store bargain brands. These two manufacturers make the best residential paint on the market — better coverage, better durability, better color accuracy.</p><p>Our most popular interior lines:</p><ul><li><strong>Sherwin-Williams Emerald</strong> — washable, zero-VOC, excellent hide. Our go-to for living rooms and bedrooms.</li><li><strong>Benjamin Moore Regal Select</strong> — smooth finish, exceptional color depth. Popular for dining rooms and feature walls.</li><li><strong>Sherwin-Williams SuperPaint</strong> — great mid-range option. Durable, good coverage, lower price point.</li></ul><p>If you have a specific brand or color preference, we\'re happy to work with it. Most clients come to us with a Benjamin Moore or Sherwin-Williams color already picked out.</p>',
-    },
-    {
-      heading: 'How Long Does Interior Painting Take?',
-      level: 'h2',
-      body: '<p>A single room takes <strong>1 day</strong>. A typical 3-bedroom interior takes <strong>2 to 4 days</strong>. A full house (5+ rooms, hallways, ceilings) takes <strong>4 to 7 days</strong>.</p><p>We give you exact start and end dates before we begin, and we stick to them. No "we\'ll get to it when we can." No dragging a 3-day job into 2 weeks.</p><p>Our crews work 7am to 5pm Monday through Saturday. We clean up every single day — you can use your home normally each evening.</p>',
-    },
-    {
-      heading: 'Our Interior Painting Process',
-      level: 'h2',
-      body: '<p><strong>Step 1: Free walkthrough.</strong> We come to your home, measure every room, discuss colors and finishes, and note any prep work needed. You get a detailed written quote within 24 hours.</p><p><strong>Step 2: Prep day.</strong> We move furniture to the center of each room, lay drop cloths on every floor, tape off trim and fixtures, patch holes, sand surfaces, and prime repairs.</p><p><strong>Step 3: Paint.</strong> Two full coats on every surface. We cut in by hand (no tape lines on walls) and roll for a smooth, even finish. Ceilings get painted first, then walls, then trim.</p><p><strong>Step 4: Final walkthrough.</strong> We walk every room with you. If anything doesn\'t look right, we fix it on the spot. Then we move your furniture back, pull up all drop cloths, and clean the floors.</p>',
-    },
-    {
-      heading: 'Choosing Interior Paint Colors',
-      level: 'h2',
-      body: '<p>LA\'s most popular interior paint colors right now are warm neutrals. <strong>Swiss Coffee</strong> (Benjamin Moore OC-45), <strong>Agreeable Gray</strong> (Sherwin-Williams SW 7029), and <strong>White Dove</strong> (Benjamin Moore OC-17) are the three colors we paint most often.</p><p>For accent walls and feature rooms, <strong>Hale Navy</strong> (Benjamin Moore HC-154) and <strong>Iron Ore</strong> (Sherwin-Williams SW 7069) have been trending hard across Beverly Hills, Brentwood, and Santa Monica.</p><p>Not sure what color to choose? Use our <a href="/#visualize">color visualizer</a> to preview how different colors look on your walls, or we can bring physical swatches to your walkthrough.</p>',
-    },
-    {
-      heading: 'Interior Painting for Different Room Types',
-      level: 'h2',
-      body: '<p><strong>Bedrooms:</strong> Eggshell or matte finish. Low sheen hides imperfections and creates a restful feel. $400-$800 per room.</p><p><strong>Living rooms:</strong> Eggshell finish. Durable enough for daily life, soft enough to look elegant. $500-$900 per room depending on size.</p><p><strong>Kitchens and bathrooms:</strong> Satin or semi-gloss finish. The higher sheen resists moisture and is easier to wipe clean. $400-$700 per room.</p><p><strong>Hallways and high-traffic areas:</strong> Satin finish. Takes a beating without showing scuffs. Usually priced per linear foot rather than per room.</p><p><strong>Ceilings:</strong> Flat/matte finish in bright white. Hides imperfections and reflects light evenly. $200-$600 per room.</p>',
-    },
-    {
-      heading: 'Why LA Homeowners Choose Red Stag',
-      level: 'h2',
-      body: '<p>We\'ve painted over <strong>500 homes</strong> across Greater Los Angeles since 2011. Our crews have been with us for <strong>5+ years</strong> — no day laborers, no rotating strangers in your home.</p><p>Every project comes with a <strong>2-year warranty</strong>. If the paint peels, bubbles, cracks, or doesn\'t look right within 2 years, we come back and fix it at no charge.</p><p>We respond to every call and message within <strong>2 hours</strong>. Not 2 days. Not "we\'ll get back to you." Two hours.</p>',
-    },
+      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Warm white living room repaint with clean trim",
+      "width": 1600,
+      "height": 900
+    }
   ],
-
-  // Pricing
-  pricePerSqFt: '$2-$4',
-  pricingTiers: [
-    { label: '1 room', min: 400, max: 900 },
-    { label: '2 rooms', min: 800, max: 1800 },
-    { label: '3 rooms', min: 1200, max: 2700 },
-    { label: '4 rooms', min: 1600, max: 3600 },
-    { label: 'Whole house', min: 2500, max: 6500, plus: true },
+  "homeownerReviews": [
+    {
+      "quote": "They patched a decade of wall damage, kept the floors spotless, and the cut lines around the crown came out dead straight.",
+      "reviewer": "Megan P.",
+      "city": "Brentwood"
+    },
+    {
+      "quote": "The crew moved everything, painted the upstairs in two days, and put the house back together without us chasing a single touch-up.",
+      "reviewer": "Darren K.",
+      "city": "Studio City"
+    },
+    {
+      "quote": "We went from yellow builder paint to a clean warm white and the whole house finally feels current.",
+      "reviewer": "Leah S.",
+      "city": "Pasadena"
+    }
   ],
-  priceAnchor: 'vs. $15,000+ for a full interior renovation',
-
-  // FAQ
-  faqs: [
+  "whyChooseCards": [
     {
-      question: 'How much does it cost to paint the interior of a house in Los Angeles?',
-      answer: 'Most interior repaints in LA run $2 to $4 per square foot. A single room costs $400 to $900. A full house interior (3-5 bedrooms, hallways, common areas) typically runs $2,500 to $6,500. The final price depends on ceiling height, prep work needed, and whether you\'re changing colors or doing a same-color refresh.',
+      "stat": "500+",
+      "title": "Interior Painting jobs across LA housing stock",
+      "body": "We handle this scope on Spanish interiors in Pasadena with curved plaster corners, large open-plan great rooms in Calabasas, and condo repaints in Santa Monica with strict elevator windows, so the plan fits the house instead of fighting it."
     },
     {
-      question: 'How long does it take to paint the inside of a house?',
-      answer: 'A single room takes about 1 day. A typical 3-bedroom home takes 2 to 4 days. A full house with 5+ rooms takes 4 to 7 days. We give you exact start and end dates before work begins and stick to them.',
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like patch scars telegraphing through flat paint and roller lap marks in long hallways, not by guessing from a few photos."
     },
     {
-      question: 'Do I need to move my furniture before the painters come?',
-      answer: 'No. We move all furniture away from the walls, cover your floors and everything else with drop cloths, and put it all back when we\'re done. You don\'t need to lift a finger.',
-    },
-    {
-      question: 'What\'s the best interior paint for Los Angeles homes?',
-      answer: 'We recommend Sherwin-Williams Emerald or Benjamin Moore Regal Select for most LA homes. Both are low-VOC, highly durable, and offer excellent color accuracy. For kitchens and bathrooms, a satin or semi-gloss finish resists moisture. For bedrooms and living rooms, eggshell provides a soft, washable finish.',
-    },
-    {
-      question: 'Is it worth hiring a professional painter or should I DIY?',
-      answer: 'A professional crew will finish a 3-bedroom home in 2-4 days with clean lines, proper prep, and premium paint. DIY typically takes 2-3 weekends, and without proper prep, the paint often peels or looks uneven within a year. Professional painting also comes with a warranty — ours is 2 years.',
-    },
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around move furniture to center and protect floors, patch holes and skim damaged drywall, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
   ],
-
-  // Internal linking
-  relatedServices: ['exterior-painting', 'cabinet-painting', 'ceiling-painting', 'trim-baseboard-painting', 'color-change-repaint'],
-  featuredCities: ['beverly-hills', 'santa-monica', 'brentwood', 'sherman-oaks', 'pacific-palisades', 'studio-city', 'pasadena', 'calabasas'],
-
-  // Schema
-  schemaServiceType: 'HousePainting',
+  "serviceFeature": {
+    "type": "roomCalculator",
+    "title": "Room Cost Calculator",
+    "subtitle": "Get a fast interior range before the walkthrough",
+    "baseMin": 400,
+    "baseMax": 900,
+    "roomOptions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "heightOptions": [
+      {
+        "value": "standard",
+        "label": "Standard 8ft",
+        "multiplier": 1
+      },
+      {
+        "value": "tall",
+        "label": "Tall 9-10ft",
+        "multiplier": 1.15
+      },
+      {
+        "value": "vaulted",
+        "label": "Vaulted 10ft+",
+        "multiplier": 1.3
+      }
+    ]
+  },
+  "introAnswer": "Interior Painting in Los Angeles usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",
+  "sections": [
+    {
+      "heading": "What Does Interior Painting Cost in Los Angeles?",
+      "level": "h2",
+      "body": "<p>Interior Painting jobs in Los Angeles usually follow the same pattern: the low end is the clean, straight-through version of the work and the high end is the one with more prep, harder access, tighter finish expectations, or more total surface area. For interior painting, that means 1 room at $400 to $900, 2 rooms at $800 to $1,800, 3 rooms at $1,200 to $2,700, 4 rooms at $1,600 to $3,600, whole house at $2,500 to $6,500+. We price by the real surface condition in front of us, not by a vague phone guess that falls apart the minute we walk the job.</p><p>What moves the number is rarely the paint itself. It is the prep. When a project has failed caulk, rough patches, greasy surfaces, raw wood, moisture staining, or old repairs telegraphing through the finish, the labor climbs because there is more work between the old surface and the new coat. That is why we write quotes after a walkthrough, photograph problem areas, and spell out the steps instead of burying them in a single line item.</p><p>Clients usually call us after getting two bad versions of the same estimate. One is so low it clearly skips prep. The other is a round number with no explanation. Our quotes show what is included, which surfaces are in scope, how many coats are realistic, and when the higher range comes into play. That keeps the project grounded and makes the final invoice predictable.</p><ul><li>Typical surfaces in scope: walls, ceilings, baseboards, door casings, closets, hallways.</li><li>Most common failure points we correct: patch scars telegraphing through flat paint, roller lap marks in long hallways, caulk gaps opening at baseboards, old touch-ups flashing through new color.</li><li>The comparison that matters: vs. $15,000+ for a full renovation.</li></ul>"
+    },
+    {
+      "heading": "Where Interior Painting Shows Up Most in LA Homes",
+      "level": "h2",
+      "body": "<p>We do a lot of interior painting work in Los Angeles because the housing stock is mixed and the wear patterns are obvious. One week it is Spanish interiors in Pasadena with curved plaster corners. The next week it is large open-plan great rooms in Calabasas. Then it is condo repaints in Santa Monica with strict elevator windows. The surfaces change, but the real job does not: get the old substrate stable, protect the finished areas around it, and leave a coating that does not read rushed once the light hits it in the afternoon.</p><p>This is where experience matters. A house in the basin behaves differently than a place closer to the coast, a canyon property, or a unit in a managed building. Access, dust control, sun exposure, drying times, elevator reservations, and homeowner expectations all shape the plan. We build our approach around how the job will actually run, not around how the sales pitch sounds.</p><p>We also look at what sits next to the surface. Stone counters, stained beams, hardwood floors, custom wallpaper, expensive light fixtures, and landscaped exterior edges all change the prep plan. Good painters pay attention to the stuff they are not painting, because that is what protects the house and keeps the project moving without damage or avoidable touch-up.</p><ul><li>Most common Los Angeles trouble spots: patch scars telegraphing through flat paint; roller lap marks in long hallways.</li><li>Best companion services: <a href=\"/color-change-repaint\">Color Change Repaint</a>, <a href=\"/ceiling-painting\">Ceiling Painting</a>, and <a href=\"/trim-baseboard-painting\">Trim & Baseboard Painting</a>.</li></ul>"
+    },
+    {
+      "heading": "Prep Work That Makes the Finish Last",
+      "level": "h2",
+      "body": "<p>Prep is the difference between a job that looks good on day one and a job that still looks good after a season of use. Every interior painting project we do includes the prep steps that make the finish hold. That starts with move furniture to center and protect floors. Then we patch holes and skim damaged drywall. After that we sand patches and glossy existing paint. Finally, we prime repairs before finish coats. When any of those steps get skipped, the finish might still look fine at first, but it will fail faster and it will usually fail in a way you can see from across the room or the street.</p><p>We are careful about sequencing because rushing one part of the prep throws off everything behind it. If sanding dust is not removed, the finish gets rough. If raw repairs are not primed, they flash. If damaged caulk is left in place, it opens up through the new paint. If contaminated surfaces are not cleaned first, adhesion turns into a gamble. That is why we would rather write a realistic schedule than promise something that only works by cutting corners.</p><p>Clean prep also keeps the house livable. We use floor protection, plastic, masking, hardware labeling, and daily cleanup so the site stays controlled. Homeowners notice that right away. More important, it keeps the project from bogging down into days of small problems. Good prep saves time later because it prevents rework.</p><ul><li>Included prep step: move furniture to center and protect floors.</li><li>Included prep step: patch holes and skim damaged drywall.</li><li>Included prep step: sand patches and glossy existing paint.</li><li>Included prep step: prime repairs before finish coats.</li></ul>"
+    },
+    {
+      "heading": "Materials, Sheen, and Finish Decisions",
+      "level": "h2",
+      "body": "<p>Material choice matters, but it matters in the context of the surface. We use premium coatings because they hide better, level better, and stand up better once the job is back in service. For interior painting, the finish decisions we talk through most are matte and eggshell for main walls, satin in hallways, baths, and kitchens, flat bright white on ceilings, and semi-gloss on baseboards and doors. Those choices affect washability, sheen, coverage, and how forgiving the surface will be in side light.</p><p>This is also where we talk honestly about expectations. Some clients want the surface to look new. Some want it to look clean and consistent without overbuilding the scope. Those are different outcomes. If we are painting over old oak, rough stucco, patched drywall, or weathered wood, we explain what the substrate will still telegraph and what we can improve with more prep. Clear expectations save everybody frustration.</p><p>Because we work across high-end homes, rentals, family houses, and condos, we are used to matching the finish to the use case. A durable rental finish is different from a showcase formal room. A beach-adjacent exterior needs different thinking than a canyon lot. The point is not to oversell. It is to match the system to the job so the client gets a finish that makes sense for how the property is actually used.</p><p>We also pay attention to maintenance after the project. Some surfaces can be wiped, some should be washed gently, and some need cure time before they take daily abuse. That advice matters because the same finish can either last or fail based on what happens in the first few weeks after the job is done.</p><ul><li>Finish note: matte and eggshell for main walls.</li><li>Finish note: satin in hallways, baths, and kitchens.</li><li>Finish note: flat bright white on ceilings.</li><li>Finish note: semi-gloss on baseboards and doors.</li></ul>"
+    },
+    {
+      "heading": "How the Work Gets Scheduled and Sequenced",
+      "level": "h2",
+      "body": "<p>A single room usually takes 1 day. A typical 3-bedroom interior lands at 2 to 4 days. Large homes with tall entries, heavy patching, or a full trim package take longer.</p><p>The way we keep timelines tight is by locking the sequence early. Surfaces that need repair get hit first. Areas with longer dry or cure windows are stacked so the crew is not standing around. The site is protected before finish material comes out, and every day ends with cleanup. That sounds basic, but it is where a lot of residential jobs fall apart. Homeowners do not need more drama. They need a clear plan and a crew that follows it.</p><p>We also tell clients where the project can slow down. Late color changes, added scope, unexpected substrate failures, association rules, weather, or occupancy constraints all affect the calendar. We would rather point those out on the front end than hide them. That honesty is what keeps a two-day job from becoming a two-week headache.</p><ul><li>Free walkthrough and written quote within 24 hours.</li><li>Daily cleanup so the site stays usable at the end of each workday.</li><li>Final walkthrough before the project is considered complete.</li></ul>"
+    },
+    {
+      "heading": "When This Service Makes More Sense Than Replacement",
+      "level": "h2",
+      "body": "<p>Fresh interior paint resets the whole house faster than any other finish trade. If the layout already works, painting usually buys the cleanest visual upgrade for the least disruption.</p><p>A lot of clients ask if they should replace instead of repaint, repair, or refinish. Sometimes replacement is the right call, especially if the substrate is rotten, swollen, structurally failed, or already carrying too many layers of bad work. Most of the time, though, the smarter move is to keep the bones that still work and invest in the finish. That is where painting delivers value: it changes what you see every day without dragging the house into a full renovation schedule.</p><p>The sweet spot is when the layout, the structure, and most of the material are still sound. That is when high-quality prep and paint make the biggest difference. You keep demolition down, you keep downtime down, and you focus the budget on the surfaces people actually notice. For homeowners trying to refresh before listing, reset after a purchase, or catch up on deferred maintenance, that is usually the right move.</p><ul><li>Most requested nearby pages: <a href=\"/interior-painting/beverly-hills\">Interior Painting in Beverly Hills</a>, <a href=\"/interior-painting/brentwood\">Interior Painting in Brentwood</a>, <a href=\"/interior-painting/santa-monica\">Interior Painting in Santa Monica</a>, <a href=\"/interior-painting/studio-city\">Interior Painting in Studio City</a>, <a href=\"/interior-painting/pasadena\">Interior Painting in Pasadena</a>, <a href=\"/interior-painting/calabasas\">Interior Painting in Calabasas</a>.</li></ul>"
+    },
+    {
+      "heading": "How to Compare Quotes Without Getting Burned",
+      "level": "h2",
+      "body": "<p>Homeowners usually get into trouble on interior painting when they compare the totals without comparing the methods. One painter includes protection, real prep, primer, two finish coats, hardware handling, and a final touch-up pass. The next painter includes one fast pass and hopes the surface is forgiving. Both call it the same service. Only one of those bids leaves a result that still looks right after the room is back in use or the weather changes.</p><p>We encourage clients to compare five things line by line: what prep is included, whether repairs are spot-painted or full-surface painted, how adjacent finishes are protected, what coating line is being used, and how the project will be scheduled day to day. If a quote is vague on those points, it is usually vague because the contractor wants room to decide later. That is when prices jump mid-job or the finish standard quietly drops.</p><p>A better quote is not the one with the nicest formatting. It is the one that tells you how the work will actually happen. That is how you know whether the price is fair. It also tells you how the crew thinks. Painters who understand the work can explain the work. Painters who only know the sales pitch usually hide behind big ranges and soft promises.</p><p>The other thing worth checking is what the contractor considers done. Some crews call the job complete once the color is on the surface. We call it complete after the walkthrough, after touch-ups, after the hardware is back where it belongs, and after the room or exterior section reads clean in real light. That standard is why our bids are written the way they are.</p><ul><li>Compare prep scope before you compare totals.</li><li>Ask which surfaces are getting spot work versus full coverage.</li><li>Ask how access, cleanup, and touch-ups are handled before approving the schedule.</li></ul>"
+    },
+    {
+      "heading": "Why Homeowners Call Red Stag for This Scope",
+      "level": "h2",
+      "body": "<p>Red Stag Painting runs residential work the way homeowners wish more contractors did: clear scope, exact prep, real communication, and no mystery around the finish standard. We have worked in estates, tight condos, tract homes, rentals, and historic houses across Greater Los Angeles. That variety matters because it teaches you what can go wrong on different substrates and how to keep the project moving when access or schedule gets complicated.</p><p>We also keep the crew disciplined. Floors are protected, hardware is labeled, tools are organized, and the site is cleaned every day. Homeowners can tell in the first hour whether a crew has done this before. The people who hire us usually care about two things: they want the finish to look right and they do not want the jobsite to take over their life. That is the standard we work to.</p><p>If you want the project priced correctly, the next step is simple: book a walkthrough, show us the real condition of the surfaces, and we will tell you where the work lands. No vague estimate. No soft numbers. Just a clean scope and a quote that matches the job.</p><ul><li>Also see <a href=\"/color-change-repaint\">Color Change Repaint</a>, <a href=\"/ceiling-painting\">Ceiling Painting</a>, and <a href=\"/trim-baseboard-painting\">Trim & Baseboard Painting</a>.</li><li>Featured markets: <a href=\"/areas/beverly-hills\">Beverly Hills</a>, <a href=\"/areas/brentwood\">Brentwood</a>, <a href=\"/areas/santa-monica\">Santa Monica</a>, <a href=\"/areas/studio-city\">Studio City</a>, <a href=\"/areas/pasadena\">Pasadena</a>, <a href=\"/areas/calabasas\">Calabasas</a>.</li></ul>"
+    }
+  ],
+  "pricePerSqFt": "$2-$4",
+  "pricingTiers": [
+    {
+      "label": "1 room",
+      "min": 400,
+      "max": 900
+    },
+    {
+      "label": "2 rooms",
+      "min": 800,
+      "max": 1800
+    },
+    {
+      "label": "3 rooms",
+      "min": 1200,
+      "max": 2700
+    },
+    {
+      "label": "4 rooms",
+      "min": 1600,
+      "max": 3600
+    },
+    {
+      "label": "Whole house",
+      "min": 2500,
+      "max": 6500,
+      "plus": true
+    }
+  ],
+  "priceAnchor": "vs. $15,000+ for a full renovation",
+  "faqs": [
+    {
+      "question": "How much does interior painting cost in Los Angeles?",
+      "answer": "Interior Painting in Los Angeles usually starts around $400 to $900 for 1 room work. Larger jobs typically land around $2,500 to $6,500+. Prep level, access, and surface condition are what move the number."
+    },
+    {
+      "question": "How long does a interior painting job usually take?",
+      "answer": "A single room usually takes 1 day. A typical 3-bedroom interior lands at 2 to 4 days. Large homes with tall entries, heavy patching, or a full trim package take longer."
+    },
+    {
+      "question": "What prep is actually included before you paint or refinish?",
+      "answer": "We include the prep steps that make the finish hold: move furniture to center and protect floors, patch holes and skim damaged drywall, sand patches and glossy existing paint, prime repairs before finish coats. We do not skip those steps to make the quote look cheaper."
+    },
+    {
+      "question": "What usually makes interior painting prices jump higher than expected?",
+      "answer": "Hidden damage, contamination, failed caulk, old patching, difficult access, and tighter finish expectations are the big cost drivers. The paint itself is rarely what moves the job from the low end to the high end."
+    },
+    {
+      "question": "Is interior painting worth doing instead of replacing everything?",
+      "answer": "Fresh interior paint resets the whole house faster than any other finish trade. If the layout already works, painting usually buys the cleanest visual upgrade for the least disruption. If the material is still sound, keeping the bones and paying for careful prep usually gives homeowners the best return."
+    }
+  ],
+  "relatedServices": [
+    "color-change-repaint",
+    "ceiling-painting",
+    "trim-baseboard-painting",
+    "drywall-repair-paint",
+    "cabinet-painting"
+  ],
+  "featuredCities": [
+    "beverly-hills",
+    "brentwood",
+    "santa-monica",
+    "studio-city",
+    "pasadena",
+    "calabasas"
+  ],
+  "schemaServiceType": "HousePainting"
 };
 
 export default data;

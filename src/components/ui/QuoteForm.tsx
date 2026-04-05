@@ -1,12 +1,16 @@
 'use client';
 
-import { useState, FormEvent } from 'react';
-import { HERO_SERVICE_OPTIONS, FULL_SERVICE_OPTIONS, GHL_WEBHOOK_URL } from '@/lib/constants';
+import { useEffect, useId, useRef, useState, FormEvent } from 'react';
+import { usePathname } from 'next/navigation';
+import { HERO_SERVICE_OPTIONS, SERVICES, GHL_WEBHOOK_URL } from '@/lib/constants';
 import { formatPhoneInput } from '@/lib/utils';
+import { trackEvent } from '@/lib/analytics';
 
 interface QuoteFormProps {
   variant?: 'compact' | 'full';
   onDark?: boolean;
+  initialService?: string;
+  submitLabel?: string;
 }
 
 interface FormData {
@@ -18,6 +22,22 @@ interface FormData {
   message: string;
 }
 
+interface AttributionData {
+  pagePath: string;
+  pageType: string;
+  serviceSlug: string;
+  citySlug: string;
+  referrer: string;
+  pageTitle: string;
+  utmSource: string;
+  utmMedium: string;
+  utmCampaign: string;
+  utmTerm: string;
+  utmContent: string;
+}
+
+const serviceSlugMap = new Map(SERVICES.map((service) => [service.name, service.slug]));
+
 function validatePhone(phone: string): boolean {
   const digits = phone.replace(/\D/g, '');
   return digits.length >= 10;
@@ -27,15 +47,21 @@ function validateZip(zip: string): boolean {
   return /^\d{5}$/.test(zip);
 }
 
-export default function QuoteForm({ variant = 'compact', onDark = false }: QuoteFormProps) {
+export default function QuoteForm({
+  variant = 'compact',
+  onDark = false,
+  initialService = '',
+  submitLabel,
+}: QuoteFormProps) {
   const isCompact = variant === 'compact';
-  const serviceOptions = isCompact ? HERO_SERVICE_OPTIONS : FULL_SERVICE_OPTIONS;
+  const serviceOptions = isCompact ? HERO_SERVICE_OPTIONS : [...SERVICES.map((service) => service.name), 'Other'];
+  const pathname = usePathname();
 
   const [formData, setFormData] = useState<FormData>({
     name: '',
     phone: '',
     email: '',
-    service: '',
+    service: initialService,
     zip: '',
     message: '',
   });
@@ -43,6 +69,66 @@ export default function QuoteForm({ variant = 'compact', onDark = false }: Quote
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [showTyping, setShowTyping] = useState(false);
+  const [submitError, setSubmitError] = useState('');
+  const [attribution, setAttribution] = useState<AttributionData>({
+    pagePath: '',
+    pageType: '',
+    serviceSlug: '',
+    citySlug: '',
+    referrer: '',
+    pageTitle: '',
+    utmSource: '',
+    utmMedium: '',
+    utmCampaign: '',
+    utmTerm: '',
+    utmContent: '',
+  });
+  const formId = useId();
+  const hasTrackedStart = useRef(false);
+
+  useEffect(() => {
+    const params = typeof window !== 'undefined'
+      ? new URLSearchParams(window.location.search)
+      : new URLSearchParams();
+    const segments = pathname.split('/').filter(Boolean);
+    const firstSegment = segments[0] ?? '';
+    const pageType = pathname === '/'
+      ? 'home'
+      : firstSegment === 'blog' && segments.length === 2
+        ? 'blog_post'
+        : firstSegment === 'areas' && segments.length === 2
+          ? 'city_page'
+          : firstSegment === 'areas'
+            ? 'areas_index'
+            : serviceSlugMap.has(initialService) || serviceSlugMap.has(SERVICES.find((service) => service.slug === firstSegment)?.name ?? '')
+              ? segments.length === 2
+                ? 'matrix_page'
+                : 'service_page'
+              : 'generic';
+
+    const serviceSlug = segments.length >= 1 && SERVICES.some((service) => service.slug === firstSegment)
+      ? firstSegment
+      : serviceSlugMap.get(initialService) ?? '';
+    const citySlug = firstSegment === 'areas' && segments.length === 2
+      ? segments[1]
+      : segments.length === 2 && SERVICES.some((service) => service.slug === firstSegment)
+        ? segments[1]
+        : '';
+
+    setAttribution({
+      pagePath: pathname,
+      pageType,
+      serviceSlug,
+      citySlug,
+      referrer: typeof document !== 'undefined' ? document.referrer : '',
+      pageTitle: typeof document !== 'undefined' ? document.title : '',
+      utmSource: params.get('utm_source') ?? '',
+      utmMedium: params.get('utm_medium') ?? '',
+      utmCampaign: params.get('utm_campaign') ?? '',
+      utmTerm: params.get('utm_term') ?? '',
+      utmContent: params.get('utm_content') ?? '',
+    });
+  }, [initialService, pathname]);
 
   function validate(): boolean {
     const newErrors: Partial<Record<keyof FormData, string>> = {};
@@ -61,16 +147,54 @@ export default function QuoteForm({ variant = 'compact', onDark = false }: Quote
     e.preventDefault();
     if (!validate()) return;
     setSubmitting(true);
+    setSubmitError('');
+    trackEvent('quote_form_submit_attempt', {
+      page_path: attribution.pagePath,
+      page_type: attribution.pageType,
+      service_slug: attribution.serviceSlug,
+      city_slug: attribution.citySlug,
+      service_name: formData.service,
+      form_variant: variant,
+    });
     try {
-      await fetch(GHL_WEBHOOK_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
+      const isDemoWebhook = GHL_WEBHOOK_URL.includes('placeholder-webhook.example.com');
+      const payload = {
+        ...formData,
+        ...attribution,
+      };
+
+      if (!isDemoWebhook) {
+        const response = await fetch(GHL_WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        if (!response.ok) {
+          throw new Error('Request failed');
+        }
+      }
     } catch {
-      console.log('Form submitted:', formData);
+      setSubmitting(false);
+      setSubmitError('We could not send your request. Call us now or try again in a moment.');
+      trackEvent('quote_form_submit_error', {
+        page_path: attribution.pagePath,
+        page_type: attribution.pageType,
+        service_slug: attribution.serviceSlug,
+        city_slug: attribution.citySlug,
+        service_name: formData.service,
+      });
+      return;
     }
     setSubmitting(false);
+    trackEvent('quote_form_submit_success', {
+      page_path: attribution.pagePath,
+      page_type: attribution.pageType,
+      service_slug: attribution.serviceSlug,
+      city_slug: attribution.citySlug,
+      service_name: formData.service,
+      form_variant: variant,
+    });
     setShowTyping(true);
     setTimeout(() => {
       setShowTyping(false);
@@ -82,7 +206,18 @@ export default function QuoteForm({ variant = 'compact', onDark = false }: Quote
     if (field === 'phone') {
       value = formatPhoneInput(value);
     }
+    if (!hasTrackedStart.current) {
+      hasTrackedStart.current = true;
+      trackEvent('quote_form_started', {
+        page_path: attribution.pagePath,
+        page_type: attribution.pageType,
+        service_slug: attribution.serviceSlug,
+        city_slug: attribution.citySlug,
+        form_variant: variant,
+      });
+    }
     setFormData((prev) => ({ ...prev, [field]: value }));
+    if (submitError) setSubmitError('');
     if (errors[field]) {
       setErrors((prev) => ({ ...prev, [field]: undefined }));
     }
@@ -112,6 +247,10 @@ export default function QuoteForm({ variant = 'compact', onDark = false }: Quote
         <p className={`mt-1 text-sm ${onDark ? 'text-text-on-dark/60' : 'text-text-muted'}`}>
           We&apos;ll call you within 2 hours with your exact price.
         </p>
+        <div className="mt-5 space-y-2 text-sm text-text-body">
+          <p>Next step: we review the scope, confirm details, and schedule a walkthrough if needed.</p>
+          <p>If your project is urgent, calling now is still the fastest path.</p>
+        </div>
       </div>
     );
   }
@@ -120,11 +259,28 @@ export default function QuoteForm({ variant = 'compact', onDark = false }: Quote
   const inputStyle = onDark
     ? `${inputBase} bg-[#3A3632] border-[#4A4642] text-text-on-dark placeholder:text-[#8A8580]`
     : `${inputBase} bg-white border-border text-text-primary placeholder:text-text-muted`;
+  const labelClass = isCompact
+    ? 'sr-only'
+    : `mb-1.5 block text-xs font-semibold uppercase tracking-[0.12em] ${onDark ? 'text-text-on-dark/70' : 'text-text-muted'}`;
 
   return (
     <form onSubmit={handleSubmit} className="space-y-3" noValidate>
+      <input type="hidden" value={attribution.pagePath} name="pagePath" />
+      <input type="hidden" value={attribution.pageType} name="pageType" />
+      <input type="hidden" value={attribution.serviceSlug} name="serviceSlug" />
+      <input type="hidden" value={attribution.citySlug} name="citySlug" />
+      <input type="hidden" value={attribution.referrer} name="referrer" />
+      <input type="hidden" value={attribution.utmSource} name="utmSource" />
+      <input type="hidden" value={attribution.utmMedium} name="utmMedium" />
+      <input type="hidden" value={attribution.utmCampaign} name="utmCampaign" />
+      <input type="hidden" value={attribution.utmTerm} name="utmTerm" />
+      <input type="hidden" value={attribution.utmContent} name="utmContent" />
       <div>
+        <label htmlFor={`${formId}-name`} className={labelClass}>
+          Full Name
+        </label>
         <input
+          id={`${formId}-name`}
           type="text"
           placeholder="Full Name"
           value={formData.name}
@@ -136,7 +292,11 @@ export default function QuoteForm({ variant = 'compact', onDark = false }: Quote
       </div>
 
       <div>
+        <label htmlFor={`${formId}-phone`} className={labelClass}>
+          Phone
+        </label>
         <input
+          id={`${formId}-phone`}
           type="tel"
           placeholder="Phone Number"
           value={formData.phone}
@@ -149,7 +309,11 @@ export default function QuoteForm({ variant = 'compact', onDark = false }: Quote
 
       {!isCompact && (
         <div>
+          <label htmlFor={`${formId}-email`} className={labelClass}>
+            Email
+          </label>
           <input
+            id={`${formId}-email`}
             type="email"
             placeholder="Email"
             value={formData.email}
@@ -162,7 +326,11 @@ export default function QuoteForm({ variant = 'compact', onDark = false }: Quote
       )}
 
       <div>
+        <label htmlFor={`${formId}-service`} className={labelClass}>
+          Service Type
+        </label>
         <select
+          id={`${formId}-service`}
           value={formData.service}
           onChange={(e) => handleChange('service', e.target.value)}
           className={`${inputStyle} ${!formData.service ? (onDark ? 'text-[#8A8580]' : 'text-text-muted') : ''}`}
@@ -178,7 +346,11 @@ export default function QuoteForm({ variant = 'compact', onDark = false }: Quote
       </div>
 
       <div>
+        <label htmlFor={`${formId}-zip`} className={labelClass}>
+          ZIP Code
+        </label>
         <input
+          id={`${formId}-zip`}
           type="text"
           placeholder="ZIP Code"
           value={formData.zip}
@@ -193,7 +365,11 @@ export default function QuoteForm({ variant = 'compact', onDark = false }: Quote
 
       {!isCompact && (
         <div>
+          <label htmlFor={`${formId}-message`} className={labelClass}>
+            Project Description
+          </label>
           <textarea
+            id={`${formId}-message`}
             placeholder="Tell us about your project (optional)"
             value={formData.message}
             onChange={(e) => handleChange('message', e.target.value)}
@@ -201,6 +377,15 @@ export default function QuoteForm({ variant = 'compact', onDark = false }: Quote
             className={inputStyle}
           />
         </div>
+      )}
+
+      {submitError && (
+        <p
+          role="alert"
+          className="rounded-sm border border-accent/25 bg-accent/8 px-4 py-3 text-sm text-accent"
+        >
+          {submitError}
+        </p>
       )}
 
       <button
@@ -212,7 +397,7 @@ export default function QuoteForm({ variant = 'compact', onDark = false }: Quote
             : 'hover:bg-accent-hover'
         }`}
       >
-        {submitting ? 'Sending...' : 'Request My Estimate'}
+        {submitting ? 'Sending...' : submitLabel ?? 'Request My Estimate'}
       </button>
 
       {isCompact && (

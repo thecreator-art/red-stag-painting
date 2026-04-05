@@ -19,6 +19,102 @@ const data: ServicePageData = {
   "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
   "heroImageAlt": "Los Angeles room repainted from a dark color to a soft warm neutral",
   "heroSubtitle": "When the old color is fighting the room, we reset it with the prep and coverage plan needed for a true color change.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Dark dated paint color before color change repaint",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Warm neutral interior after color change repaint",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "A heavy, dated palette was blocked out, re-primed where needed, and turned into a lighter scheme that makes the rooms feel calmer and more current."
+  },
+  "inlineImages": [
+    {
+      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Fresh neutral interior after major color change",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Painter rolling over old dark wall color",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Light bright room after repainting from darker tones",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "homeownerReviews": [
+    {
+      "quote": "They took out three dark accent walls and the place instantly felt twice as bright without looking washed out.",
+      "reviewer": "Rachel I.",
+      "city": "West Hollywood"
+    },
+    {
+      "quote": "We bought a house full of yellow undertones and they got it to a clean warm neutral without ghosting from the old colors.",
+      "reviewer": "Eddie P.",
+      "city": "Silver Lake"
+    },
+    {
+      "quote": "The primer plan mattered. You cannot tell where the old navy walls were anymore.",
+      "reviewer": "Simone T.",
+      "city": "Santa Monica"
+    }
+  ],
+  "whyChooseCards": [
+    {
+      "stat": "500+",
+      "title": "Color Change Repaint jobs across LA housing stock",
+      "body": "We handle this scope on dated tans in Woodland Hills tract homes, high-contrast designer palettes in West Hollywood condos, and sun-bleached neutrals in Santa Monica beach properties, so the plan fits the house instead of fighting it."
+    },
+    {
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like deep colors ghosting through weak hide paints and old cut lines left at the ceiling, not by guessing from a few photos."
+    },
+    {
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around sand and feather all old sample areas, prime where the color shift is dramatic, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
+  ],
+  "serviceFeature": {
+    "type": "colorDirectionGuide",
+    "title": "Color Direction Guide",
+    "subtitle": "The price changes when the old color has to disappear under the new one",
+    "directions": [
+      {
+        "title": "Going Lighter",
+        "price": "$3-$5/sqft",
+        "details": [
+          "Dark to light usually needs a tinted primer",
+          "Expect 2-3 finish coats for true hide",
+          "Deep reds, blues, and charcoals take the most correction"
+        ],
+        "gradient": "light"
+      },
+      {
+        "title": "Going Darker",
+        "price": "$2.50-$4/sqft",
+        "details": [
+          "A primer coat may still be needed depending on the starting color",
+          "Two finish coats are common",
+          "Edges and old sample blocks need extra cleanup"
+        ],
+        "gradient": "dark"
+      }
+    ]
+  },
   "introAnswer": "Color Change Repaint in Los Angeles usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",
   "sections": [
     {

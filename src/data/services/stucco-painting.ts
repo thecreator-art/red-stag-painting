@@ -19,6 +19,115 @@ const data: ServicePageData = {
   "heroImage": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1800&q=80",
   "heroImageAlt": "Freshly painted stucco house exterior in Los Angeles",
   "heroSubtitle": "We repair cracks, deal with chalking, and coat stucco at the right build so the finish does not burn off on the sunny side first.",
+  "beforeAfter": {
+    "before": {
+      "src": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Cracked stucco exterior before painting",
+      "width": 1600,
+      "height": 900
+    },
+    "after": {
+      "src": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Fresh stucco exterior coating after repaint",
+      "width": 1600,
+      "height": 900
+    },
+    "caption": "Hairline cracks, faded body color, and patched wall areas were stabilized first so the finish coat could read even across the whole elevation."
+  },
+  "inlineImages": [
+    {
+      "src": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Stucco exterior prep on Southern California home",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Freshly painted stucco home with clean lines",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Large stucco residence after exterior repaint",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "homeownerReviews": [
+    {
+      "quote": "They did not just roll over the cracks. They chased every bad spot first and the walls now read consistent from end to end.",
+      "reviewer": "Paul D.",
+      "city": "Brentwood"
+    },
+    {
+      "quote": "Our stucco had years of chalking on the south wall and the finish still came out rich and even.",
+      "reviewer": "Mia O.",
+      "city": "Malibu"
+    },
+    {
+      "quote": "The crew matched the repaired texture, coated the whole facade, and the house looks tighter from the street than it has in years.",
+      "reviewer": "Ramon A.",
+      "city": "Pasadena"
+    }
+  ],
+  "whyChooseCards": [
+    {
+      "stat": "500+",
+      "title": "Stucco Painting jobs across LA housing stock",
+      "body": "We handle this scope on Spanish exteriors in Pasadena, cliffside homes in Pacific Palisades, and gated estates in Hidden Hills with long stucco walls, so the plan fits the house instead of fighting it."
+    },
+    {
+      "stat": "24 hr",
+      "title": "Quotes built around real prep",
+      "body": "We price the work after looking at things like hairline map cracking and chalky surface dust, not by guessing from a few photos."
+    },
+    {
+      "stat": "Clean",
+      "title": "Sequencing that keeps the site under control",
+      "body": "The production plan is built around wash and brush down chalk, route and patch active cracks, and daily cleanup so the finish still reads right when the room or exterior goes back into service."
+    }
+  ],
+  "serviceFeature": {
+    "type": "stuccoConditionAssessment",
+    "title": "Stucco Condition Assessment",
+    "subtitle": "Condition changes both the coating system and what the quote needs to include",
+    "conditions": [
+      {
+        "title": "Good Condition",
+        "accent": "green",
+        "description": "Minor fading and light wear. The stucco is stable and mostly ready for prep plus paint.",
+        "includes": [
+          "Wash and chalk removal",
+          "Spot caulking",
+          "Prime repairs",
+          "Standard premium exterior coating"
+        ]
+      },
+      {
+        "title": "Fair Condition",
+        "accent": "amber",
+        "description": "Hairline cracking and more visible age. This usually calls for heavier prep and elastomeric planning.",
+        "includes": [
+          "Crack repair and wider patch blending",
+          "Elastomeric-compatible primer plan",
+          "More detailed masking",
+          "Higher-build coating where needed"
+        ]
+      },
+      {
+        "title": "Poor Condition",
+        "accent": "red",
+        "description": "Large cracks, failed patches, or bigger surface movement. Repair comes first, paint second.",
+        "includes": [
+          "Repair-first scope review",
+          "Larger crack and patch stabilization",
+          "Prime all repaired zones",
+          "Finish pricing after the substrate is made sound"
+        ]
+      }
+    ]
+  },
   "introAnswer": "Stucco Painting in Los Angeles usually starts around $4,000 to $7,000 for a basic small home scope. Larger projects land closer to $9,000 to $15,000+, depending on prep, access, and how much of the surface package we are touching in one visit.",
   "sections": [
     {
