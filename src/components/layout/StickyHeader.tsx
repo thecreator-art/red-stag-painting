@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { PHONE_HREF, PHONE_NUMBER, CTA_PRIMARY, RESPONSE_TIME } from '@/lib/constants';
+import { RESPONSE_TIME } from '@/lib/constants';
 
 export default function StickyHeader() {
   const [visible, setVisible] = useState(false);
@@ -50,15 +50,12 @@ export default function StickyHeader() {
           />
           Red Stag Painting
         </Link>
-        <a href={PHONE_HREF} className="text-sm text-text-body hover:text-text-primary transition-colors duration-300">
-          {PHONE_NUMBER}
-        </a>
         <span className="text-xs text-text-muted">{RESPONSE_TIME}</span>
         <Link
-          href="/#contact"
+          href="/contact"
           className="px-5 py-2 bg-accent hover:bg-accent-hover text-white text-sm font-semibold rounded-sm transition-all duration-300"
         >
-          {CTA_PRIMARY}
+          Get Pricing
         </Link>
       </div>
     </header>

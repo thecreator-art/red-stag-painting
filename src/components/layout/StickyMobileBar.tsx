@@ -14,9 +14,7 @@ export default function StickyMobileBar() {
   const isMatrixPage = serviceSlugs.includes(firstSegment) && segments.length === 2;
   const isCityPage = firstSegment === 'areas' && segments.length === 2;
   const isBlogPage = firstSegment === 'blog' && segments.length === 2;
-  const contactHref = pathname === '/'
-    ? '#contact'
-    : isServicePage
+  const contactHref = isServicePage
       ? '#service-quote-form'
       : isMatrixPage
         ? '#matrix-quote-form'
@@ -24,7 +22,7 @@ export default function StickyMobileBar() {
           ? '#city-quote-form'
           : isBlogPage
             ? '#blog-quote-form'
-            : '/#contact';
+            : '/contact';
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-bg-dark h-[60px] flex">

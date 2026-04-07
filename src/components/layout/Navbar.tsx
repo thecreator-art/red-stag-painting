@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { SERVICES, PHONE_HREF, PHONE_NUMBER, CTA_PRIMARY } from '@/lib/constants';
+import { SERVICES, CTA_PRIMARY } from '@/lib/constants';
 
 interface NavbarProps {
   sticky?: boolean;
@@ -14,7 +14,6 @@ export default function Navbar({ sticky = false }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const pathname = usePathname();
-  const onHomePage = pathname === '/';
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => {
@@ -25,31 +24,27 @@ export default function Navbar({ sticky = false }: NavbarProps) {
     return () => window.cancelAnimationFrame(frame);
   }, [pathname]);
 
-  function sectionHref(id: string) {
-    return onHomePage ? `#${id}` : `/#${id}`;
-  }
-
   return (
     <div className={sticky ? 'sticky top-0 z-50' : ''}>
       {/* Terracotta accent line */}
       <div className="h-[3px] bg-accent" />
 
       <nav className={`relative z-40 ${sticky ? 'bg-bg-primary/95 backdrop-blur border-b border-border/50' : 'bg-bg-primary'}`}>
-        <div className="mx-auto max-w-[1200px] px-6 md:px-10 flex items-center justify-between py-5">
+        <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4 md:px-10">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 text-xl font-heading text-text-primary">
+          <Link href="/" className="flex items-center gap-2 text-lg font-heading text-text-primary whitespace-nowrap xl:text-xl">
             <Image
               src="/images/stag-logo.png"
               alt=""
-              width={40}
-              height={32}
-              className="h-8 w-auto logo-accent"
+              width={34}
+              height={28}
+              className="h-7 w-auto logo-accent xl:h-8"
             />
             Red Stag Painting
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-6">
             <div
               className="relative"
               onMouseEnter={() => setServicesOpen(true)}
@@ -57,7 +52,7 @@ export default function Navbar({ sticky = false }: NavbarProps) {
             >
               <button
                 type="button"
-                className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300 cursor-pointer"
+                className="whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.12em] text-text-body transition-colors duration-300 hover:text-text-primary xl:text-xs"
               >
                 Services
                 <svg className="inline-block ml-1 w-3 h-3" fill="none" viewBox="0 0 12 12" stroke="currentColor">
@@ -70,7 +65,7 @@ export default function Navbar({ sticky = false }: NavbarProps) {
                     <Link
                       key={service.slug}
                       href={`/${service.slug}`}
-                      className="block px-4 py-2 text-sm text-text-body hover:bg-bg-secondary hover:text-text-primary transition-colors duration-300"
+                      className="block px-4 py-2 text-sm text-text-body transition-colors duration-300 hover:bg-bg-secondary hover:text-text-primary"
                     >
                       {service.name}
                     </Link>
@@ -78,33 +73,30 @@ export default function Navbar({ sticky = false }: NavbarProps) {
                 </div>
               </div>
             </div>
-            <Link href={sectionHref('our-work')} className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
+            <Link href="/our-work" className="whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.12em] text-text-body transition-colors duration-300 hover:text-text-primary xl:text-xs">
               Our Work
             </Link>
-            <Link href={sectionHref('service-area')} className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
+            <Link href="/areas" className="whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.12em] text-text-body transition-colors duration-300 hover:text-text-primary xl:text-xs">
               Areas We Serve
             </Link>
-            <Link href="/blog" className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
+            <Link href="/blog" className="whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.12em] text-text-body transition-colors duration-300 hover:text-text-primary xl:text-xs">
               Blog
             </Link>
-            <Link href={sectionHref('faq')} className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
+            <Link href="/about" className="whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.12em] text-text-body transition-colors duration-300 hover:text-text-primary xl:text-xs">
               About
             </Link>
-            <Link href={sectionHref('contact')} className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
+            <Link href="/contact" className="whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.12em] text-text-body transition-colors duration-300 hover:text-text-primary xl:text-xs">
               Contact
             </Link>
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-4">
-            <a href={PHONE_HREF} className="text-sm text-text-body hover:text-text-primary transition-colors duration-300">
-              {PHONE_NUMBER}
-            </a>
+          <div className="hidden lg:flex items-center">
             <Link
-              href={sectionHref('contact')}
-              className="px-5 py-2 bg-accent hover:bg-accent-hover text-white text-sm font-semibold rounded-sm transition-all duration-300"
+              href="/contact"
+              className="rounded-sm bg-accent px-4 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-accent-hover xl:px-5"
             >
-              {CTA_PRIMARY}
+              Get Pricing
             </Link>
           </div>
 
@@ -145,28 +137,25 @@ export default function Navbar({ sticky = false }: NavbarProps) {
                 </div>
               </div>
               <div className="border-t border-border pt-6 space-y-4">
-                <Link href={sectionHref('our-work')} className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
+                <Link href="/our-work" className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
                   Our Work
                 </Link>
-                <Link href={sectionHref('service-area')} className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
+                <Link href="/areas" className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
                   Areas We Serve
                 </Link>
                 <Link href="/blog" className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
                   Blog
                 </Link>
-                <Link href={sectionHref('faq')} className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
+                <Link href="/about" className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
                   About
                 </Link>
-                <Link href={sectionHref('contact')} className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
+                <Link href="/contact" className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
                   Contact
                 </Link>
               </div>
               <div className="border-t border-border pt-6">
-                <a href={PHONE_HREF} className="block text-lg font-semibold text-text-primary mb-4">
-                  {PHONE_NUMBER}
-                </a>
                 <Link
-                  href={sectionHref('contact')}
+                  href="/contact"
                   className="block w-full py-3 bg-accent text-white text-center font-semibold rounded-sm"
                   onClick={() => setMobileOpen(false)}
                 >
