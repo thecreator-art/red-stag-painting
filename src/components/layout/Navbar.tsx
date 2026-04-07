@@ -84,6 +84,9 @@ export default function Navbar({ sticky = false }: NavbarProps) {
             <Link href={sectionHref('service-area')} className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
               Areas We Serve
             </Link>
+            <Link href="/blog" className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
+              Blog
+            </Link>
             <Link href={sectionHref('faq')} className="text-sm uppercase tracking-wider text-text-body hover:text-text-primary transition-colors duration-300">
               About
             </Link>
@@ -147,6 +150,9 @@ export default function Navbar({ sticky = false }: NavbarProps) {
                 </Link>
                 <Link href={sectionHref('service-area')} className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
                   Areas We Serve
+                </Link>
+                <Link href="/blog" className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
+                  Blog
                 </Link>
                 <Link href={sectionHref('faq')} className="block text-lg text-text-primary" onClick={() => setMobileOpen(false)}>
                   About
