@@ -23,18 +23,33 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 min-h-[calc(100vh-68px)] flex items-center">
         <div className="mx-auto max-w-[1200px] px-6 md:px-10 w-full py-16 lg:py-24">
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="mx-auto max-w-4xl text-center">
             <div className="brand-line mx-auto mb-6 hero-animate" />
 
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-heading leading-[1.1] tracking-tight hero-animate hero-animate-delay-1 !text-white">
-              Los Angeles House
-              <br />
-              <span className="!text-accent painted-underline">Painting</span> Contractor
-            </h1>
-            <p className="mt-5 mx-auto max-w-xl text-base md:text-lg text-white/60 font-body hero-animate hero-animate-delay-2">
-              Your neighbors will ask who painted your house. From Beverly Hills
-              to Calabasas, we paint homes people love coming back to.
-            </p>
+            <div className="hero-animate hero-animate-delay-1 flex flex-col items-center justify-center gap-6 lg:flex-row lg:items-center lg:gap-8">
+              <div className="relative w-[120px] sm:w-[150px] lg:w-[200px] xl:w-[220px] shrink-0">
+                <Image
+                  src="/images/paint-roller-hero.png"
+                  alt="Illustrated paint roller and paint can"
+                  width={1024}
+                  height={1024}
+                  priority
+                  className="h-auto w-full drop-shadow-[0_16px_28px_rgba(0,0,0,0.28)]"
+                />
+              </div>
+
+              <div className="max-w-2xl text-center lg:text-left">
+                <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-heading leading-[1.1] tracking-tight !text-white">
+                  Los Angeles House
+                  <br />
+                  <span className="!text-accent painted-underline">Painting</span> Contractor
+                </h1>
+                <p className="mt-5 mx-auto max-w-xl text-base md:text-lg text-white/60 font-body lg:mx-0">
+                  Your neighbors will ask who painted your house. From Beverly Hills
+                  to Calabasas, we paint homes people love coming back to.
+                </p>
+              </div>
+            </div>
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 hero-animate hero-animate-delay-3">
               <MagneticButton>
