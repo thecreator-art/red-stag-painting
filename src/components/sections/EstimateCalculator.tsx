@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
-import { PRICING, CALCULATOR_SERVICES, PRICE_ANCHORS, CTA_PRIMARY, GHL_WEBHOOK_URL } from '@/lib/constants';
+import { PRICING, CALCULATOR_SERVICES, PRICE_ANCHORS, CTA_PRIMARY, GHL_WEBHOOK_URL, HAS_GHL_WEBHOOK, EMAIL, PHONE_NUMBER, PHONE_HREF } from '@/lib/constants';
 import { formatPhoneInput } from '@/lib/utils';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 import MagneticButton from '@/components/ui/MagneticButton';
@@ -81,6 +81,7 @@ export default function EstimateCalculator() {
   const [submitting, setSubmitting] = useState(false);
   const [showTyping, setShowTyping] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
   const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('left');
 
   const selectedService = CALCULATOR_SERVICES.find((s) => s.key === serviceKey);
@@ -102,8 +103,26 @@ export default function EstimateCalculator() {
     e.preventDefault();
     if (!contact.name || !contact.phone) return;
     setSubmitting(true);
+    setSubmitError('');
+    if (!HAS_GHL_WEBHOOK) {
+      const subject = `${selectedService?.label || 'Painting'} estimate request from ${contact.name}`;
+      const bodyLines = [
+        `Name: ${contact.name}`,
+        `Phone: ${contact.phone}`,
+        `Email: ${contact.email || 'Not provided'}`,
+        `Service: ${selectedService?.label || 'Not selected'}`,
+        `Size: ${selectedOption?.label || 'Not selected'}`,
+        `Price Range: ${selectedOption ? `${formatPrice(selectedOption.min)}-${formatPrice(selectedOption.max)}` : 'Not available'}`,
+      ];
+      if (typeof window !== 'undefined') {
+        window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+      }
+      setSubmitting(false);
+      setSubmitError(`Online estimate delivery is not connected yet. Your email app should open now. If it does not, call ${PHONE_NUMBER}.`);
+      return;
+    }
     try {
-      await fetch(GHL_WEBHOOK_URL, {
+      const response = await fetch(GHL_WEBHOOK_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -113,8 +132,13 @@ export default function EstimateCalculator() {
           priceRange: selectedOption ? `${formatPrice(selectedOption.min)}-${formatPrice(selectedOption.max)}` : '',
         }),
       });
+      if (!response.ok) {
+        throw new Error('Request failed');
+      }
     } catch {
-      console.log('Form submitted');
+      setSubmitting(false);
+      setSubmitError(`We could not send your request. Call ${PHONE_NUMBER} now or try again in a moment.`);
+      return;
     }
     setSubmitting(false);
     setShowTyping(true);
@@ -300,6 +324,15 @@ export default function EstimateCalculator() {
 
                     <p className="text-sm font-semibold text-text-primary mb-4">Where should we send your exact price?</p>
                     <form onSubmit={handleSubmit} className="space-y-3">
+                      {submitError && (
+                        <p className="rounded-sm border border-accent/25 bg-accent/8 px-4 py-3 text-sm text-accent">
+                          {submitError}{' '}
+                          <a href={PHONE_HREF} className="font-semibold underline underline-offset-2">
+                            Call now
+                          </a>
+                          .
+                        </p>
+                      )}
                       <input
                         type="text"
                         placeholder="Full Name"

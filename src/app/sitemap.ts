@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { SERVICES, CITIES, SITE_URL } from '@/lib/constants';
+import { blogIndex } from '@/data/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -40,7 +41,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  // TODO: Add blog post URLs dynamically once blog is implemented
+  const blogPages: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    ...blogIndex.map((post) => ({
+      url: `${SITE_URL}/blog/${post.slug}`,
+      lastModified: new Date(post.publishedDate),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
+  ];
 
-  return [...homepage, ...servicePages, ...cityPages, ...matrixPages];
+  return [...homepage, ...servicePages, ...cityPages, ...matrixPages, ...blogPages];
 }

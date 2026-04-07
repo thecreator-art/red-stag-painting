@@ -17,8 +17,12 @@ export default function Navbar({ sticky = false }: NavbarProps) {
   const onHomePage = pathname === '/';
 
   useEffect(() => {
-    setMobileOpen(false);
-    setServicesOpen(false);
+    const frame = window.requestAnimationFrame(() => {
+      setMobileOpen(false);
+      setServicesOpen(false);
+    });
+
+    return () => window.cancelAnimationFrame(frame);
   }, [pathname]);
 
   function sectionHref(id: string) {

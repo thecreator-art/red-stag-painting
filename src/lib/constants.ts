@@ -3,11 +3,25 @@ import type { Service, City, Project, FAQItem, PricingOption, ComparisonRow } fr
 // Tiny 10x6 neutral placeholder for blur-up loading on external images
 export const BLUR_PLACEHOLDER = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVQImWP4z8DwHwMDA8N/BgYGBob/DAz/GRj+MzD8Z2D4z8Dwn4HhPwMDAwMDIwMAd3YJBkLshiMAAAAASUVORK5CYII=';
 
+function normalizeUrl(value: string | undefined, fallback: string): string {
+  const trimmed = value?.trim();
+  if (!trimmed) return fallback;
+  return trimmed.startsWith('http') ? trimmed : `https://${trimmed}`;
+}
+
 export const PHONE_NUMBER = '(323) 555-0199';
 export const PHONE_HREF = 'tel:+13235550199';
 export const EMAIL = 'info@redstagpainting.com';
-export const SITE_URL = 'https://redstagpainting.com';
-export const GHL_WEBHOOK_URL = 'https://placeholder-webhook.example.com/submit';
+export const SITE_URL = normalizeUrl(
+  process.env.NEXT_PUBLIC_SITE_URL ?? process.env.VERCEL_PROJECT_PRODUCTION_URL,
+  'https://red-stag-painting.vercel.app'
+);
+export const GHL_WEBHOOK_URL = process.env.NEXT_PUBLIC_GHL_WEBHOOK_URL?.trim() ?? '';
+export const HAS_GHL_WEBHOOK = Boolean(
+  GHL_WEBHOOK_URL && !GHL_WEBHOOK_URL.includes('placeholder-webhook.example.com')
+);
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() ?? '';
+export const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID?.trim() ?? '';
 
 export const SERVICES: Service[] = [
   { name: 'Interior Painting', slug: 'interior-painting' },

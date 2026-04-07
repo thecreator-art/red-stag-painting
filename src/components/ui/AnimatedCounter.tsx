@@ -16,6 +16,36 @@ export default function AnimatedCounter({ target, duration = 2000 }: AnimatedCou
     const el = ref.current;
     if (!el) return;
 
+    function animateCount() {
+      const match = target.match(/^([^\d]*)([\d.]+)(.*)$/);
+      if (!match) return;
+
+      const prefix = match[1];
+      const numStr = match[2];
+      const suffix = match[3];
+      const targetNum = parseFloat(numStr);
+      const isFloat = numStr.includes('.');
+      const decimals = isFloat ? (numStr.split('.')[1]?.length || 0) : 0;
+
+      const steps = 60;
+      const stepDuration = duration / steps;
+      let step = 0;
+
+      const interval = setInterval(() => {
+        step++;
+        const progress = easeOutCubic(step / steps);
+        const current = targetNum * progress;
+
+        if (step >= steps) {
+          setDisplay(target);
+          clearInterval(interval);
+        } else {
+          const formatted = isFloat ? current.toFixed(decimals) : Math.floor(current).toString();
+          setDisplay(`${prefix}${formatted}${suffix}`);
+        }
+      }, stepDuration);
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated.current) {
@@ -29,38 +59,7 @@ export default function AnimatedCounter({ target, duration = 2000 }: AnimatedCou
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
-
-  function animateCount() {
-    // Parse the target: extract prefix, number, suffix
-    const match = target.match(/^([^\d]*)([\d.]+)(.*)$/);
-    if (!match) return;
-
-    const prefix = match[1];
-    const numStr = match[2];
-    const suffix = match[3];
-    const targetNum = parseFloat(numStr);
-    const isFloat = numStr.includes('.');
-    const decimals = isFloat ? (numStr.split('.')[1]?.length || 0) : 0;
-
-    const steps = 60;
-    const stepDuration = duration / steps;
-    let step = 0;
-
-    const interval = setInterval(() => {
-      step++;
-      const progress = easeOutCubic(step / steps);
-      const current = targetNum * progress;
-
-      if (step >= steps) {
-        setDisplay(target);
-        clearInterval(interval);
-      } else {
-        const formatted = isFloat ? current.toFixed(decimals) : Math.floor(current).toString();
-        setDisplay(`${prefix}${formatted}${suffix}`);
-      }
-    }, stepDuration);
-  }
+  }, [duration, target]);
 
   function easeOutCubic(t: number): number {
     return 1 - Math.pow(1 - t, 3);

@@ -12,7 +12,6 @@ export default function StickyHeader() {
 
   useEffect(() => {
     if (pathname !== '/') {
-      setVisible(false);
       return;
     }
 
@@ -41,7 +40,7 @@ export default function StickyHeader() {
       }`}
     >
       <div className="mx-auto max-w-[1200px] px-10 flex items-center justify-between h-14">
-        <a href="/" className="flex items-center gap-2 text-lg font-heading text-text-primary">
+        <Link href="/" className="flex items-center gap-2 text-lg font-heading text-text-primary">
           <Image
             src="/images/stag-logo.png"
             alt=""
@@ -50,7 +49,7 @@ export default function StickyHeader() {
             className="h-[26px] w-auto logo-accent"
           />
           Red Stag Painting
-        </a>
+        </Link>
         <a href={PHONE_HREF} className="text-sm text-text-body hover:text-text-primary transition-colors duration-300">
           {PHONE_NUMBER}
         </a>

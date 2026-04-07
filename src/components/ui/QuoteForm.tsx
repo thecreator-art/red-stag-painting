@@ -2,7 +2,7 @@
 
 import { useEffect, useId, useRef, useState, FormEvent } from 'react';
 import { usePathname } from 'next/navigation';
-import { HERO_SERVICE_OPTIONS, SERVICES, GHL_WEBHOOK_URL } from '@/lib/constants';
+import { HERO_SERVICE_OPTIONS, SERVICES, GHL_WEBHOOK_URL, HAS_GHL_WEBHOOK, EMAIL, PHONE_NUMBER, PHONE_HREF } from '@/lib/constants';
 import { formatPhoneInput } from '@/lib/utils';
 import { trackEvent } from '@/lib/analytics';
 
@@ -45,6 +45,32 @@ function validatePhone(phone: string): boolean {
 
 function validateZip(zip: string): boolean {
   return /^\d{5}$/.test(zip);
+}
+
+function buildMailtoHref(data: FormData, attribution: AttributionData): string {
+  const subject = `${data.service || 'Painting'} estimate request from ${data.name}`;
+  const bodyLines = [
+    `Name: ${data.name}`,
+    `Phone: ${data.phone}`,
+    `Email: ${data.email || 'Not provided'}`,
+    `Service: ${data.service || 'Not selected'}`,
+    `ZIP Code: ${data.zip}`,
+    `Project Description: ${data.message || 'Not provided'}`,
+    '',
+    `Page Path: ${attribution.pagePath || 'Unknown'}`,
+    `Page Type: ${attribution.pageType || 'Unknown'}`,
+    `Service Slug: ${attribution.serviceSlug || 'N/A'}`,
+    `City Slug: ${attribution.citySlug || 'N/A'}`,
+    `Referrer: ${attribution.referrer || 'Direct'}`,
+    `Page Title: ${attribution.pageTitle || 'Unknown'}`,
+    `UTM Source: ${attribution.utmSource || 'N/A'}`,
+    `UTM Medium: ${attribution.utmMedium || 'N/A'}`,
+    `UTM Campaign: ${attribution.utmCampaign || 'N/A'}`,
+    `UTM Term: ${attribution.utmTerm || 'N/A'}`,
+    `UTM Content: ${attribution.utmContent || 'N/A'}`,
+  ];
+
+  return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
 }
 
 export default function QuoteForm({
@@ -156,23 +182,37 @@ export default function QuoteForm({
       service_name: formData.service,
       form_variant: variant,
     });
+    if (!HAS_GHL_WEBHOOK) {
+      const mailtoHref = buildMailtoHref(formData, attribution);
+      trackEvent('quote_form_mailto_fallback', {
+        page_path: attribution.pagePath,
+        page_type: attribution.pageType,
+        service_slug: attribution.serviceSlug,
+        city_slug: attribution.citySlug,
+        service_name: formData.service,
+        form_variant: variant,
+      });
+      if (typeof window !== 'undefined') {
+        window.location.href = mailtoHref;
+      }
+      setSubmitting(false);
+      setSubmitError(`Online form delivery is not connected yet. Your email app should open now. If it does not, call ${PHONE_NUMBER}.`);
+      return;
+    }
     try {
-      const isDemoWebhook = GHL_WEBHOOK_URL.includes('placeholder-webhook.example.com');
       const payload = {
         ...formData,
         ...attribution,
       };
 
-      if (!isDemoWebhook) {
-        const response = await fetch(GHL_WEBHOOK_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
-        });
+      const response = await fetch(GHL_WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
 
-        if (!response.ok) {
-          throw new Error('Request failed');
-        }
+      if (!response.ok) {
+        throw new Error('Request failed');
       }
     } catch {
       setSubmitting(false);
@@ -384,7 +424,11 @@ export default function QuoteForm({
           role="alert"
           className="rounded-sm border border-accent/25 bg-accent/8 px-4 py-3 text-sm text-accent"
         >
-          {submitError}
+          {submitError}{' '}
+          <a href={PHONE_HREF} className="font-semibold underline underline-offset-2">
+            Call now
+          </a>
+          .
         </p>
       )}
 

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans, DM_Sans } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import SiteHeader from '@/components/layout/SiteHeader';
 import StickyMobileBar from '@/components/layout/StickyMobileBar';
@@ -7,6 +8,7 @@ import Footer from '@/components/layout/Footer';
 import ScrollProgress from '@/components/ui/ScrollProgress';
 import BackToTop from '@/components/ui/BackToTop';
 import { generateLocalBusinessSchema, generateFAQSchema } from '@/lib/schema';
+import { GA_MEASUREMENT_ID, GTM_ID, SITE_URL } from '@/lib/constants';
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
   title: 'House Painter Los Angeles | Interior & Exterior Painting | Red Stag Painting',
   description:
     'Professional house painting in Los Angeles. Interior, exterior, cabinet, and deck staining. Serving Beverly Hills, Pasadena, Santa Monica & 30 neighborhoods. Free estimates. Call today.',
-  metadataBase: new URL('https://redstagpainting.com'),
+  metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: '/',
   },
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     title: 'House Painter Los Angeles | Red Stag Painting',
     description:
       'Professional house painting in Los Angeles. Interior, exterior, and cabinet painting. Free estimates.',
-    url: 'https://redstagpainting.com',
+    url: SITE_URL,
     siteName: 'Red Stag Painting',
     type: 'website',
   },
@@ -58,12 +60,42 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
-        {/* Google Analytics 4 placeholder */}
-        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" /> */}
-        {/* Google Tag Manager placeholder */}
-        {/* <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){...})(window,document,'script','dataLayer','GTM-XXXXXXX');` }} /> */}
+        {GTM_ID ? (
+          <Script
+            id="gtm-base"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`,
+            }}
+          />
+        ) : null}
+        {!GTM_ID && GA_MEASUREMENT_ID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script
+              id="ga4-base"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} window.gtag = gtag; gtag('js', new Date()); gtag('config', '${GA_MEASUREMENT_ID}');`,
+              }}
+            />
+          </>
+        ) : null}
       </head>
       <body className="min-h-screen font-body text-text-body bg-bg-primary antialiased pb-[60px] md:pb-0">
+        {GTM_ID ? (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+              height="0"
+              width="0"
+              style={{ display: 'none', visibility: 'hidden' }}
+            />
+          </noscript>
+        ) : null}
         <ScrollProgress />
         <SiteHeader />
         <main>{children}</main>
