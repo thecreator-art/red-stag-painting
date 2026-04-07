@@ -10,12 +10,12 @@ export default function ProjectGallery() {
         {/* Section header: left-aligned for asymmetry */}
         <ScrollReveal>
           <div className="max-w-xl mb-14">
-            <span className="section-label">Our Work</span>
+            <span className="section-label">Visual References</span>
             <h2 className="text-3xl md:text-5xl font-heading text-text-primary leading-tight">
-              Real homes. Real results.
+              Illustrative transformation references
             </h2>
             <p className="mt-4 text-text-muted text-base md:text-lg">
-              Hover or tap any photo to see the before. Every project shown is a home we painted in Los Angeles.
+              Hover or tap any photo to see the before. These are curated stock references that show finish direction until the client has a real project photo library.
             </p>
           </div>
         </ScrollReveal>

@@ -25,12 +25,12 @@ export default function HorizontalGallery() {
         <ScrollReveal>
           <div className="flex items-end justify-between mb-10">
             <div className="max-w-xl">
-              <span className="section-label">Our Work</span>
+              <span className="section-label">Visual References</span>
               <h2 className="text-3xl md:text-5xl font-heading text-text-primary leading-tight">
-                Real homes. Real results.
+                Illustrative before and after references
               </h2>
               <p className="mt-3 text-text-muted text-base">
-                Drag the slider on any photo to see the before.
+                These are curated stock reference pairs that show finish direction and transformation potential. We&apos;ll replace them with real project photography as the client library grows.
               </p>
             </div>
 
@@ -85,14 +85,9 @@ export default function HorizontalGallery() {
               <span className="text-xs text-text-muted">{project.city}</span>
             </div>
             <p className="mt-1 text-sm text-text-body">{project.description}</p>
-            {project.review && (
-              <blockquote className="mt-3 pl-4 border-l-[3px] border-accent">
-                <p className="text-sm italic text-text-muted">&ldquo;{project.review.text}&rdquo;</p>
-                <cite className="block mt-1 text-xs text-text-muted not-italic font-semibold">
-                  {project.review.author}, {project.review.city}
-                </cite>
-              </blockquote>
-            )}
+            <p className="mt-2 text-xs uppercase tracking-[0.14em] text-text-muted">
+              Reference imagery only
+            </p>
           </div>
         ))}
       </div>

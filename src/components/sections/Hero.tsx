@@ -23,20 +23,20 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 min-h-[calc(100vh-68px)] flex items-center">
         <div className="mx-auto max-w-[1200px] px-6 md:px-10 w-full py-16 lg:py-24">
-          <div className="max-w-2xl">
-            <div className="brand-line mb-6 hero-animate" />
+          <div className="mx-auto max-w-2xl text-center">
+            <div className="brand-line mx-auto mb-6 hero-animate" />
 
             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-heading leading-[1.1] tracking-tight hero-animate hero-animate-delay-1 !text-white">
               Los Angeles House
               <br />
               <span className="!text-accent painted-underline">Painting</span> Contractor
             </h1>
-            <p className="mt-5 text-base md:text-lg text-white/60 font-body max-w-md hero-animate hero-animate-delay-2">
+            <p className="mt-5 mx-auto max-w-xl text-base md:text-lg text-white/60 font-body hero-animate hero-animate-delay-2">
               Your neighbors will ask who painted your house. From Beverly Hills
               to Calabasas, we paint homes people love coming back to.
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row items-start gap-4 hero-animate hero-animate-delay-3">
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 hero-animate hero-animate-delay-3">
               <MagneticButton>
                 <a
                   href="#contact"
@@ -57,7 +57,7 @@ export default function Hero() {
             </div>
 
             {/* Response time + warranty badges */}
-            <div className="mt-6 flex flex-wrap items-center gap-4 hero-animate hero-animate-delay-4">
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-4 hero-animate hero-animate-delay-4">
               <div className="flex items-center gap-2 text-white/40 text-xs">
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <circle cx="12" cy="12" r="10" />
@@ -74,7 +74,7 @@ export default function Hero() {
             </div>
 
             {/* Quick stats row */}
-            <div className="mt-10 flex items-center gap-8 hero-animate hero-animate-delay-4">
+            <div className="mt-10 flex items-center justify-center gap-8 hero-animate hero-animate-delay-4">
               <div>
                 <p className="text-2xl md:text-3xl font-heading text-accent leading-none">500+</p>
                 <p className="mt-1 text-[10px] tracking-wider uppercase text-white/40">Homes Painted</p>
