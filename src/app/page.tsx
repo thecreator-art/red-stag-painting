@@ -15,11 +15,13 @@ import ServiceArea from '@/components/sections/ServiceArea';
 import FAQ from '@/components/sections/FAQ';
 import ContactForm from '@/components/sections/ContactForm';
 import TrustedPlatforms from '@/components/sections/TrustedPlatforms';
+import DesktopQuoteDrawer from '@/components/sections/DesktopQuoteDrawer';
 
 export default function HomePage() {
   return (
     <>
       <Hero />
+      <DesktopQuoteDrawer />
       <BookingBanner />
       <TrustedPlatforms />
       <BrushDivider colorFrom="#FAF8F5" colorTo="#EDE7DF" />
