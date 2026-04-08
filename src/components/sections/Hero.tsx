@@ -29,7 +29,7 @@ export default function Hero() {
             <div className="hero-animate hero-animate-delay-1 flex flex-col items-center justify-center gap-6 lg:flex-row lg:items-center lg:gap-8">
               <div className="relative w-[120px] sm:w-[150px] lg:w-[200px] xl:w-[220px] shrink-0">
                 <Image
-                  src="/images/paint-roller-hero.png"
+                  src="/images/paint-roller-hero-transparent.png"
                   alt="Illustrated paint roller and paint can"
                   width={1024}
                   height={1024}
