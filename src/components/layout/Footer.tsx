@@ -142,16 +142,22 @@ export default function Footer() {
             <Link href="/terms" className="hover:text-white transition-colors duration-300">Terms of Service</Link>
           </div>
 
-          <div className="flex items-center gap-2">
-            <span>Website &amp; Digital Marketing by</span>
-            <a href="https://vaultio.agency" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity">
+          <div className="flex items-center gap-2 mt-4 sm:mt-0 text-sm">
+            <span className="text-text-on-dark/50">Website &amp; Digital Marketing by</span>
+            <a 
+              href="https://vaultio.co" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity"
+            >
               <Image 
                 src="/images/vaultio-logo.png" 
                 alt="Vaultio Digital Marketing Agency" 
-                width={80} 
-                height={20} 
-                className="h-5 w-auto object-contain"
+                width={36} 
+                height={36} 
+                className="h-7 w-auto object-contain"
               />
+              <span className="font-heading tracking-widest font-bold text-white text-base">VAULTIO</span>
             </a>
           </div>
 
