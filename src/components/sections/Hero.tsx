@@ -7,7 +7,7 @@ export default function Hero() {
     <section id="hero" className="relative min-h-[calc(100vh-68px)] overflow-hidden">
       {/* Full-width background image */}
       <Image
-        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80"
+        src="/images/hero.png"
         alt="Freshly painted modern home exterior in Los Angeles by Red Stag Painting"
         fill
         priority

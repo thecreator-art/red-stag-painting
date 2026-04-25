@@ -142,8 +142,8 @@ export const CALCULATOR_SERVICES = [
 
 export const PROJECTS: Project[] = [
   {
-    afterImage: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=800&q=80',
-    beforeImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=800&q=80',
+    afterImage: '/images/proj_1_after.png',
+    beforeImage: '/images/proj_1_before.png',
     serviceType: 'Interior Repaint',
     city: 'Encino',
     description: '4-day full repaint. Sherwin-Williams Emerald. Zero touch-ups.',
@@ -154,15 +154,15 @@ export const PROJECTS: Project[] = [
     },
   },
   {
-    afterImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80',
-    beforeImage: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=800&q=80',
+    afterImage: '/images/proj_2_after.png',
+    beforeImage: '/images/proj_2_before.png',
     serviceType: 'Exterior Painting',
     city: 'Pacific Palisades',
     description: 'Full exterior. Benjamin Moore Aura. Done in 5 days flat.',
   },
   {
-    afterImage: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
-    beforeImage: 'https://images.unsplash.com/photo-1560448075-bb485b067938?auto=format&fit=crop&w=800&q=80',
+    afterImage: '/images/proj_3_after.png',
+    beforeImage: '/images/proj_3_before.png',
     serviceType: 'Cabinet Refinishing',
     city: 'Sherman Oaks',
     description: '32 cabinet doors. Sprayed finish. Smooth as factory.',
@@ -173,15 +173,15 @@ export const PROJECTS: Project[] = [
     },
   },
   {
-    afterImage: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80',
-    beforeImage: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+    afterImage: '/images/proj_4_after.png',
+    beforeImage: '/images/proj_4_before.png',
     serviceType: 'Interior Repaint',
     city: 'Brentwood',
     description: '3 bedrooms, hallway, and ceiling. 3 days start to finish.',
   },
   {
-    afterImage: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80',
-    beforeImage: 'https://images.unsplash.com/photo-1560185127-6ed9919d945b?auto=format&fit=crop&w=800&q=80',
+    afterImage: '/images/proj_5_after.png',
+    beforeImage: '/images/proj_5_before.png',
     serviceType: 'Exterior Painting',
     city: 'Calabasas',
     description: '4,200 sqft home. Stucco repair and full repaint. 7 days.',
@@ -192,8 +192,8 @@ export const PROJECTS: Project[] = [
     },
   },
   {
-    afterImage: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80',
-    beforeImage: 'https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=800&q=80',
+    afterImage: '/images/proj_6_after.png',
+    beforeImage: '/images/proj_6_before.png',
     serviceType: 'Popcorn Ceiling Removal',
     city: 'Studio City',
     description: 'Popcorn removed, skim-coated, and painted. 5 rooms in 2 days.',
