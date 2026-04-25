@@ -6,8 +6,8 @@ export default function FullBleedBeforeAfter() {
       {/* Full-bleed slider */}
       <div className="w-screen relative left-1/2 right-1/2 -mx-[50vw]">
         <DragSlider
-          beforeImage="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1800&q=80"
-          afterImage="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1800&q=80"
+          beforeImage="/images/full_bleed_before.png"
+          afterImage="/images/full_bleed_after.png"
           beforeAlt="Before: home exterior in Calabasas before painting"
           afterAlt="After: freshly painted home exterior in Calabasas by Red Stag Painting"
           aspectRatio="21/9"
@@ -16,17 +16,17 @@ export default function FullBleedBeforeAfter() {
         />
       </div>
       {/* Caption */}
-      <div className="mx-auto max-w-2xl py-6 px-6">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm">
-          <div className="flex items-center gap-2">
-            <span className="inline-block w-2 h-2 rounded-full bg-text-muted" />
-            <span className="text-text-muted font-medium">Before: Faded, cracked stucco with 15 years of sun damage</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="inline-block w-2 h-2 rounded-full bg-accent" />
-            <span className="text-text-body font-medium">After: Full elastomeric repaint &mdash; Calabasas, CA &mdash; 7 days</span>
-          </div>
-        </div>
+      <div className="mx-auto max-w-4xl py-10 px-6 text-center">
+        <h3 className="font-heading font-bold text-xl md:text-2xl text-text-primary mb-4">
+          Hollywood Hills, CA &mdash; Complete Exterior Restoration
+        </h3>
+        <p className="text-text-muted text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          This luxury property suffered from years of sun damage, resulting in chalky, faded stucco. 
+          Our team performed a comprehensive 7-day restoration. We started with intense pressure washing, 
+          stucco patching, and rigorous masking. We applied a premium primer and finished with two coats 
+          of bright white and custom naval black trim using Sherwin-Williams Emerald. The result is a stunning, 
+          pristine modern transformation with razor-sharp paint lines that elevated the home's value instantly.
+        </p>
       </div>
     </section>
   );
