@@ -127,16 +127,34 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="bg-[#1F1C19] border-t border-[#2A2622]">
-        <div className="mx-auto max-w-[1200px] px-6 md:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-text-on-dark/40">
-          <div className="flex items-center gap-4">
+        <div className="mx-auto max-w-[1200px] px-6 md:px-10 py-5 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-text-on-dark/40">
+          
+          <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
             <p>&copy; {new Date().getFullYear()} Red Stag Painting. All rights reserved.</p>
             <span className="hidden sm:inline">|</span>
             <p>Licensed & Insured</p>
           </div>
-          <div className="flex gap-6">
+
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
+            <Link href="/sitemap.xml" className="hover:text-white transition-colors duration-300">Sitemap</Link>
+            <Link href="/llms.txt" className="hover:text-white transition-colors duration-300" title="Information for AI Agents">LLMs Info</Link>
             <Link href="/privacy" className="hover:text-white transition-colors duration-300">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors duration-300">Terms of Service</Link>
           </div>
+
+          <div className="flex items-center gap-2">
+            <span>Website &amp; Digital Marketing by</span>
+            <a href="https://vaultio.agency" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity">
+              <Image 
+                src="/images/vaultio-logo.png" 
+                alt="Vaultio Digital Marketing Agency" 
+                width={80} 
+                height={20} 
+                className="h-5 w-auto object-contain"
+              />
+            </a>
+          </div>
+
         </div>
       </div>
     </footer>
