@@ -16,10 +16,22 @@ import FAQ from '@/components/sections/FAQ';
 import ContactForm from '@/components/sections/ContactForm';
 import TrustedPlatforms from '@/components/sections/TrustedPlatforms';
 import DesktopQuoteDrawer from '@/components/sections/DesktopQuoteDrawer';
+import { generateLocalBusinessSchema, generateFAQSchema } from '@/lib/schema';
 
 export default function HomePage() {
+  const businessSchema = generateLocalBusinessSchema();
+  const faqSchema = generateFAQSchema();
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Hero />
       <DesktopQuoteDrawer />
       <BookingBanner />

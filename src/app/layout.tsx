@@ -7,7 +7,6 @@ import StickyMobileBar from '@/components/layout/StickyMobileBar';
 import Footer from '@/components/layout/Footer';
 import ScrollProgress from '@/components/ui/ScrollProgress';
 import BackToTop from '@/components/ui/BackToTop';
-import { generateLocalBusinessSchema, generateFAQSchema } from '@/lib/schema';
 import { GA_MEASUREMENT_ID, GTM_ID, SITE_URL } from '@/lib/constants';
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -46,20 +45,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const businessSchema = generateLocalBusinessSchema();
-  const faqSchema = generateFAQSchema();
-
   return (
     <html lang="en" className={`${plusJakarta.variable} ${dmSans.variable}`}>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
         {GTM_ID ? (
           <Script
             id="gtm-base"
