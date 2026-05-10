@@ -17,7 +17,7 @@ const data: CityPageData = {
   "canonical": "/areas/mar-vista",
   "ogTitle": "Mar Vista House Painters | Red Stag Painting",
   "ogDescription": "Painting services in Mar Vista, CA with local pricing, cleaner prep, and neighborhood-specific job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_cabinet.png",
   "heroImageAlt": "Mar Vista residential painting project in Los Angeles County",
   "heroSubtitle": "Durable painting for westside ranch homes, bungalows, and small-lot rebuilds.",
   "introAnswer": "House painting in Mar Vista usually runs about the same as standard Los Angeles pricing. Interior work starts around $400 per room, and exterior repaint ranges move with access, prep, and finish expectations in this market.",

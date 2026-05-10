@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/wallpaper-removal/burbank",
   "ogTitle": "Wallpaper Removal in Burbank | Red Stag Painting",
   "ogDescription": "Wallpaper Removal in Burbank with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Wallpaper Removal project in Burbank",
   "heroSubtitle": "Wallpaper removal in Burbank usually means peeling old feature walls back to a clean paint-ready surface without damaging the drywall underneath. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Wallpaper Removal in Burbank usually starts around $380 to $855 for a basic 1 room scope. Larger projects land closer to $2,375 to $6,175+, depending on prep, access, and how much of the surface package we are touching in one visit.",

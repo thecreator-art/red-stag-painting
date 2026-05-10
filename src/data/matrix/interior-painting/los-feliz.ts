@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/interior-painting/los-feliz",
   "ogTitle": "Interior Painting in Los Feliz | Red Stag Painting",
   "ogDescription": "Interior Painting in Los Feliz with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Interior Painting project in Los Feliz",
   "heroSubtitle": "In Los Feliz, interior repaint work usually starts with old plaster, patch history, and trim details that need better prep than a basic tract home. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Interior Painting in Los Feliz usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

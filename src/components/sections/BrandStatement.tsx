@@ -30,7 +30,7 @@ export default function BrandStatement() {
     <section className="relative py-24 md:py-36 overflow-hidden">
       {/* Background image */}
       <Image
-        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=80"
+        src="/images/bg_brand.png"
         alt="Bright freshly painted living room interior"
         fill
         sizes="100vw"

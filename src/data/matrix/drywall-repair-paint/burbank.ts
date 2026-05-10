@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/drywall-repair-paint/burbank",
   "ogTitle": "Drywall Repair & Paint in Burbank | Red Stag Painting",
   "ogDescription": "Drywall Repair & Paint in Burbank with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Drywall Repair & Paint project in Burbank",
   "heroSubtitle": "Drywall repair and paint in Burbank usually comes from family wear, settlement cracks, HVAC cuts, and move-out damage that needs to disappear under fresh paint. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Drywall Repair & Paint in Burbank usually starts around $380 to $855 for a basic 1 room scope. Larger projects land closer to $2,375 to $6,175+, depending on prep, access, and how much of the surface package we are touching in one visit.",

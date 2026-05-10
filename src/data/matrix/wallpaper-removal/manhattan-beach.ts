@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/wallpaper-removal/manhattan-beach",
   "ogTitle": "Wallpaper Removal in Manhattan Beach | Red Stag Painting",
   "ogDescription": "Wallpaper Removal in Manhattan Beach with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Wallpaper Removal project in Manhattan Beach",
   "heroSubtitle": "Wallpaper removal in Manhattan Beach often happens in beach-adjacent interiors where owners want cleaner walls and less visual weight. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Wallpaper Removal in Manhattan Beach usually starts around $460 to $1,035 for a basic 1 room scope. Larger projects land closer to $2,875 to $7,475+, depending on prep, access, and how much of the surface package we are touching in one visit.",

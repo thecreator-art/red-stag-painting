@@ -38,7 +38,7 @@ export default function ContactForm() {
     <section id="contact" className="relative py-20 md:py-28 overflow-hidden">
       {/* Background image */}
       <Image
-        src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1800&q=80"
+        src="/images/bg_contact.png"
         alt="Painted home exterior"
         fill
         sizes="100vw"

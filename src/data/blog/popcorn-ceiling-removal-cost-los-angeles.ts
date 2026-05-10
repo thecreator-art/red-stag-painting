@@ -20,7 +20,7 @@ const data: BlogPostData = {
   "lastUpdatedDate": "2026-04-04",
   "category": "Cost Guide",
   "readTime": 8,
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Popcorn Ceiling Removal project in Los Angeles",
   "introAnswer": "For Los Angeles homeowners, popcorn ceiling removal cost and planning come down to scope, prep, and timing. Most jobs start near $600 to $1,400 and move up fast when the surfaces, access, or finish standard get more demanding.",
   "sections": [

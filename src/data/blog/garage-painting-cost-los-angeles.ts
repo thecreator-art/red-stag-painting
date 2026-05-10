@@ -20,7 +20,7 @@ const data: BlogPostData = {
   "lastUpdatedDate": "2026-04-04",
   "category": "Cost Guide",
   "readTime": 8,
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Garage Painting project in Los Angeles",
   "introAnswer": "For Los Angeles homeowners, garage painting cost and planning come down to scope, prep, and timing. Most jobs start near $800 to $2,000 and move up fast when the surfaces, access, or finish standard get more demanding.",
   "sections": [

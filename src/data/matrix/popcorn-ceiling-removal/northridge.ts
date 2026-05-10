@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/popcorn-ceiling-removal/northridge",
   "ogTitle": "Popcorn Ceiling Removal in Northridge | Red Stag Painting",
   "ogDescription": "Popcorn Ceiling Removal in Northridge with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Popcorn Ceiling Removal project in Northridge",
   "heroSubtitle": "Popcorn ceiling removal in Northridge is common in 1970s and 1980s Valley housing, where the old texture makes otherwise solid homes look dated. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Popcorn Ceiling Removal in Northridge usually starts around $570 to $1,330 for a basic 1-2 rooms scope. Larger projects land closer to $1,900 to $4,275+, depending on prep, access, and how much of the surface package we are touching in one visit.",

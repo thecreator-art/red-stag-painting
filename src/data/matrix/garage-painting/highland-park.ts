@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/garage-painting/highland-park",
   "ogTitle": "Garage Painting in Highland Park | Red Stag Painting",
   "ogDescription": "Garage Painting in Highland Park with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Garage Painting project in Highland Park",
   "heroSubtitle": "Garage painting in Highland Park often means detached structures, older slabs, and wall surfaces that need more prep than a new build would. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Garage Painting in Highland Park usually starts around $800 to $2,000 for a basic floor coating only scope. Larger projects land closer to $2,000 to $4,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

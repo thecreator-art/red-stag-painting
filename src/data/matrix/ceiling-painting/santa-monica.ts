@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/ceiling-painting/santa-monica",
   "ogTitle": "Ceiling Painting in Santa Monica | Red Stag Painting",
   "ogDescription": "Ceiling Painting in Santa Monica with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Ceiling Painting project in Santa Monica",
   "heroSubtitle": "Ceiling painting in Santa Monica often aims to brighten rooms with big daylight and hide old stains or cut lines that show up in coastal light. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Ceiling Painting in Santa Monica usually starts around $200 to $600 for a basic 1-2 rooms scope. Larger projects land closer to $1,000 to $2,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

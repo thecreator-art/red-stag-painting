@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/exterior-painting/studio-city",
   "ogTitle": "Exterior Painting in Studio City | Red Stag Painting",
   "ogDescription": "Exterior Painting in Studio City with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Exterior Painting project in Studio City",
   "heroSubtitle": "Exterior painting in Studio City is driven by heat, UV, and dry caulk joints. Most of the real work is fixing what the sun has already beaten up. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Exterior Painting in Studio City usually starts around $2,500 to $5,000 for a basic under 1500 sqft scope. Larger projects land closer to $10,000 to $18,000+, depending on prep, access, and how much of the surface package we are touching in one visit.",

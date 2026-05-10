@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/ceiling-painting/culver-city",
   "ogTitle": "Ceiling Painting in Culver City | Red Stag Painting",
   "ogDescription": "Ceiling Painting in Culver City with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Ceiling Painting project in Culver City",
   "heroSubtitle": "Ceiling painting in Culver City often happens in smaller rooms where a bright, flat ceiling makes the whole interior feel cleaner instantly. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Ceiling Painting in Culver City usually starts around $200 to $600 for a basic 1-2 rooms scope. Larger projects land closer to $1,000 to $2,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

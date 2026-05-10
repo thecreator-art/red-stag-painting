@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/wallpaper-removal/hidden-hills",
   "ogTitle": "Wallpaper Removal in Hidden Hills | Red Stag Painting",
   "ogDescription": "Wallpaper Removal in Hidden Hills with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Wallpaper Removal project in Hidden Hills",
   "heroSubtitle": "Wallpaper removal in Hidden Hills is usually tied to powder rooms, dining rooms, and designer spaces where the old finish no longer fits the house. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Wallpaper Removal in Hidden Hills usually starts around $500 to $1,125 for a basic 1 room scope. Larger projects land closer to $3,125 to $8,125+, depending on prep, access, and how much of the surface package we are touching in one visit.",

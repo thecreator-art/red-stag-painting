@@ -17,7 +17,7 @@ const data: CityPageData = {
   "canonical": "/areas/hidden-hills",
   "ogTitle": "Hidden Hills House Painters | Red Stag Painting",
   "ogDescription": "Painting services in Hidden Hills, CA with local pricing, cleaner prep, and neighborhood-specific job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_detail.png",
   "heroImageAlt": "Hidden Hills residential painting project in Los Angeles County",
   "heroSubtitle": "Quiet, orderly painting for guard-gated homes, barns, guest houses, and long stucco runs.",
   "introAnswer": "House painting in Hidden Hills usually runs about 25% above standard Los Angeles pricing. Interior work starts around $500 per room, and exterior repaint ranges move with access, prep, and finish expectations in this market.",

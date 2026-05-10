@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/color-change-repaint/manhattan-beach",
   "ogTitle": "Color Change Repaint in Manhattan Beach | Red Stag Painting",
   "ogDescription": "Color Change Repaint in Manhattan Beach with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Color Change Repaint project in Manhattan Beach",
   "heroSubtitle": "Color change repaints in Manhattan Beach often aim to soften glare, warm up cool light, and pull older beach-house finishes into a cleaner palette. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Color Change Repaint in Manhattan Beach usually starts around $460 to $1,035 for a basic 1 room scope. Larger projects land closer to $2,875 to $7,475+, depending on prep, access, and how much of the surface package we are touching in one visit.",

@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/color-change-repaint/pasadena",
   "ogTitle": "Color Change Repaint in Pasadena | Red Stag Painting",
   "ogDescription": "Color Change Repaint in Pasadena with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Color Change Repaint project in Pasadena",
   "heroSubtitle": "Color change repaints in Pasadena often mean balancing updated color with original trim, plaster texture, and period details. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Color Change Repaint in Pasadena usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

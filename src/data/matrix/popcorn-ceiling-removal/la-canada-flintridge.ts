@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/popcorn-ceiling-removal/la-canada-flintridge",
   "ogTitle": "Popcorn Ceiling Removal in La Canada Flintridge | Red Stag Painting",
   "ogDescription": "Popcorn Ceiling Removal in La Canada Flintridge with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Popcorn Ceiling Removal project in La Canada Flintridge",
   "heroSubtitle": "Popcorn ceiling removal in La Canada Flintridge usually comes with repair work because older homes have more ceiling patches and movement than owners expect. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Popcorn Ceiling Removal in La Canada Flintridge usually starts around $600 to $1,400 for a basic 1-2 rooms scope. Larger projects land closer to $2,000 to $4,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/interior-painting/manhattan-beach",
   "ogTitle": "Interior Painting in Manhattan Beach | Red Stag Painting",
   "ogDescription": "Interior Painting in Manhattan Beach with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Interior Painting project in Manhattan Beach",
   "heroSubtitle": "In Manhattan Beach, interior repaint work is often about freshening sun-bleached walls, calming glare, and choosing finishes that handle salt air and open-window living. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Interior Painting in Manhattan Beach usually starts around $460 to $1,035 for a basic 1 room scope. Larger projects land closer to $2,875 to $7,475+, depending on prep, access, and how much of the surface package we are touching in one visit.",

@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/exterior-painting/manhattan-beach",
   "ogTitle": "Exterior Painting in Manhattan Beach | Red Stag Painting",
   "ogDescription": "Exterior Painting in Manhattan Beach with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Exterior Painting project in Manhattan Beach",
   "heroSubtitle": "Exterior painting in Manhattan Beach is all about weather. Salt air, marine moisture, and bright UV punish weak prep fast, so the coating system matters. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Exterior Painting in Manhattan Beach usually starts around $2,875 to $5,750 for a basic under 1500 sqft scope. Larger projects land closer to $11,500 to $20,700+, depending on prep, access, and how much of the surface package we are touching in one visit.",

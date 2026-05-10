@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/color-change-repaint/bel-air",
   "ogTitle": "Color Change Repaint in Bel Air | Red Stag Painting",
   "ogDescription": "Color Change Repaint in Bel Air with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Color Change Repaint project in Bel Air",
   "heroSubtitle": "Color change repaints in Bel Air usually happen when a house is being reset after purchase or staged to feel lighter, calmer, and more current. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Color Change Repaint in Bel Air usually starts around $500 to $1,125 for a basic 1 room scope. Larger projects land closer to $3,125 to $8,125+, depending on prep, access, and how much of the surface package we are touching in one visit.",

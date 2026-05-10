@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/interior-painting/northridge",
   "ogTitle": "Interior Painting in Northridge | Red Stag Painting",
   "ogDescription": "Interior Painting in Northridge with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Interior Painting project in Northridge",
   "heroSubtitle": "In Northridge, interior repaint work is often a clean reset for family-heavy rooms, warm hallways, and ceilings that have baked under Valley heat for years. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Interior Painting in Northridge usually starts around $380 to $855 for a basic 1 room scope. Larger projects land closer to $2,375 to $6,175+, depending on prep, access, and how much of the surface package we are touching in one visit.",

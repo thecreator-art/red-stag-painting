@@ -17,7 +17,7 @@ const data: CityPageData = {
   "canonical": "/areas/pasadena",
   "ogTitle": "Pasadena House Painters | Red Stag Painting",
   "ogDescription": "Painting services in Pasadena, CA with local pricing, cleaner prep, and neighborhood-specific job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Pasadena residential painting project in Los Angeles County",
   "heroSubtitle": "Careful painting for Craftsman homes, old plaster, and Pasadena’s mixed historic housing stock.",
   "introAnswer": "House painting in Pasadena usually runs about the same as standard Los Angeles pricing. Interior work starts around $400 per room, and exterior repaint ranges move with access, prep, and finish expectations in this market.",

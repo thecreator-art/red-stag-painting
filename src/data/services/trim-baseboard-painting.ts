@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/trim-baseboard-painting",
   "ogTitle": "Trim & Baseboard Painting Los Angeles | Red Stag Painting",
   "ogDescription": "Trim & Baseboard Painting across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_detail.png",
   "heroImageAlt": "Cleanly painted white baseboards and door trim in a Los Angeles home",
   "heroSubtitle": "Baseboards, casings, doors, and trim look sharp only when the prep is careful and the sheen is laid down without runs.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_detail.png",
       "alt": "Scuffed baseboards and trim before repaint",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_detail.png",
       "alt": "Freshly painted baseboards and trim after finish work",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_detail.png",
       "alt": "Fresh trim paint around doors and windows",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_detail.png",
       "alt": "Painter detailing trim inside Los Angeles home",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_detail.png",
       "alt": "Finished millwork and baseboards in warm neutral room",
       "width": 1600,
       "height": 900

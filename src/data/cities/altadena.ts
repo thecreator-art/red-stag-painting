@@ -17,7 +17,7 @@ const data: CityPageData = {
   "canonical": "/areas/altadena",
   "ogTitle": "Altadena House Painters | Red Stag Painting",
   "ogDescription": "Painting services in Altadena, CA with local pricing, cleaner prep, and neighborhood-specific job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Altadena residential painting project in Los Angeles County",
   "heroSubtitle": "Repair-heavy painting for Craftsman homes, foothill ranches, and older Altadena properties.",
   "introAnswer": "House painting in Altadena usually runs about the same as standard Los Angeles pricing. Interior work starts around $400 per room, and exterior repaint ranges move with access, prep, and finish expectations in this market.",

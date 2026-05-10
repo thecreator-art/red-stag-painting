@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/garage-painting/altadena",
   "ogTitle": "Garage Painting in Altadena | Red Stag Painting",
   "ogDescription": "Garage Painting in Altadena with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Garage Painting project in Altadena",
   "heroSubtitle": "Garage painting in Altadena usually includes more slab prep and more dust control because foothill conditions travel right into the garage. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Garage Painting in Altadena usually starts around $800 to $2,000 for a basic floor coating only scope. Larger projects land closer to $2,000 to $4,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

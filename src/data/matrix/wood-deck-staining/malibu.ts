@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/wood-deck-staining/malibu",
   "ogTitle": "Wood & Deck Staining in Malibu | Red Stag Painting",
   "ogDescription": "Wood & Deck Staining in Malibu with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Wood & Deck Staining project in Malibu",
   "heroSubtitle": "Wood and deck staining in Malibu is about fighting sun, salt, and moisture before the boards gray out or start checking badly. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Wood & Deck Staining in Malibu usually starts around $1,000 to $3,125 for a basic fence staining scope. Larger projects land closer to $3,750 to $8,125+, depending on prep, access, and how much of the surface package we are touching in one visit.",

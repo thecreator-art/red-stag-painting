@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/ceiling-painting/hidden-hills",
   "ogTitle": "Ceiling Painting in Hidden Hills | Red Stag Painting",
   "ogDescription": "Ceiling Painting in Hidden Hills with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Ceiling Painting project in Hidden Hills",
   "heroSubtitle": "Ceiling painting in Hidden Hills usually means higher ceilings, more side light, and bigger rooms where uneven rolling stands out immediately. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Ceiling Painting in Hidden Hills usually starts around $250 to $750 for a basic 1-2 rooms scope. Larger projects land closer to $1,250 to $3,125+, depending on prep, access, and how much of the surface package we are touching in one visit.",

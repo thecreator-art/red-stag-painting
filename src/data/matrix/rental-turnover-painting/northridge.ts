@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/rental-turnover-painting/northridge",
   "ogTitle": "Rental Turnover Painting in Northridge | Red Stag Painting",
   "ogDescription": "Rental Turnover Painting in Northridge with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Rental Turnover Painting project in Northridge",
   "heroSubtitle": "Rental turnover painting in Northridge is usually straightforward make-ready work where speed, patch quality, and durable finishes all matter. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Rental Turnover Painting in Northridge usually starts around $380 to $855 for a basic 1 room scope. Larger projects land closer to $2,375 to $6,175+, depending on prep, access, and how much of the surface package we are touching in one visit.",

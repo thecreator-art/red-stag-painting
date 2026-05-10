@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/popcorn-ceiling-removal/malibu",
   "ogTitle": "Popcorn Ceiling Removal in Malibu | Red Stag Painting",
   "ogDescription": "Popcorn Ceiling Removal in Malibu with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Popcorn Ceiling Removal project in Malibu",
   "heroSubtitle": "Popcorn ceiling removal in Malibu often means taking older beach-house ceilings smooth so the space feels brighter and cleaner in natural light. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Popcorn Ceiling Removal in Malibu usually starts around $750 to $1,750 for a basic 1-2 rooms scope. Larger projects land closer to $2,500 to $5,625+, depending on prep, access, and how much of the surface package we are touching in one visit.",

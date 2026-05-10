@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/wallpaper-removal/la-canada-flintridge",
   "ogTitle": "Wallpaper Removal in La Canada Flintridge | Red Stag Painting",
   "ogDescription": "Wallpaper Removal in La Canada Flintridge with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Wallpaper Removal project in La Canada Flintridge",
   "heroSubtitle": "Wallpaper removal in La Canada Flintridge often leads straight into skim coating and repainting because the older wall surface needs more repair afterward. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Wallpaper Removal in La Canada Flintridge usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

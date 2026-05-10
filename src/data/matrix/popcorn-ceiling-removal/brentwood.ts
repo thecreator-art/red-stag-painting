@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/popcorn-ceiling-removal/brentwood",
   "ogTitle": "Popcorn Ceiling Removal in Brentwood | Red Stag Painting",
   "ogDescription": "Popcorn Ceiling Removal in Brentwood with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Popcorn Ceiling Removal project in Brentwood",
   "heroSubtitle": "Popcorn ceiling removal in Brentwood is usually part of a larger finish reset, where the goal is to make the whole room read sharper and more current. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Popcorn Ceiling Removal in Brentwood usually starts around $690 to $1,610 for a basic 1-2 rooms scope. Larger projects land closer to $2,300 to $5,175+, depending on prep, access, and how much of the surface package we are touching in one visit.",

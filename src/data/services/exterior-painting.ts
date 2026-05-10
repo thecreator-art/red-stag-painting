@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/exterior-painting",
   "ogTitle": "Exterior Painting Los Angeles | Red Stag Painting",
   "ogDescription": "Exterior Painting across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Freshly painted Los Angeles house exterior with crisp trim and smooth stucco walls",
   "heroSubtitle": "Stucco, siding, trim, fascia, eaves, and doors painted as one system so the job wears evenly under LA sun.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Faded stucco exterior before repaint",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Freshly painted white stucco exterior in Los Angeles",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Los Angeles exterior painter on stucco home",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Freshly painted two-story exterior with crisp trim",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Bright exterior repaint on Southern California home",
       "width": 1600,
       "height": 900

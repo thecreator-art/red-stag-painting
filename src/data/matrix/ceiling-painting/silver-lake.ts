@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/ceiling-painting/silver-lake",
   "ogTitle": "Ceiling Painting in Silver Lake | Red Stag Painting",
   "ogDescription": "Ceiling Painting in Silver Lake with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Ceiling Painting project in Silver Lake",
   "heroSubtitle": "Ceiling painting in Silver Lake often happens in smaller rooms where a bright, flat ceiling makes the whole interior feel cleaner instantly. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Ceiling Painting in Silver Lake usually starts around $200 to $600 for a basic 1-2 rooms scope. Larger projects land closer to $1,000 to $2,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/cabinet-painting/manhattan-beach",
   "ogTitle": "Cabinet Painting in Manhattan Beach | Red Stag Painting",
   "ogDescription": "Cabinet Painting in Manhattan Beach with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_cabinet.png",
   "heroImageAlt": "Cabinet Painting project in Manhattan Beach",
   "heroSubtitle": "Cabinet painting in Manhattan Beach often focuses on brightening beach-adjacent kitchens where sun, salt air, and open-window cooking wear the finish over time. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Cabinet Painting in Manhattan Beach usually starts around $2,875 to $5,175 for a basic small kitchen scope. Larger projects land closer to $7,475 to $11,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

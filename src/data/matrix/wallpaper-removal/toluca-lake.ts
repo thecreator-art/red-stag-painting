@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/wallpaper-removal/toluca-lake",
   "ogTitle": "Wallpaper Removal in Toluca Lake | Red Stag Painting",
   "ogDescription": "Wallpaper Removal in Toluca Lake with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Wallpaper Removal project in Toluca Lake",
   "heroSubtitle": "Wallpaper removal in Toluca Lake is usually tied to powder rooms, dining rooms, and designer spaces where the old finish no longer fits the house. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Wallpaper Removal in Toluca Lake usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

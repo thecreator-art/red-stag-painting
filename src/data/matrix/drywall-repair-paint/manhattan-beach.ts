@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/drywall-repair-paint/manhattan-beach",
   "ogTitle": "Drywall Repair & Paint in Manhattan Beach | Red Stag Painting",
   "ogDescription": "Drywall Repair & Paint in Manhattan Beach with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Drywall Repair & Paint project in Manhattan Beach",
   "heroSubtitle": "Drywall repair and paint in Manhattan Beach often means patching around old moisture marks and making the wall read flat again in strong coastal light. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Drywall Repair & Paint in Manhattan Beach usually starts around $460 to $1,035 for a basic 1 room scope. Larger projects land closer to $2,875 to $7,475+, depending on prep, access, and how much of the surface package we are touching in one visit.",

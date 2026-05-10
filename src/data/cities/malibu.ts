@@ -17,7 +17,7 @@ const data: CityPageData = {
   "canonical": "/areas/malibu",
   "ogTitle": "Malibu House Painters | Red Stag Painting",
   "ogDescription": "Painting services in Malibu, CA with local pricing, cleaner prep, and neighborhood-specific job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_detail.png",
   "heroImageAlt": "Malibu residential painting project in Los Angeles County",
   "heroSubtitle": "Beachfront and canyon painting built for salt air, sun, and fast weather swings.",
   "introAnswer": "House painting in Malibu usually runs about 25% above standard Los Angeles pricing. Interior work starts around $500 per room, and exterior repaint ranges move with access, prep, and finish expectations in this market.",

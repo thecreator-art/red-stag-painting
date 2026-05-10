@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/interior-painting/calabasas",
   "ogTitle": "Interior Painting in Calabasas | Red Stag Painting",
   "ogDescription": "Interior Painting in Calabasas with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Interior Painting project in Calabasas",
   "heroSubtitle": "In Calabasas, interior repaint work usually means larger rooms, taller walls, and finish standards that have to hold up under big windows and expensive trim details. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Interior Painting in Calabasas usually starts around $460 to $1,035 for a basic 1 room scope. Larger projects land closer to $2,875 to $7,475+, depending on prep, access, and how much of the surface package we are touching in one visit.",

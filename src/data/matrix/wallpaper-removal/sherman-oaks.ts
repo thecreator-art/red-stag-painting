@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/wallpaper-removal/sherman-oaks",
   "ogTitle": "Wallpaper Removal in Sherman Oaks | Red Stag Painting",
   "ogDescription": "Wallpaper Removal in Sherman Oaks with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Wallpaper Removal project in Sherman Oaks",
   "heroSubtitle": "Wallpaper removal in Sherman Oaks usually means peeling old feature walls back to a clean paint-ready surface without damaging the drywall underneath. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Wallpaper Removal in Sherman Oaks usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/stucco-painting/hidden-hills",
   "ogTitle": "Stucco Painting in Hidden Hills | Red Stag Painting",
   "ogDescription": "Stucco Painting in Hidden Hills with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Stucco Painting project in Hidden Hills",
   "heroSubtitle": "Stucco painting in Hidden Hills usually means long wall runs, formal elevations, and patch blending that has to hold up under close inspection. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Stucco Painting in Hidden Hills usually starts around $5,000 to $8,750 for a basic small home scope. Larger projects land closer to $11,250 to $18,750+, depending on prep, access, and how much of the surface package we are touching in one visit.",

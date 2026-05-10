@@ -17,7 +17,7 @@ const data: CityPageData = {
   "canonical": "/areas/culver-city",
   "ogTitle": "Culver City House Painters | Red Stag Painting",
   "ogDescription": "Painting services in Culver City, CA with local pricing, cleaner prep, and neighborhood-specific job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_detail.png",
   "heroImageAlt": "Culver City residential painting project in Los Angeles County",
   "heroSubtitle": "Fast, clean painting for bungalows, condos, and family homes across Culver City.",
   "introAnswer": "House painting in Culver City usually runs about the same as standard Los Angeles pricing. Interior work starts around $400 per room, and exterior repaint ranges move with access, prep, and finish expectations in this market.",

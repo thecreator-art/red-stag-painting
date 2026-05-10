@@ -20,7 +20,7 @@ const data: BlogPostData = {
   "lastUpdatedDate": "2026-04-04",
   "category": "How-To",
   "readTime": 8,
-  "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Drywall Repair & Paint project in Los Angeles",
   "introAnswer": "For Los Angeles homeowners, drywall repair & paint cost and planning come down to scope, prep, and timing. Most jobs start near $400 to $900 and move up fast when the surfaces, access, or finish standard get more demanding.",
   "sections": [

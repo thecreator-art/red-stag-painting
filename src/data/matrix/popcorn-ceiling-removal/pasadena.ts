@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/popcorn-ceiling-removal/pasadena",
   "ogTitle": "Popcorn Ceiling Removal in Pasadena | Red Stag Painting",
   "ogDescription": "Popcorn Ceiling Removal in Pasadena with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Popcorn Ceiling Removal project in Pasadena",
   "heroSubtitle": "Popcorn ceiling removal in Pasadena is often less about trend and more about cleaning up later-applied texture that hides the room’s original character. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Popcorn Ceiling Removal in Pasadena usually starts around $600 to $1,400 for a basic 1-2 rooms scope. Larger projects land closer to $2,000 to $4,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

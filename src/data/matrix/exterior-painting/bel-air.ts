@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/exterior-painting/bel-air",
   "ogTitle": "Exterior Painting in Bel Air | Red Stag Painting",
   "ogDescription": "Exterior Painting in Bel Air with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Exterior Painting project in Bel Air",
   "heroSubtitle": "Exterior painting in Bel Air usually means long elevations, guest structures, gates, and trim packages that need a cleaner finish than a volume repaint crew can deliver. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Exterior Painting in Bel Air usually starts around $3,125 to $6,250 for a basic under 1500 sqft scope. Larger projects land closer to $12,500 to $22,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

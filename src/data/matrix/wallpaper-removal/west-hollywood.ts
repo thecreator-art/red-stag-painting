@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/wallpaper-removal/west-hollywood",
   "ogTitle": "Wallpaper Removal in West Hollywood | Red Stag Painting",
   "ogDescription": "Wallpaper Removal in West Hollywood with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Wallpaper Removal project in West Hollywood",
   "heroSubtitle": "Wallpaper removal in West Hollywood often focuses on one or two rooms where style has changed faster than the wall finish. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Wallpaper Removal in West Hollywood usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

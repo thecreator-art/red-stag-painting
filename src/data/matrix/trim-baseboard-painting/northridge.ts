@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/trim-baseboard-painting/northridge",
   "ogTitle": "Trim & Baseboard Painting in Northridge | Red Stag Painting",
   "ogDescription": "Trim & Baseboard Painting in Northridge with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_detail.png",
   "heroImageAlt": "Trim & Baseboard Painting project in Northridge",
   "heroSubtitle": "Trim and baseboard painting in Northridge is often the fastest way to clean up tired family interiors without repainting every wall. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Trim & Baseboard Painting in Northridge usually starts around $380 to $855 for a basic 1 room scope. Larger projects land closer to $2,375 to $6,175+, depending on prep, access, and how much of the surface package we are touching in one visit.",

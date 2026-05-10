@@ -17,7 +17,7 @@ const data: CityPageData = {
   "canonical": "/areas/sherman-oaks",
   "ogTitle": "Sherman Oaks House Painters | Red Stag Painting",
   "ogDescription": "Painting services in Sherman Oaks, CA with local pricing, cleaner prep, and neighborhood-specific job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_detail.png",
   "heroImageAlt": "Sherman Oaks residential painting project in Los Angeles County",
   "heroSubtitle": "Painting built for busy family homes, Valley heat, and quick scheduling.",
   "introAnswer": "House painting in Sherman Oaks usually runs about the same as standard Los Angeles pricing. Interior work starts around $400 per room, and exterior repaint ranges move with access, prep, and finish expectations in this market.",

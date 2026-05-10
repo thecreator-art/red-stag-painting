@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/trim-baseboard-painting/malibu",
   "ogTitle": "Trim & Baseboard Painting in Malibu | Red Stag Painting",
   "ogDescription": "Trim & Baseboard Painting in Malibu with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_detail.png",
   "heroImageAlt": "Trim & Baseboard Painting project in Malibu",
   "heroSubtitle": "Trim and baseboard painting in Malibu often focuses on brightening interiors where natural light makes every roller mark and dirty caulk line obvious. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Trim & Baseboard Painting in Malibu usually starts around $500 to $1,125 for a basic 1 room scope. Larger projects land closer to $3,125 to $8,125+, depending on prep, access, and how much of the surface package we are touching in one visit.",

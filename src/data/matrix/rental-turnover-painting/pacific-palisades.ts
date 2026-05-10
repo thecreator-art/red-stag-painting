@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/rental-turnover-painting/pacific-palisades",
   "ogTitle": "Rental Turnover Painting in Pacific Palisades | Red Stag Painting",
   "ogDescription": "Rental Turnover Painting in Pacific Palisades with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Rental Turnover Painting project in Pacific Palisades",
   "heroSubtitle": "Rental turnover painting in Pacific Palisades is usually about high expectations and tight vacancy windows, especially in premium condos or lease listings. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Rental Turnover Painting in Pacific Palisades usually starts around $500 to $1,125 for a basic 1 room scope. Larger projects land closer to $3,125 to $8,125+, depending on prep, access, and how much of the surface package we are touching in one visit.",

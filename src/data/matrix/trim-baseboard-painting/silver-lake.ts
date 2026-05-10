@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/trim-baseboard-painting/silver-lake",
   "ogTitle": "Trim & Baseboard Painting in Silver Lake | Red Stag Painting",
   "ogDescription": "Trim & Baseboard Painting in Silver Lake with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_detail.png",
   "heroImageAlt": "Trim & Baseboard Painting project in Silver Lake",
   "heroSubtitle": "Trim and baseboard painting in Silver Lake often happens in condos and compact homes where crisp edges instantly sharpen the whole room. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Trim & Baseboard Painting in Silver Lake usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

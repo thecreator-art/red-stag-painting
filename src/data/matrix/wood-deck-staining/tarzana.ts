@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/wood-deck-staining/tarzana",
   "ogTitle": "Wood & Deck Staining in Tarzana | Red Stag Painting",
   "ogDescription": "Wood & Deck Staining in Tarzana with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Wood & Deck Staining project in Tarzana",
   "heroSubtitle": "Wood and deck staining in Tarzana often means reviving dry, sun-beaten fences, pergolas, and backyard decks that have taken years of heat. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Wood & Deck Staining in Tarzana usually starts around $800 to $2,500 for a basic fence staining scope. Larger projects land closer to $3,000 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

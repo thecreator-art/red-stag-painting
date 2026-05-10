@@ -20,7 +20,7 @@ const data: BlogPostData = {
   "lastUpdatedDate": "2026-04-04",
   "category": "Comparison",
   "readTime": 8,
-  "heroImage": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Stucco Painting project in Los Angeles",
   "introAnswer": "For Los Angeles homeowners, stucco painting cost and planning come down to scope, prep, and timing. Most jobs start near $4,000 to $7,000 and move up fast when the surfaces, access, or finish standard get more demanding.",
   "sections": [

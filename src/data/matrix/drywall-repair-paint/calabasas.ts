@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/drywall-repair-paint/calabasas",
   "ogTitle": "Drywall Repair & Paint in Calabasas | Red Stag Painting",
   "ogDescription": "Drywall Repair & Paint in Calabasas with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Drywall Repair & Paint project in Calabasas",
   "heroSubtitle": "Drywall repair and paint in Calabasas is less about giant holes and more about making premium rooms look untouched after cracks, leaks, or remodel punch work. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Drywall Repair & Paint in Calabasas usually starts around $460 to $1,035 for a basic 1 room scope. Larger projects land closer to $2,875 to $7,475+, depending on prep, access, and how much of the surface package we are touching in one visit.",

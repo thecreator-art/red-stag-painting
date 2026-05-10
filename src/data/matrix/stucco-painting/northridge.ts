@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/stucco-painting/northridge",
   "ogTitle": "Stucco Painting in Northridge | Red Stag Painting",
   "ogDescription": "Stucco Painting in Northridge with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Stucco Painting project in Northridge",
   "heroSubtitle": "Stucco painting in Northridge is mostly about sun damage, chalking, and dry cracking on big south- and west-facing wall planes. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Stucco Painting in Northridge usually starts around $3,800 to $6,650 for a basic small home scope. Larger projects land closer to $8,550 to $14,250+, depending on prep, access, and how much of the surface package we are touching in one visit.",

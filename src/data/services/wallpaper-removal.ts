@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/wallpaper-removal",
   "ogTitle": "Wallpaper Removal Los Angeles | Red Stag Painting",
   "ogDescription": "Wallpaper Removal across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Wallpaper stripped from an interior wall before skim coating and paint",
   "heroSubtitle": "We remove the paper, clean the adhesive, repair the wall, and repaint so the room does not stop halfway at demo.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_prep.png",
       "alt": "Wallpapered room before removal and repaint",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_prep.png",
       "alt": "Smooth painted wall after wallpaper removal",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_prep.png",
       "alt": "Wall surface being smoothed after wallpaper removal",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_prep.png",
       "alt": "Paint-ready wall after wallpaper removal work",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_prep.png",
       "alt": "Bright finished room after wallpaper removal and paint",
       "width": 1600,
       "height": 900

@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/color-change-repaint/la-canada-flintridge",
   "ogTitle": "Color Change Repaint in La Canada Flintridge | Red Stag Painting",
   "ogDescription": "Color Change Repaint in La Canada Flintridge with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Color Change Repaint project in La Canada Flintridge",
   "heroSubtitle": "Color change repaints in La Canada Flintridge often help older homes feel cleaner and brighter without a full renovation budget. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Color Change Repaint in La Canada Flintridge usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

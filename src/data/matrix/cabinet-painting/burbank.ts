@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/cabinet-painting/burbank",
   "ogTitle": "Cabinet Painting in Burbank | Red Stag Painting",
   "ogDescription": "Cabinet Painting in Burbank with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_cabinet.png",
   "heroImageAlt": "Cabinet Painting project in Burbank",
   "heroSubtitle": "Cabinet painting in Burbank is often the move for builder-grade oak or thermofoil kitchens that work fine but look tired. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Cabinet Painting in Burbank usually starts around $2,375 to $4,275 for a basic small kitchen scope. Larger projects land closer to $6,175 to $9,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

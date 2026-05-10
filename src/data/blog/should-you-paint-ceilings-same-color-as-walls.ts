@@ -20,7 +20,7 @@ const data: BlogPostData = {
   "lastUpdatedDate": "2026-04-04",
   "category": "How-To",
   "readTime": 8,
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Ceiling Painting project in Los Angeles",
   "introAnswer": "For Los Angeles homeowners, ceiling painting cost and planning come down to scope, prep, and timing. Most jobs start near $200 to $600 and move up fast when the surfaces, access, or finish standard get more demanding.",
   "sections": [

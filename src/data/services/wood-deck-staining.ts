@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/wood-deck-staining",
   "ogTitle": "Wood & Deck Staining Los Angeles | Red Stag Painting",
   "ogDescription": "Wood & Deck Staining across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Freshly stained wood deck and fence in a Southern California backyard",
   "heroSubtitle": "We wash, sand, dry, and stain decks and fences so the finish soaks in evenly instead of flashing or peeling early.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Weathered wood deck before staining",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Freshly stained backyard wood deck after refinishing",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Freshly stained wood deck in backyard",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Exterior wood railing and deck staining project",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Outdoor wood fence and deck stained warm brown",
       "width": 1600,
       "height": 900

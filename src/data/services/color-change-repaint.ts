@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/color-change-repaint",
   "ogTitle": "Color Change Repaint Los Angeles | Red Stag Painting",
   "ogDescription": "Color Change Repaint across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Los Angeles room repainted from a dark color to a soft warm neutral",
   "heroSubtitle": "When the old color is fighting the room, we reset it with the prep and coverage plan needed for a true color change.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Dark dated paint color before color change repaint",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Warm neutral interior after color change repaint",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Fresh neutral interior after major color change",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Painter rolling over old dark wall color",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Light bright room after repainting from darker tones",
       "width": 1600,
       "height": 900

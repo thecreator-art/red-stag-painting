@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/stucco-painting",
   "ogTitle": "Stucco Painting Los Angeles | Red Stag Painting",
   "ogDescription": "Stucco Painting across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Freshly painted stucco house exterior in Los Angeles",
   "heroSubtitle": "We repair cracks, deal with chalking, and coat stucco at the right build so the finish does not burn off on the sunny side first.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Cracked stucco exterior before painting",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Fresh stucco exterior coating after repaint",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Stucco exterior prep on Southern California home",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Freshly painted stucco home with clean lines",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Large stucco residence after exterior repaint",
       "width": 1600,
       "height": 900

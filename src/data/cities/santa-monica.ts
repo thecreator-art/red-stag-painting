@@ -17,7 +17,7 @@ const data: CityPageData = {
   "canonical": "/areas/santa-monica",
   "ogTitle": "Santa Monica House Painters | Red Stag Painting",
   "ogDescription": "Painting services in Santa Monica, CA with local pricing, cleaner prep, and neighborhood-specific job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Santa Monica residential painting project in Los Angeles County",
   "heroSubtitle": "Apartment, condo, and single-family painting tuned for coastal air and tight access.",
   "introAnswer": "House painting in Santa Monica usually runs about the same as standard Los Angeles pricing. Interior work starts around $400 per room, and exterior repaint ranges move with access, prep, and finish expectations in this market.",

@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/cabinet-painting/mar-vista",
   "ogTitle": "Cabinet Painting in Mar Vista | Red Stag Painting",
   "ogDescription": "Cabinet Painting in Mar Vista with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_cabinet.png",
   "heroImageAlt": "Cabinet Painting project in Mar Vista",
   "heroSubtitle": "Cabinet painting in Mar Vista often focuses on brightening beach-adjacent kitchens where sun, salt air, and open-window cooking wear the finish over time. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Cabinet Painting in Mar Vista usually starts around $2,500 to $4,500 for a basic small kitchen scope. Larger projects land closer to $6,500 to $10,000+, depending on prep, access, and how much of the surface package we are touching in one visit.",

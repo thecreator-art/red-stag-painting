@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/color-change-repaint/beverly-hills",
   "ogTitle": "Color Change Repaint in Beverly Hills | Red Stag Painting",
   "ogDescription": "Color Change Repaint in Beverly Hills with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Color Change Repaint project in Beverly Hills",
   "heroSubtitle": "Color change repaints in Beverly Hills usually happen when a house is being reset after purchase or staged to feel lighter, calmer, and more current. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Color Change Repaint in Beverly Hills usually starts around $500 to $1,125 for a basic 1 room scope. Larger projects land closer to $3,125 to $8,125+, depending on prep, access, and how much of the surface package we are touching in one visit.",

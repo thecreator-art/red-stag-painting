@@ -68,7 +68,7 @@ export default function ColorVisualizer() {
             {/* Base room image — white/light walled interior */}
             <div className="relative aspect-[16/9] md:aspect-[21/9]">
               <Image
-                src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1800&q=80"
+                src="/images/bg_color.png"
                 alt="Modern living room interior with white walls"
                 fill
                 sizes="(max-width: 768px) 100vw, 1200px"

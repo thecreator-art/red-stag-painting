@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/stucco-painting/altadena",
   "ogTitle": "Stucco Painting in Altadena | Red Stag Painting",
   "ogDescription": "Stucco Painting in Altadena with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Stucco Painting project in Altadena",
   "heroSubtitle": "Stucco painting in Altadena usually has to account for foothill dust, tree cover, and larger lots with more detached walls and structures. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Stucco Painting in Altadena usually starts around $4,000 to $7,000 for a basic small home scope. Larger projects land closer to $9,000 to $15,000+, depending on prep, access, and how much of the surface package we are touching in one visit.",

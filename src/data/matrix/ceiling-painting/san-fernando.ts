@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/ceiling-painting/san-fernando",
   "ogTitle": "Ceiling Painting in San Fernando | Red Stag Painting",
   "ogDescription": "Ceiling Painting in San Fernando with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Ceiling Painting project in San Fernando",
   "heroSubtitle": "Ceiling painting in San Fernando is often the quickest way to clean up rooms that feel dingy after years of heat, HVAC dust, and family wear. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Ceiling Painting in San Fernando usually starts around $190 to $570 for a basic 1-2 rooms scope. Larger projects land closer to $950 to $2,375+, depending on prep, access, and how much of the surface package we are touching in one visit.",

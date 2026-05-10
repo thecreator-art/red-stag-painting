@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/garage-painting/la-canada-flintridge",
   "ogTitle": "Garage Painting in La Canada Flintridge | Red Stag Painting",
   "ogDescription": "Garage Painting in La Canada Flintridge with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Garage Painting project in La Canada Flintridge",
   "heroSubtitle": "Garage painting in La Canada Flintridge usually includes more slab prep and more dust control because foothill conditions travel right into the garage. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Garage Painting in La Canada Flintridge usually starts around $800 to $2,000 for a basic floor coating only scope. Larger projects land closer to $2,000 to $4,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

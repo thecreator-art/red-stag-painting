@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/ceiling-painting/calabasas",
   "ogTitle": "Ceiling Painting in Calabasas | Red Stag Painting",
   "ogDescription": "Ceiling Painting in Calabasas with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Ceiling Painting project in Calabasas",
   "heroSubtitle": "Ceiling painting in Calabasas usually means higher ceilings, more side light, and bigger rooms where uneven rolling stands out immediately. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Ceiling Painting in Calabasas usually starts around $230 to $690 for a basic 1-2 rooms scope. Larger projects land closer to $1,150 to $2,875+, depending on prep, access, and how much of the surface package we are touching in one visit.",

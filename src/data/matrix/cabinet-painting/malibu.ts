@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/cabinet-painting/malibu",
   "ogTitle": "Cabinet Painting in Malibu | Red Stag Painting",
   "ogDescription": "Cabinet Painting in Malibu with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_cabinet.png",
   "heroImageAlt": "Cabinet Painting project in Malibu",
   "heroSubtitle": "Cabinet painting in Malibu often focuses on brightening beach-adjacent kitchens where sun, salt air, and open-window cooking wear the finish over time. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Cabinet Painting in Malibu usually starts around $3,125 to $5,625 for a basic small kitchen scope. Larger projects land closer to $8,125 to $12,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

@@ -17,7 +17,7 @@ const data: CityPageData = {
   "canonical": "/areas/toluca-lake",
   "ogTitle": "Toluca Lake House Painters | Red Stag Painting",
   "ogDescription": "Painting services in Toluca Lake, CA with local pricing, cleaner prep, and neighborhood-specific job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Toluca Lake residential painting project in Los Angeles County",
   "heroSubtitle": "Quiet, careful painting for estate lots, classic homes, and upscale condos.",
   "introAnswer": "House painting in Toluca Lake usually runs about the same as standard Los Angeles pricing. Interior work starts around $400 per room, and exterior repaint ranges move with access, prep, and finish expectations in this market.",

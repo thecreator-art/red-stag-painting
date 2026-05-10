@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/rental-turnover-painting/manhattan-beach",
   "ogTitle": "Rental Turnover Painting in Manhattan Beach | Red Stag Painting",
   "ogDescription": "Rental Turnover Painting in Manhattan Beach with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Rental Turnover Painting project in Manhattan Beach",
   "heroSubtitle": "Rental turnover painting in Manhattan Beach often focuses on cleaning up bright, sun-exposed interiors fast enough to get new listing photos out immediately. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Rental Turnover Painting in Manhattan Beach usually starts around $460 to $1,035 for a basic 1 room scope. Larger projects land closer to $2,875 to $7,475+, depending on prep, access, and how much of the surface package we are touching in one visit.",

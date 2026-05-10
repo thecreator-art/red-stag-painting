@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/drywall-repair-paint",
   "ogTitle": "Drywall Repair & Paint Los Angeles | Red Stag Painting",
   "ogDescription": "Drywall Repair & Paint across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Drywall repair patch sanded smooth before priming and painting",
   "heroSubtitle": "We do the patching and the painting in one scope so repaired walls do not flash or crater under the finish coat.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_prep.png",
       "alt": "Drywall damage and cracked wall before repair",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_prep.png",
       "alt": "Smooth repaired wall ready after paint",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_prep.png",
       "alt": "Drywall repair tools and patch work in progress",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_prep.png",
       "alt": "Painter sanding a drywall patch before primer",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_prep.png",
       "alt": "Finished repaired wall with fresh paint",
       "width": 1600,
       "height": 900

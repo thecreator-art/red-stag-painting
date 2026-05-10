@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/exterior-painting/san-fernando",
   "ogTitle": "Exterior Painting in San Fernando | Red Stag Painting",
   "ogDescription": "Exterior Painting in San Fernando with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Exterior Painting project in San Fernando",
   "heroSubtitle": "Exterior painting in San Fernando is driven by heat, UV, and dry caulk joints. Most of the real work is fixing what the sun has already beaten up. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Exterior Painting in San Fernando usually starts around $2,375 to $4,750 for a basic under 1500 sqft scope. Larger projects land closer to $9,500 to $17,100+, depending on prep, access, and how much of the surface package we are touching in one visit.",

@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/ceiling-painting",
   "ogTitle": "Ceiling Painting Los Angeles | Red Stag Painting",
   "ogDescription": "Ceiling Painting across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Freshly painted smooth white ceiling in a Los Angeles home",
   "heroSubtitle": "We reset ceilings that are dingy, stained, patched, or cut by old paint lines and leave them flat from corner to corner.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Stained ceiling before repaint",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Bright clean ceiling after repaint",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Ceiling painting setup in occupied room",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Bright flat white ceiling after repaint",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Fresh tray ceiling and walls in Los Angeles home",
       "width": 1600,
       "height": 900

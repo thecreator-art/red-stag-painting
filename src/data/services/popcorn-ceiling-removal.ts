@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/popcorn-ceiling-removal",
   "ogTitle": "Popcorn Ceiling Removal Los Angeles | Red Stag Painting",
   "ogDescription": "Popcorn Ceiling Removal across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Smooth ceiling after popcorn texture removal and fresh paint",
   "heroSubtitle": "Ceilings get tested, protected, scraped, skimmed, sanded, primed, and painted so the room looks new instead of half-finished.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Popcorn ceiling before removal in older Los Angeles home",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Smooth skim-coated ceiling after popcorn removal",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Painter protecting a room for popcorn ceiling removal",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Smooth white ceiling after texture removal",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Ceiling texture removal setup in living room",
       "width": 1600,
       "height": 900

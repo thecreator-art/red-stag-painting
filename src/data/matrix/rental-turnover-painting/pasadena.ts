@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/rental-turnover-painting/pasadena",
   "ogTitle": "Rental Turnover Painting in Pasadena | Red Stag Painting",
   "ogDescription": "Rental Turnover Painting in Pasadena with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Rental Turnover Painting project in Pasadena",
   "heroSubtitle": "Rental turnover painting in Pasadena often means balancing speed with the prep older walls and trim actually need. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Rental Turnover Painting in Pasadena usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

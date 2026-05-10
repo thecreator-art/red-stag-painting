@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/stucco-painting/manhattan-beach",
   "ogTitle": "Stucco Painting in Manhattan Beach | Red Stag Painting",
   "ogDescription": "Stucco Painting in Manhattan Beach with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Stucco Painting project in Manhattan Beach",
   "heroSubtitle": "Stucco painting in Manhattan Beach is a weather job as much as a paint job. Salt, fog, and UV can eat weak coatings fast. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Stucco Painting in Manhattan Beach usually starts around $4,600 to $8,050 for a basic small home scope. Larger projects land closer to $10,350 to $17,250+, depending on prep, access, and how much of the surface package we are touching in one visit.",

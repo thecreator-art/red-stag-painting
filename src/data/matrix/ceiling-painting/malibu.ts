@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/ceiling-painting/malibu",
   "ogTitle": "Ceiling Painting in Malibu | Red Stag Painting",
   "ogDescription": "Ceiling Painting in Malibu with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Ceiling Painting project in Malibu",
   "heroSubtitle": "Ceiling painting in Malibu often aims to brighten rooms with big daylight and hide old stains or cut lines that show up in coastal light. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Ceiling Painting in Malibu usually starts around $250 to $750 for a basic 1-2 rooms scope. Larger projects land closer to $1,250 to $3,125+, depending on prep, access, and how much of the surface package we are touching in one visit.",

@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/cabinet-painting",
   "ogTitle": "Cabinet Painting Los Angeles | Red Stag Painting",
   "ogDescription": "Cabinet Painting across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_cabinet.png",
   "heroImageAlt": "Sprayed kitchen cabinet doors drying to a smooth painted finish",
   "heroSubtitle": "Doors and drawers come off, hardware gets cataloged, and the finish is sprayed to lay down smooth instead of brush-marked.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1560448075-bb485b067938?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_cabinet.png",
       "alt": "Dark dated kitchen cabinets before repaint",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_cabinet.png",
       "alt": "Bright white sprayed kitchen cabinets after painting",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_cabinet.png",
       "alt": "Cabinet doors removed and labeled for painting",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_cabinet.png",
       "alt": "Freshly painted kitchen cabinets and island",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_cabinet.png",
       "alt": "Luxury painted cabinetry in estate kitchen",
       "width": 1600,
       "height": 900

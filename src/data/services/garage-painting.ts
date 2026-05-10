@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/garage-painting",
   "ogTitle": "Garage Painting Los Angeles | Red Stag Painting",
   "ogDescription": "Garage Painting across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Clean painted garage with coated floor and bright walls",
   "heroSubtitle": "Garage jobs work best when the floor, walls, storage layout, and cure time are planned together instead of as separate punch-list items.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Dusty garage before paint and coating",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Bright organized garage after painting",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Freshly painted organized garage interior",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Garage walls and ceiling painted bright white",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_exterior.png",
       "alt": "Residential garage project in Los Angeles home",
       "width": 1600,
       "height": 900

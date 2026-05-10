@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/color-change-repaint/encino",
   "ogTitle": "Color Change Repaint in Encino | Red Stag Painting",
   "ogDescription": "Color Change Repaint in Encino with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Color Change Repaint project in Encino",
   "heroSubtitle": "Color change repaints in Encino are usually about moving from dated tans, yellows, or deep accent walls into a cleaner family-home palette. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Color Change Repaint in Encino usually starts around $400 to $900 for a basic 1 room scope. Larger projects land closer to $2,500 to $6,500+, depending on prep, access, and how much of the surface package we are touching in one visit.",

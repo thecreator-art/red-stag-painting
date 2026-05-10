@@ -17,7 +17,7 @@ const data: CityPageData = {
   "canonical": "/areas/manhattan-beach",
   "ogTitle": "Manhattan Beach House Painters | Red Stag Painting",
   "ogDescription": "Painting services in Manhattan Beach, CA with local pricing, cleaner prep, and neighborhood-specific job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_detail.png",
   "heroImageAlt": "Manhattan Beach residential painting project in Los Angeles County",
   "heroSubtitle": "Salt-air-conscious painting for sand-section homes, townhomes, and bright coastal interiors.",
   "introAnswer": "House painting in Manhattan Beach usually runs about 15% above standard Los Angeles pricing. Interior work starts around $460 per room, and exterior repaint ranges move with access, prep, and finish expectations in this market.",

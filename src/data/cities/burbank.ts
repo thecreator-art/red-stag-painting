@@ -17,7 +17,7 @@ const data: CityPageData = {
   "canonical": "/areas/burbank",
   "ogTitle": "Burbank House Painters | Red Stag Painting",
   "ogDescription": "Painting services in Burbank, CA with local pricing, cleaner prep, and neighborhood-specific job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_cabinet.png",
   "heroImageAlt": "Burbank residential painting project in Los Angeles County",
   "heroSubtitle": "Straightforward painting for tract homes, cottages, and studio-adjacent neighborhoods.",
   "introAnswer": "House painting in Burbank usually runs about 5% below standard Los Angeles pricing. Interior work starts around $380 per room, and exterior repaint ranges move with access, prep, and finish expectations in this market.",

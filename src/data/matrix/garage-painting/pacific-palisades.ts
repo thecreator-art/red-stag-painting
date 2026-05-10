@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/garage-painting/pacific-palisades",
   "ogTitle": "Garage Painting in Pacific Palisades | Red Stag Painting",
   "ogDescription": "Garage Painting in Pacific Palisades with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Garage Painting project in Pacific Palisades",
   "heroSubtitle": "Garage painting in Pacific Palisades usually turns a dusty storage room into a cleaner extension of the house, often with better lighting and floor performance. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Garage Painting in Pacific Palisades usually starts around $1,000 to $2,500 for a basic floor coating only scope. Larger projects land closer to $2,500 to $5,625+, depending on prep, access, and how much of the surface package we are touching in one visit.",

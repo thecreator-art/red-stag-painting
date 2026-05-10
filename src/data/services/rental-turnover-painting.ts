@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/rental-turnover-painting",
   "ogTitle": "Rental Turnover Painting Los Angeles | Red Stag Painting",
   "ogDescription": "Rental Turnover Painting across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Freshly repainted rental unit ready for the next tenant",
   "heroSubtitle": "We handle vacancy turnovers fast, patch the real damage, and leave a durable finish that photographs clean for leasing.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Vacant rental unit before turnover painting",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Fresh rental turnover repaint ready for listing photos",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1560440021-33f9b867899d?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Vacant apartment prepared for turnover painting",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Freshly painted rental interior ready for move-in",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Painter patching and repainting rental hallway",
       "width": 1600,
       "height": 900

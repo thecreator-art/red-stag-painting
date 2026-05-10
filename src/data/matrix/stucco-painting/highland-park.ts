@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/stucco-painting/highland-park",
   "ogTitle": "Stucco Painting in Highland Park | Red Stag Painting",
   "ogDescription": "Stucco Painting in Highland Park with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Stucco Painting project in Highland Park",
   "heroSubtitle": "Stucco painting in Highland Park often means respecting older texture patterns and making repair areas disappear without flattening the whole façade. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Stucco Painting in Highland Park usually starts around $4,000 to $7,000 for a basic small home scope. Larger projects land closer to $9,000 to $15,000+, depending on prep, access, and how much of the surface package we are touching in one visit.",

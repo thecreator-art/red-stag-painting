@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/wood-deck-staining/burbank",
   "ogTitle": "Wood & Deck Staining in Burbank | Red Stag Painting",
   "ogDescription": "Wood & Deck Staining in Burbank with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_exterior.png",
   "heroImageAlt": "Wood & Deck Staining project in Burbank",
   "heroSubtitle": "Wood and deck staining in Burbank often means reviving dry, sun-beaten fences, pergolas, and backyard decks that have taken years of heat. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Wood & Deck Staining in Burbank usually starts around $760 to $2,375 for a basic fence staining scope. Larger projects land closer to $2,850 to $6,175+, depending on prep, access, and how much of the surface package we are touching in one visit.",

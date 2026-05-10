@@ -17,7 +17,7 @@ const data: CityPageData = {
   "canonical": "/areas/beverly-hills",
   "ogTitle": "Beverly Hills House Painters | Red Stag Painting",
   "ogDescription": "Painting services in Beverly Hills, CA with local pricing, cleaner prep, and neighborhood-specific job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_prep.png",
   "heroImageAlt": "Beverly Hills residential painting project in Los Angeles County",
   "heroSubtitle": "Detailed prep, quiet crews, and tight finish work for estates, condos, and high-visibility homes.",
   "introAnswer": "House painting in Beverly Hills usually runs about 25% above standard Los Angeles pricing. Interior work starts around $500 per room, and exterior repaint ranges move with access, prep, and finish expectations in this market.",

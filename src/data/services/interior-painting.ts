@@ -16,18 +16,18 @@ const data: ServicePageData = {
   "canonical": "/interior-painting",
   "ogTitle": "Interior Painting Los Angeles | Red Stag Painting",
   "ogDescription": "Interior Painting across Greater Los Angeles with premium prep, exact scheduling, and clear pricing.",
-  "heroImage": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_interior.png",
   "heroImageAlt": "Freshly painted living room with clean white walls in a Los Angeles home",
   "heroSubtitle": "Walls, ceilings, trim, and patching handled in the right order so the finish stays sharp after furniture moves back in.",
   "beforeAfter": {
     "before": {
-      "src": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Outdated beige Los Angeles living room before repaint",
       "width": 1600,
       "height": 900
     },
     "after": {
-      "src": "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Bright freshly painted living room after interior repaint",
       "width": 1600,
       "height": 900
@@ -36,19 +36,19 @@ const data: ServicePageData = {
   },
   "inlineImages": [
     {
-      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Interior painter working in a bright bedroom",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Freshly painted hallway and staircase in Los Angeles home",
       "width": 1600,
       "height": 900
     },
     {
-      "src": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80",
+      "src": "/images/service_interior.png",
       "alt": "Warm white living room repaint with clean trim",
       "width": 1600,
       "height": 900

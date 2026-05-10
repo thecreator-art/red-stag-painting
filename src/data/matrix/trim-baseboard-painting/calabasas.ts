@@ -17,7 +17,7 @@ const data: MatrixPageData = {
   "canonical": "/trim-baseboard-painting/calabasas",
   "ogTitle": "Trim & Baseboard Painting in Calabasas | Red Stag Painting",
   "ogDescription": "Trim & Baseboard Painting in Calabasas with city-specific pricing, prep, and local job planning.",
-  "heroImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "/images/service_detail.png",
   "heroImageAlt": "Trim & Baseboard Painting project in Calabasas",
   "heroSubtitle": "Trim and baseboard painting in Calabasas usually means longer runs, better millwork, and a finish that gets judged from arm’s length. We price the job around the actual house, not around a generic LA average.",
   "introAnswer": "Trim & Baseboard Painting in Calabasas usually starts around $460 to $1,035 for a basic 1 room scope. Larger projects land closer to $2,875 to $7,475+, depending on prep, access, and how much of the surface package we are touching in one visit.",
