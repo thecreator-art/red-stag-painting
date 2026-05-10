@@ -54,13 +54,16 @@ export default function ContactForm() {
           {/* Left: text content */}
           <div className="lg:w-1/2">
             <ScrollReveal direction="left">
-            <Image
-              src="/images/stag-logo.png"
-              alt=""
-              width={40}
-              height={32}
-              className="h-8 w-auto logo-white mb-6"
-            />
+            <div className="flex items-center gap-2 mb-6">
+              <Image
+                src="/images/logo_white.png"
+                alt="Red Stag"
+                width={128}
+                height={48}
+                className="h-10 w-auto xl:h-12"
+              />
+              <span className="font-heading text-xl xl:text-2xl font-bold text-[#E63946] tracking-widest uppercase mt-1">Painters</span>
+            </div>
             <span className="section-label !text-accent-light">Get Started</span>
             <h2 className="text-3xl md:text-5xl font-heading text-text-on-dark leading-tight">
               Your home deserves good paint.

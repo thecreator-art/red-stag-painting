@@ -34,13 +34,14 @@ export default function Navbar({ sticky = false }: NavbarProps) {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-lg font-heading text-text-primary whitespace-nowrap xl:text-xl">
             <Image
-              src="/images/stag-logo.png"
-              alt=""
-              width={34}
-              height={28}
-              className="h-7 w-auto logo-accent xl:h-8"
+              src="/images/logo.png"
+              alt="Red Stag"
+              width={128}
+              height={48}
+              className="h-10 w-auto xl:h-12"
+              priority
             />
-            Red Stag Painting
+            <span className="font-heading text-xl xl:text-2xl font-bold text-[#E63946] tracking-widest uppercase mt-1">Painters</span>
           </Link>
 
           {/* Desktop nav */}

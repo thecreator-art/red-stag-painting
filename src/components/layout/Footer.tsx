@@ -16,15 +16,15 @@ export default function Footer() {
           
           {/* Brand Column (Span 4) */}
           <div className="lg:col-span-4 pr-4">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-2 mb-6">
               <Image
-                src="/images/stag-logo.png"
-                alt=""
-                width={40}
-                height={32}
-                className="h-8 w-auto logo-white"
+                src="/images/logo_white.png"
+                alt="Red Stag"
+                width={128}
+                height={48}
+                className="h-10 w-auto xl:h-12"
               />
-              <p className="text-2xl font-heading tracking-wide">Red Stag Painting</p>
+              <span className="font-heading text-xl xl:text-2xl font-bold text-[#E63946] tracking-widest uppercase mt-1">Painters</span>
             </div>
             <p className="text-sm text-text-on-dark/60 leading-relaxed mb-6 max-w-sm">
               Elevating homes across Greater Los Angeles with flawless execution, premium materials, and a commitment to unmatched craftsmanship.

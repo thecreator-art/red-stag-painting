@@ -42,13 +42,14 @@ export default function StickyHeader() {
       <div className="mx-auto max-w-[1200px] px-10 flex items-center justify-between h-14">
         <Link href="/" className="flex items-center gap-2 text-lg font-heading text-text-primary">
           <Image
-            src="/images/stag-logo.png"
-            alt=""
-            width={32}
-            height={26}
-            className="h-[26px] w-auto logo-accent"
+            src="/images/logo.png"
+            alt="Red Stag"
+            width={96}
+            height={36}
+            className="h-8 w-auto"
+            priority
           />
-          Red Stag Painting
+          <span className="font-heading text-lg font-bold text-[#E63946] tracking-widest uppercase mt-1">Painters</span>
         </Link>
         <span className="text-xs text-text-muted">{RESPONSE_TIME}</span>
         <Link
