@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Manhattan Beach",
   "state": "CA",
   "titleTag": "Manhattan Beach House Painters | Red Stag",
-  "metaDescription": "House painters in Manhattan Beach, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Manhattan Beach painters — Hill Section, Sand Section, and Tree Section pricing with coastal-grade prep. Free walkthrough and quote within 24 hours.",
   "h1": "House Painters in Manhattan Beach, CA",
   "primaryKeyword": "house painters Manhattan Beach CA",
   "secondaryKeywords": [

@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Tarzana",
   "state": "CA",
   "titleTag": "Tarzana House Painters | Red Stag",
-  "metaDescription": "House painters in Tarzana, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Tarzana house painters working Vanalden Heights and South of Ventura ranches. Ranch and Spanish-revival prep with a free walkthrough.",
   "h1": "House Painters in Tarzana, CA",
   "primaryKeyword": "house painters Tarzana CA",
   "secondaryKeywords": [

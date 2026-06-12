@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Mar Vista",
   "state": "CA",
   "titleTag": "Mar Vista House Painters | Red Stag",
-  "metaDescription": "House painters in Mar Vista, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Mar Vista house painters working East Mar Vista and the Walgrove area. Mid-market pricing, quick turnaround, and a 24-hour written quote.",
   "h1": "House Painters in Mar Vista, CA",
   "primaryKeyword": "house painters Mar Vista CA",
   "secondaryKeywords": [

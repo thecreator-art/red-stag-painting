@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Sherman Oaks",
   "state": "CA",
   "titleTag": "Sherman Oaks House Painters | Red Stag",
-  "metaDescription": "House painters in Sherman Oaks, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Sherman Oaks house painters from Longridge Estates to South of the Boulevard. Honest valley pricing, premium paints, and a 24-hour written quote.",
   "h1": "House Painters in Sherman Oaks, CA",
   "primaryKeyword": "house painters Sherman Oaks CA",
   "secondaryKeywords": [

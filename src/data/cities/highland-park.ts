@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Highland Park",
   "state": "CA",
   "titleTag": "Highland Park House Painters | Red Stag",
-  "metaDescription": "House painters in Highland Park, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Highland Park painters for Garvanza, Mt. Washington edge, and York Boulevard. Craftsman and Victorian repaints — exact quote inside 24 hours.",
   "h1": "House Painters in Highland Park, CA",
   "primaryKeyword": "house painters Highland Park CA",
   "secondaryKeywords": [

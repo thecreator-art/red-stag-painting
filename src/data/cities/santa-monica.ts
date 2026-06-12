@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Santa Monica",
   "state": "CA",
   "titleTag": "Santa Monica House Painters | Red Stag",
-  "metaDescription": "House painters in Santa Monica, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Santa Monica house painters covering North of Montana, Sunset Park, and Wilshire-Montana. Honest mid-market pricing and a free in-person walkthrough.",
   "h1": "House Painters in Santa Monica, CA",
   "primaryKeyword": "house painters Santa Monica CA",
   "secondaryKeywords": [

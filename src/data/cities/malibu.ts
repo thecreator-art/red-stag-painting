@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Malibu",
   "state": "CA",
   "titleTag": "Malibu House Painters | Red Stag",
-  "metaDescription": "House painters in Malibu, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Malibu painters for Point Dume, Carbon Beach, and Big Rock. Saltwater-rated coatings, marine-grade prep, and a free in-person walkthrough.",
   "h1": "House Painters in Malibu, CA",
   "primaryKeyword": "house painters Malibu CA",
   "secondaryKeywords": [

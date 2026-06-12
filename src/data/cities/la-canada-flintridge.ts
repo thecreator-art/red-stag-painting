@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "La Canada Flintridge",
   "state": "CA",
   "titleTag": "La Canada Flintridge House Painters | Red Stag",
-  "metaDescription": "House painters in La Canada Flintridge, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "La Cañada Flintridge painters for Flintridge, Sagebrush, and Devil's Gate-area estates. Premium finishes and a written quote within 24 hours.",
   "h1": "House Painters in La Canada Flintridge, CA",
   "primaryKeyword": "house painters La Canada Flintridge CA",
   "secondaryKeywords": [

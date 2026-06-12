@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Brentwood",
   "state": "CA",
   "titleTag": "Brentwood House Painters | Red Stag",
-  "metaDescription": "House painters in Brentwood, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Brentwood house painters working from Brentwood Park to Mandeville Canyon. Hillside-access pricing, premium finishes, and a 24-hour written quote.",
   "h1": "House Painters in Brentwood, CA",
   "primaryKeyword": "house painters Brentwood CA",
   "secondaryKeywords": [

@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Los Feliz",
   "state": "CA",
   "titleTag": "Los Feliz House Painters | Red Stag",
-  "metaDescription": "House painters in Los Feliz, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Los Feliz house painters from the Hills down to Vermont Square. Spanish-revival, French Norman, and craftsman prep — quote within 24 hours.",
   "h1": "House Painters in Los Feliz, CA",
   "primaryKeyword": "house painters Los Feliz CA",
   "secondaryKeywords": [

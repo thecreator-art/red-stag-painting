@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Pacific Palisades",
   "state": "CA",
   "titleTag": "Pacific Palisades House Painters | Red Stag",
-  "metaDescription": "House painters in Pacific Palisades, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Pacific Palisades house painting in the Riviera, Huntington, and Alphabet Streets — fire-rebuild experience and coastal-grade exterior prep.",
   "h1": "House Painters in Pacific Palisades, CA",
   "primaryKeyword": "house painters Pacific Palisades CA",
   "secondaryKeywords": [

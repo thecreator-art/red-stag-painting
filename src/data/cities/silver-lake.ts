@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Silver Lake",
   "state": "CA",
   "titleTag": "Silver Lake House Painters | Red Stag",
-  "metaDescription": "House painters in Silver Lake, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Silver Lake painters working the Reservoir, Moreno Highlands, and Sunset Junction. Spanish-revival, mid-century, and craftsman prep specialists.",
   "h1": "House Painters in Silver Lake, CA",
   "primaryKeyword": "house painters Silver Lake CA",
   "secondaryKeywords": [

@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Bel Air",
   "state": "CA",
   "titleTag": "Bel Air House Painters | Red Stag",
-  "metaDescription": "House painters in Bel Air, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Bel Air house painters serving East and West Gate estates plus Stone Canyon. Expect canyon-access pricing, careful prep, and an exact quote within 24 hours.",
   "h1": "House Painters in Bel Air, CA",
   "primaryKeyword": "house painters Bel Air CA",
   "secondaryKeywords": [

@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Beverly Hills",
   "state": "CA",
   "titleTag": "Beverly Hills House Painters | Red Stag",
-  "metaDescription": "House painters in Beverly Hills, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Beverly Hills painters — pricing typically tracks ~25% above LA base for The Flats, Trousdale Estates, and South Beverly. Quiet crews, 24-hour written quote.",
   "h1": "House Painters in Beverly Hills, CA",
   "primaryKeyword": "house painters Beverly Hills CA",
   "secondaryKeywords": [

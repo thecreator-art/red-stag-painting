@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Hidden Hills",
   "state": "CA",
   "titleTag": "Hidden Hills House Painters | Red Stag",
-  "metaDescription": "House painters in Hidden Hills, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Hidden Hills painters for gated estates near the Calabasas line. Quiet crews, equestrian-property prep, and a written quote inside 24 hours.",
   "h1": "House Painters in Hidden Hills, CA",
   "primaryKeyword": "house painters Hidden Hills CA",
   "secondaryKeywords": [

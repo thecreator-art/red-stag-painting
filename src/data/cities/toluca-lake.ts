@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Toluca Lake",
   "state": "CA",
   "titleTag": "Toluca Lake House Painters | Red Stag",
-  "metaDescription": "House painters in Toluca Lake, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Toluca Lake painters covering Toluca Estates and the Country Club area. Quiet single-crew work and a free in-person walkthrough.",
   "h1": "House Painters in Toluca Lake, CA",
   "primaryKeyword": "house painters Toluca Lake CA",
   "secondaryKeywords": [

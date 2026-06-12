@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Altadena",
   "state": "CA",
   "titleTag": "Altadena House Painters | Red Stag",
-  "metaDescription": "House painters in Altadena, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Altadena house painters working Janes Village, the Meadows, and post-Eaton-fire restoration jobs. Craftsman repaints and fire-rebuild specialists.",
   "h1": "House Painters in Altadena, CA",
   "primaryKeyword": "house painters Altadena CA",
   "secondaryKeywords": [

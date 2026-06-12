@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Eagle Rock",
   "state": "CA",
   "titleTag": "Eagle Rock House Painters | Red Stag",
-  "metaDescription": "House painters in Eagle Rock, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Eagle Rock painters for Hilltop, Lincoln Heights border, and the Mt. Washington adjacency. Craftsman-friendly prep and a free walkthrough.",
   "h1": "House Painters in Eagle Rock, CA",
   "primaryKeyword": "house painters Eagle Rock CA",
   "secondaryKeywords": [

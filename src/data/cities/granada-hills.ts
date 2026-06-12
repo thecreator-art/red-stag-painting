@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Granada Hills",
   "state": "CA",
   "titleTag": "Granada Hills House Painters | Red Stag",
-  "metaDescription": "House painters in Granada Hills, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Granada Hills house painters for ranch-style homes on Knollwood Drive and the lower hills. Mid-market pricing and a free walkthrough.",
   "h1": "House Painters in Granada Hills, CA",
   "primaryKeyword": "house painters Granada Hills CA",
   "secondaryKeywords": [

@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Northridge",
   "state": "CA",
   "titleTag": "Northridge House Painters | Red Stag",
-  "metaDescription": "House painters in Northridge, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Northridge painters for CSUN-area rentals and Sherwood Forest estates. Rental turnover and full repaints with a 24-hour written quote.",
   "h1": "House Painters in Northridge, CA",
   "primaryKeyword": "house painters Northridge CA",
   "secondaryKeywords": [

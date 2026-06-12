@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Culver City",
   "state": "CA",
   "titleTag": "Culver City House Painters | Red Stag",
-  "metaDescription": "House painters in Culver City, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Culver City painters for Sunkist Park, Carlson Park, and historic Hayden Tract. Honest mid-city pricing and a 24-hour written quote.",
   "h1": "House Painters in Culver City, CA",
   "primaryKeyword": "house painters Culver City CA",
   "secondaryKeywords": [

@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "West Hollywood",
   "state": "CA",
   "titleTag": "West Hollywood House Painters | Red Stag",
-  "metaDescription": "House painters in West Hollywood, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "West Hollywood painters for Norma Triangle, Tri-West, and Eastside duplexes. Apartment-friendly scheduling, written quote in 24 hours.",
   "h1": "House Painters in West Hollywood, CA",
   "primaryKeyword": "house painters West Hollywood CA",
   "secondaryKeywords": [

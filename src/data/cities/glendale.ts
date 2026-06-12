@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Glendale",
   "state": "CA",
   "titleTag": "Glendale House Painters | Red Stag",
-  "metaDescription": "House painters in Glendale, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Glendale painters working Verdugo Woodlands, Adams Hill, and Rossmoyne. Mediterranean and mid-century homes — quote within 24 hours.",
   "h1": "House Painters in Glendale, CA",
   "primaryKeyword": "house painters Glendale CA",
   "secondaryKeywords": [

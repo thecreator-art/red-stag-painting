@@ -137,8 +137,8 @@ export default function EstimateCalculator() {
       if (HAS_WEB3FORMS) {
         const w3Payload = {
           access_key: WEB3FORMS_ACCESS_KEY,
-          subject: `${selectedService?.label || 'Painting'} estimate request from ${contact.name}`,
-          from_name: 'Red Stag Painting Calculator',
+          subject: `🦌 New Estimate Request — Red Stag Painters (${selectedService?.label || 'General'} · ${contact.name})`,
+          from_name: 'Vaultio',
           replyto: contact.email || undefined,
           name: contact.name,
           phone: contact.phone,

@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Woodland Hills",
   "state": "CA",
   "titleTag": "Woodland Hills House Painters | Red Stag",
-  "metaDescription": "House painters in Woodland Hills, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Woodland Hills painters for Walnut Acres, Vista de Oro, and Warner Center condos. Honest valley pricing and a 24-hour written estimate.",
   "h1": "House Painters in Woodland Hills, CA",
   "primaryKeyword": "house painters Woodland Hills CA",
   "secondaryKeywords": [

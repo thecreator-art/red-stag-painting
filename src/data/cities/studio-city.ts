@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Studio City",
   "state": "CA",
   "titleTag": "Studio City House Painters | Red Stag",
-  "metaDescription": "House painters in Studio City, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Studio City painters — Colfax Meadows, Carpenter Avenue, and the Hills. Detailed cabinet and stucco prep with a written quote inside 24 hours.",
   "h1": "House Painters in Studio City, CA",
   "primaryKeyword": "house painters Studio City CA",
   "secondaryKeywords": [

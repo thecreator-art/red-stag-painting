@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Burbank",
   "state": "CA",
   "titleTag": "Burbank House Painters | Red Stag",
-  "metaDescription": "House painters in Burbank, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Burbank painters — Magnolia Park, Rancho District, and the Toluca Lake border. California bungalow and Spanish prep with a 24-hour quote.",
   "h1": "House Painters in Burbank, CA",
   "primaryKeyword": "house painters Burbank CA",
   "secondaryKeywords": [

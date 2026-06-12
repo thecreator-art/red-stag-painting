@@ -213,8 +213,8 @@ export default function QuoteForm({
       if (HAS_WEB3FORMS) {
         const w3Payload = {
           access_key: WEB3FORMS_ACCESS_KEY,
-          subject: `${formData.service || 'Painting'} estimate request from ${formData.name}`,
-          from_name: 'Red Stag Painting Website',
+          subject: `🦌 New Estimate Request — Red Stag Painters (${formData.service || 'General'} · ${formData.name})`,
+          from_name: 'Vaultio',
           replyto: formData.email || undefined,
           name: formData.name,
           phone: formData.phone,

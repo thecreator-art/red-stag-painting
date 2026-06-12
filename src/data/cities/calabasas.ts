@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Calabasas",
   "state": "CA",
   "titleTag": "Calabasas House Painters | Red Stag",
-  "metaDescription": "House painters in Calabasas, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Calabasas painters for The Oaks, Mountain View Estates, and the Hidden Hills border. Gated-community familiar, premium finishes, 24-hour quote.",
   "h1": "House Painters in Calabasas, CA",
   "primaryKeyword": "house painters Calabasas CA",
   "secondaryKeywords": [

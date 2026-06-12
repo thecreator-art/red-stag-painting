@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "San Fernando",
   "state": "CA",
   "titleTag": "San Fernando House Painters | Red Stag",
-  "metaDescription": "House painters in San Fernando, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "San Fernando house painters serving older Spanish bungalows and stucco ranches. Honest valley pricing and a free in-person walkthrough.",
   "h1": "House Painters in San Fernando, CA",
   "primaryKeyword": "house painters San Fernando CA",
   "secondaryKeywords": [

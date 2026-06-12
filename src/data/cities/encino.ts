@@ -5,7 +5,7 @@ const data: CityPageData = {
   "name": "Encino",
   "state": "CA",
   "titleTag": "Encino House Painters | Red Stag",
-  "metaDescription": "House painters in Encino, CA. Real local pricing, neighborhood-specific prep, and fast estimates. Talk through your project today.",
+  "metaDescription": "Encino painters serving Encino Hills, Royal Oaks, and Amestoy Estates. Stucco and trim specialists with a free walkthrough and 24-hour quote.",
   "h1": "House Painters in Encino, CA",
   "primaryKeyword": "house painters Encino CA",
   "secondaryKeywords": [
