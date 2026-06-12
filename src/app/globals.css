@@ -41,9 +41,15 @@ body {
   font-family: var(--font-body);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-text-primary);
-  font-weight: 700;
+/* Put the heading default inside @layer base so Tailwind's utility
+   layer can override it. An unlayered rule (even with :where())
+   beats layered rules regardless of specificity, which made the
+   global heading color win over .text-text-on-dark and friends. */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-primary);
+    font-weight: 700;
+  }
 }
 
 [id] {
