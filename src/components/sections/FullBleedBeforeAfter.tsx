@@ -25,7 +25,7 @@ export default function FullBleedBeforeAfter() {
           Our team performed a comprehensive 7-day restoration. We started with intense pressure washing, 
           stucco patching, and rigorous masking. We applied a premium primer and finished with two coats 
           of bright white and custom naval black trim using Sherwin-Williams Emerald. The result is a stunning, 
-          pristine modern transformation with razor-sharp paint lines that elevated the home's value instantly.
+          pristine modern transformation with razor-sharp paint lines that elevated the home&apos;s value instantly.
         </p>
       </div>
     </section>
