@@ -31,10 +31,11 @@ export default function BrandStatement() {
       {/* Background image */}
       <Image
         src="/images/bg_brand.png"
-        alt="Bright freshly painted living room interior"
+        alt=""
+        aria-hidden="true"
         fill
         sizes="100vw"
-        loading="eager"
+        loading="lazy"
         className="object-cover"
         placeholder="blur"
         blurDataURL={BLUR_PLACEHOLDER}

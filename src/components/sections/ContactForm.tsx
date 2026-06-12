@@ -39,15 +39,16 @@ export default function ContactForm() {
       {/* Background image */}
       <Image
         src="/images/bg_contact.png"
-        alt="Painted home exterior"
+        alt=""
+        aria-hidden="true"
         fill
         sizes="100vw"
-        loading="eager"
+        loading="lazy"
         className="object-cover"
         placeholder="blur"
         blurDataURL={BLUR_PLACEHOLDER}
       />
-      <div className="absolute inset-0 bg-[rgba(42,38,34,0.93)]" />
+      <div className="absolute inset-0 bg-[rgba(42,38,34,0.93)]" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-[1200px] px-6 md:px-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
@@ -57,7 +58,7 @@ export default function ContactForm() {
             <div className="flex items-center gap-2 mb-6">
               <Image
                 src="/images/logo_white.png"
-                alt="Red Stag"
+                alt="Red Stag Painting"
                 width={128}
                 height={48}
                 className="h-10 w-auto xl:h-12"

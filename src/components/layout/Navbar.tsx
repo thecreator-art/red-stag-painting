@@ -25,17 +25,18 @@ export default function Navbar({ sticky = false }: NavbarProps) {
   }, [pathname]);
 
   return (
-    <div className={sticky ? 'sticky top-0 z-50' : ''}>
+    <header className={sticky ? 'sticky top-0 z-50' : ''}>
       {/* Terracotta accent line */}
-      <div className="h-[3px] bg-accent" />
+      <div className="h-[3px] bg-accent" aria-hidden="true" />
 
-      <nav className={`relative z-40 ${sticky ? 'bg-bg-primary/95 backdrop-blur border-b border-border/50' : 'bg-bg-primary'}`}>
+      <nav aria-label="Primary" className={`relative z-40 ${sticky ? 'bg-bg-primary/95 backdrop-blur border-b border-border/50' : 'bg-bg-primary'}`}>
         <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4 md:px-10">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 text-lg font-heading text-text-primary whitespace-nowrap xl:text-xl">
+          <Link href="/" aria-label="Red Stag Painting — Home" className="flex items-center gap-2 text-lg font-heading text-text-primary whitespace-nowrap xl:text-xl">
             <Image
               src="/images/logo.png"
-              alt="Red Stag"
+              alt=""
+              aria-hidden="true"
               width={128}
               height={48}
               className="h-10 w-auto xl:h-12"
@@ -53,14 +54,19 @@ export default function Navbar({ sticky = false }: NavbarProps) {
             >
               <button
                 type="button"
+                onClick={() => setServicesOpen((v) => !v)}
+                onFocus={() => setServicesOpen(true)}
+                aria-haspopup="menu"
+                aria-expanded={servicesOpen}
+                aria-controls="primary-services-menu"
                 className="whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.12em] text-text-body transition-colors duration-300 hover:text-text-primary xl:text-xs"
               >
                 Services
-                <svg className="inline-block ml-1 w-3 h-3" fill="none" viewBox="0 0 12 12" stroke="currentColor">
+                <svg aria-hidden="true" focusable="false" className="inline-block ml-1 w-3 h-3" fill="none" viewBox="0 0 12 12" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5l3 3 3-3" />
                 </svg>
               </button>
-              <div className={`absolute top-full left-0 pt-2 nav-dropdown ${servicesOpen ? 'nav-dropdown-open' : ''}`}>
+              <div id="primary-services-menu" role="menu" className={`absolute top-full left-0 pt-2 nav-dropdown ${servicesOpen ? 'nav-dropdown-open' : ''}`}>
                 <div className="bg-white rounded-sm shadow-lg border border-border py-2 min-w-[220px]">
                   {SERVICES.map((service) => (
                     <Link
@@ -104,11 +110,13 @@ export default function Navbar({ sticky = false }: NavbarProps) {
           {/* Mobile hamburger */}
           <button
             type="button"
-            className="lg:hidden p-2 cursor-pointer"
+            className="lg:hidden p-3 cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center"
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
+            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={mobileOpen}
+            aria-controls="primary-mobile-nav"
           >
-            <svg className="w-6 h-6 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg aria-hidden="true" focusable="false" className="w-6 h-6 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {mobileOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
@@ -120,7 +128,7 @@ export default function Navbar({ sticky = false }: NavbarProps) {
 
         {/* Mobile overlay */}
         {mobileOpen && (
-          <div className="fixed inset-0 top-[68px] bg-bg-primary z-50 lg:hidden overflow-y-auto">
+          <div id="primary-mobile-nav" role="dialog" aria-modal="true" aria-label="Site menu" className="fixed inset-0 top-[68px] bg-bg-primary z-50 lg:hidden overflow-y-auto">
             <div className="px-6 py-8 space-y-6">
               <div>
                 <p className="text-xs font-semibold tracking-wider text-text-muted uppercase mb-3">Services</p>
@@ -167,6 +175,6 @@ export default function Navbar({ sticky = false }: NavbarProps) {
           </div>
         )}
       </nav>
-    </div>
+    </header>
   );
 }

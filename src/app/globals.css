@@ -7,7 +7,7 @@
   --color-bg-dark-mid: #352F2B;
   --color-text-primary: #1A1816;
   --color-text-body: #4A4641;
-  --color-text-muted: #8A8580;
+  --color-text-muted: #6E6963;
   --color-text-on-dark: #F5F1EC;
   --color-accent: #C23B2B;
   --color-accent-hover: #A83224;
@@ -20,8 +20,19 @@
   --font-body: var(--font-dm-sans);
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 body {
@@ -215,6 +226,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .shield-glow {
   animation: shieldGlow 3s ease-in-out infinite;
+}
+
+/* Force select options to use light theme so they never render as black-on-dark
+   in macOS dark mode or system dark color schemes */
+select option,
+select optgroup {
+  color: #1A1816;
+  background-color: #FFFFFF;
 }
 
 /* Section label: small uppercase category text */

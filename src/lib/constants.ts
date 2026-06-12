@@ -9,13 +9,22 @@ function normalizeUrl(value: string | undefined, fallback: string): string {
   return trimmed.startsWith('http') ? trimmed : `https://${trimmed}`;
 }
 
-export const PHONE_NUMBER = '(323) 555-0199';
-export const PHONE_HREF = 'tel:+13235550199';
-export const EMAIL = 'info@redstagpainting.com';
+export const PHONE_NUMBER = '(626) 652-2303';
+export const PHONE_HREF = 'tel:+16266522303';
+export const EMAIL = 'support@redstagcc.com';
 export const SITE_URL = normalizeUrl(
   process.env.NEXT_PUBLIC_SITE_URL ?? process.env.VERCEL_PROJECT_PRODUCTION_URL,
   'https://red-stag-painting.vercel.app'
 );
+export const BUSINESS_LOCALITY = 'Los Angeles';
+export const BUSINESS_REGION = 'CA';
+export const BUSINESS_COUNTRY = 'US';
+export const BUSINESS_LATITUDE = 34.0522;
+export const BUSINESS_LONGITUDE = -118.2437;
+export const FOUNDING_YEAR = '2011';
+export const OWNER_NAME = 'Israel Aquino';
+export const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY?.trim() ?? '';
+export const HAS_WEB3FORMS = Boolean(WEB3FORMS_ACCESS_KEY);
 export const GHL_WEBHOOK_URL = process.env.NEXT_PUBLIC_GHL_WEBHOOK_URL?.trim() ?? '';
 export const HAS_GHL_WEBHOOK = Boolean(
   GHL_WEBHOOK_URL && !GHL_WEBHOOK_URL.includes('placeholder-webhook.example.com')

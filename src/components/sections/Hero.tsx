@@ -17,8 +17,8 @@ export default function Hero() {
         blurDataURL={BLUR_PLACEHOLDER}
       />
 
-      {/* Dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-bg-dark/95 via-bg-dark/80 to-bg-dark/40" />
+      {/* Dark gradient overlay — strengthened on the right side for AA contrast */}
+      <div className="absolute inset-0 bg-gradient-to-r from-bg-dark/95 via-bg-dark/85 to-bg-dark/75" />
 
       {/* Content */}
       <div className="relative z-10 min-h-[calc(100vh-68px)] flex items-center">
@@ -31,10 +31,11 @@ export default function Hero() {
                 <div className="relative w-[120px] shrink-0 sm:w-[150px] lg:w-[180px] xl:w-[195px]">
                   <Image
                     src="/images/paint-roller-hero-transparent.png"
-                    alt="Illustrated paint roller and paint can"
+                    alt=""
+                    aria-hidden="true"
                     width={1024}
                     height={1024}
-                    priority
+                    sizes="(min-width: 1280px) 195px, (min-width: 1024px) 180px, (min-width: 640px) 150px, 120px"
                     className="h-auto w-full drop-shadow-[0_16px_28px_rgba(0,0,0,0.28)]"
                   />
                 </div>
@@ -45,7 +46,7 @@ export default function Hero() {
                     <br />
                     <span className="!text-accent painted-underline">Painting</span> Contractor
                   </h1>
-                  <p className="mt-5 mx-auto max-w-2xl text-base md:text-lg text-white/60 font-body">
+                  <p className="mt-5 mx-auto max-w-2xl text-base md:text-lg text-white/85 font-body">
                     Your neighbors will ask who painted your house. From Beverly Hills
                     to Calabasas, we paint homes people love coming back to.
                   </p>
@@ -64,9 +65,9 @@ export default function Hero() {
               </MagneticButton>
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center gap-2 text-white/60 hover:text-white font-body transition-colors duration-300 text-sm py-4"
+                className="inline-flex items-center gap-2 text-white/90 hover:text-white font-body transition-colors duration-300 text-sm py-4"
               >
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg aria-hidden="true" focusable="false" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 {PHONE_NUMBER}
@@ -75,14 +76,14 @@ export default function Hero() {
 
             {/* Response time + warranty badges */}
             <div className="mt-6 flex flex-wrap items-center justify-center gap-4 hero-animate hero-animate-delay-4">
-              <div className="flex items-center gap-2 text-white/40 text-xs">
+              <div className="flex items-center gap-2 text-white/80 text-xs">
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <circle cx="12" cy="12" r="10" />
                   <path d="M12 6v6l4 2" />
                 </svg>
                 {RESPONSE_TIME}
               </div>
-              <div className="flex items-center gap-2 text-white/40 text-xs">
+              <div className="flex items-center gap-2 text-white/80 text-xs">
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                 </svg>
@@ -94,17 +95,17 @@ export default function Hero() {
             <div className="mt-10 flex items-center justify-center gap-8 hero-animate hero-animate-delay-4">
               <div>
                 <p className="text-2xl md:text-3xl font-heading text-accent leading-none">500+</p>
-                <p className="mt-1 text-[10px] tracking-wider uppercase text-white/40">Homes Painted</p>
+                <p className="mt-1 text-[10px] tracking-wider uppercase text-white/80">Homes Painted</p>
               </div>
               <div className="w-px h-10 bg-white/15" />
               <div>
                 <p className="text-2xl md:text-3xl font-heading text-accent leading-none">4.9</p>
-                <p className="mt-1 text-[10px] tracking-wider uppercase text-white/40">Star Rating</p>
+                <p className="mt-1 text-[10px] tracking-wider uppercase text-white/80">Star Rating</p>
               </div>
               <div className="w-px h-10 bg-white/15" />
               <div>
                 <p className="text-2xl md:text-3xl font-heading text-accent leading-none">14</p>
-                <p className="mt-1 text-[10px] tracking-wider uppercase text-white/40">Years</p>
+                <p className="mt-1 text-[10px] tracking-wider uppercase text-white/80">Years</p>
               </div>
             </div>
           </div>

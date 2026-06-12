@@ -2,7 +2,17 @@
 
 import { useEffect, useId, useRef, useState, FormEvent } from 'react';
 import { usePathname } from 'next/navigation';
-import { HERO_SERVICE_OPTIONS, SERVICES, GHL_WEBHOOK_URL, HAS_GHL_WEBHOOK, EMAIL, PHONE_NUMBER, PHONE_HREF } from '@/lib/constants';
+import {
+  HERO_SERVICE_OPTIONS,
+  SERVICES,
+  GHL_WEBHOOK_URL,
+  HAS_GHL_WEBHOOK,
+  WEB3FORMS_ACCESS_KEY,
+  HAS_WEB3FORMS,
+  EMAIL,
+  PHONE_NUMBER,
+  PHONE_HREF,
+} from '@/lib/constants';
 import { formatPhoneInput } from '@/lib/utils';
 import { trackEvent } from '@/lib/analytics';
 
@@ -182,7 +192,7 @@ export default function QuoteForm({
       service_name: formData.service,
       form_variant: variant,
     });
-    if (!HAS_GHL_WEBHOOK) {
+    if (!HAS_WEB3FORMS && !HAS_GHL_WEBHOOK) {
       const mailtoHref = buildMailtoHref(formData, attribution);
       trackEvent('quote_form_mailto_fallback', {
         page_path: attribution.pagePath,
@@ -200,19 +210,53 @@ export default function QuoteForm({
       return;
     }
     try {
-      const payload = {
-        ...formData,
-        ...attribution,
-      };
-
-      const response = await fetch(GHL_WEBHOOK_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-
-      if (!response.ok) {
-        throw new Error('Request failed');
+      if (HAS_WEB3FORMS) {
+        const w3Payload = {
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `${formData.service || 'Painting'} estimate request from ${formData.name}`,
+          from_name: 'Red Stag Painting Website',
+          replyto: formData.email || undefined,
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          service: formData.service,
+          zip: formData.zip,
+          message: formData.message,
+          page_path: attribution.pagePath,
+          page_type: attribution.pageType,
+          service_slug: attribution.serviceSlug,
+          city_slug: attribution.citySlug,
+          referrer: attribution.referrer,
+          page_title: attribution.pageTitle,
+          utm_source: attribution.utmSource,
+          utm_medium: attribution.utmMedium,
+          utm_campaign: attribution.utmCampaign,
+          utm_term: attribution.utmTerm,
+          utm_content: attribution.utmContent,
+          botcheck: '',
+        };
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(w3Payload),
+        });
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok || data.success === false) {
+          throw new Error(data.message || 'Request failed');
+        }
+      } else {
+        const payload = {
+          ...formData,
+          ...attribution,
+        };
+        const response = await fetch(GHL_WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        if (!response.ok) {
+          throw new Error('Request failed');
+        }
       }
     } catch {
       setSubmitting(false);
@@ -326,9 +370,16 @@ export default function QuoteForm({
           value={formData.name}
           onChange={(e) => handleChange('name', e.target.value)}
           autoComplete="name"
+          required
+          aria-invalid={!!errors.name}
+          aria-describedby={errors.name ? `${formId}-name-error` : undefined}
           className={inputStyle}
         />
-        {errors.name && <p className="mt-1 text-xs text-accent">{errors.name}</p>}
+        {errors.name && (
+          <p id={`${formId}-name-error`} role="alert" className="mt-1 text-xs text-accent">
+            {errors.name}
+          </p>
+        )}
       </div>
 
       <div>
@@ -342,9 +393,16 @@ export default function QuoteForm({
           value={formData.phone}
           onChange={(e) => handleChange('phone', e.target.value)}
           autoComplete="tel"
+          required
+          aria-invalid={!!errors.phone}
+          aria-describedby={errors.phone ? `${formId}-phone-error` : undefined}
           className={inputStyle}
         />
-        {errors.phone && <p className="mt-1 text-xs text-accent">{errors.phone}</p>}
+        {errors.phone && (
+          <p id={`${formId}-phone-error`} role="alert" className="mt-1 text-xs text-accent">
+            {errors.phone}
+          </p>
+        )}
       </div>
 
       {!isCompact && (
@@ -359,9 +417,16 @@ export default function QuoteForm({
             value={formData.email}
             onChange={(e) => handleChange('email', e.target.value)}
             autoComplete="email"
+            required
+            aria-invalid={!!errors.email}
+            aria-describedby={errors.email ? `${formId}-email-error` : undefined}
             className={inputStyle}
           />
-          {errors.email && <p className="mt-1 text-xs text-accent">{errors.email}</p>}
+          {errors.email && (
+            <p id={`${formId}-email-error`} role="alert" className="mt-1 text-xs text-accent">
+              {errors.email}
+            </p>
+          )}
         </div>
       )}
 
@@ -373,6 +438,9 @@ export default function QuoteForm({
           id={`${formId}-service`}
           value={formData.service}
           onChange={(e) => handleChange('service', e.target.value)}
+          required
+          aria-invalid={!!errors.service}
+          aria-describedby={errors.service ? `${formId}-service-error` : undefined}
           className={`${inputStyle} ${!formData.service ? (onDark ? 'text-[#8A8580]' : 'text-text-muted') : ''}`}
         >
           <option value="">Select Service Type</option>
@@ -382,7 +450,11 @@ export default function QuoteForm({
             </option>
           ))}
         </select>
-        {errors.service && <p className="mt-1 text-xs text-accent">{errors.service}</p>}
+        {errors.service && (
+          <p id={`${formId}-service-error`} role="alert" className="mt-1 text-xs text-accent">
+            {errors.service}
+          </p>
+        )}
       </div>
 
       <div>
@@ -398,9 +470,16 @@ export default function QuoteForm({
           inputMode="numeric"
           maxLength={5}
           autoComplete="postal-code"
+          required
+          aria-invalid={!!errors.zip}
+          aria-describedby={errors.zip ? `${formId}-zip-error` : undefined}
           className={inputStyle}
         />
-        {errors.zip && <p className="mt-1 text-xs text-accent">{errors.zip}</p>}
+        {errors.zip && (
+          <p id={`${formId}-zip-error`} role="alert" className="mt-1 text-xs text-accent">
+            {errors.zip}
+          </p>
+        )}
       </div>
 
       {!isCompact && (

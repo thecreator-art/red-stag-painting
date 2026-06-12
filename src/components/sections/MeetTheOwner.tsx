@@ -15,7 +15,7 @@ export default function MeetTheOwner() {
                   alt="Israel Aquino, owner of Red Stag Painting"
                   fill
                   sizes="256px"
-                  loading="eager"
+                  loading="lazy"
                   className="object-cover"
                 />
               </div>

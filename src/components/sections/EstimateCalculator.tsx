@@ -1,7 +1,19 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
-import { PRICING, CALCULATOR_SERVICES, PRICE_ANCHORS, CTA_PRIMARY, GHL_WEBHOOK_URL, HAS_GHL_WEBHOOK, EMAIL, PHONE_NUMBER, PHONE_HREF } from '@/lib/constants';
+import {
+  PRICING,
+  CALCULATOR_SERVICES,
+  PRICE_ANCHORS,
+  CTA_PRIMARY,
+  GHL_WEBHOOK_URL,
+  HAS_GHL_WEBHOOK,
+  WEB3FORMS_ACCESS_KEY,
+  HAS_WEB3FORMS,
+  EMAIL,
+  PHONE_NUMBER,
+  PHONE_HREF,
+} from '@/lib/constants';
 import { formatPhoneInput } from '@/lib/utils';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 import MagneticButton from '@/components/ui/MagneticButton';
@@ -104,7 +116,7 @@ export default function EstimateCalculator() {
     if (!contact.name || !contact.phone) return;
     setSubmitting(true);
     setSubmitError('');
-    if (!HAS_GHL_WEBHOOK) {
+    if (!HAS_WEB3FORMS && !HAS_GHL_WEBHOOK) {
       const subject = `${selectedService?.label || 'Painting'} estimate request from ${contact.name}`;
       const bodyLines = [
         `Name: ${contact.name}`,
@@ -122,18 +134,44 @@ export default function EstimateCalculator() {
       return;
     }
     try {
-      const response = await fetch(GHL_WEBHOOK_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...contact,
+      if (HAS_WEB3FORMS) {
+        const w3Payload = {
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `${selectedService?.label || 'Painting'} estimate request from ${contact.name}`,
+          from_name: 'Red Stag Painting Calculator',
+          replyto: contact.email || undefined,
+          name: contact.name,
+          phone: contact.phone,
+          email: contact.email,
           service: selectedService?.label,
           size: selectedOption?.label,
-          priceRange: selectedOption ? `${formatPrice(selectedOption.min)}-${formatPrice(selectedOption.max)}` : '',
-        }),
-      });
-      if (!response.ok) {
-        throw new Error('Request failed');
+          price_range: selectedOption ? `${formatPrice(selectedOption.min)}-${formatPrice(selectedOption.max)}` : '',
+          source: 'estimate_calculator',
+          botcheck: '',
+        };
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(w3Payload),
+        });
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok || data.success === false) {
+          throw new Error(data.message || 'Request failed');
+        }
+      } else {
+        const response = await fetch(GHL_WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            ...contact,
+            service: selectedService?.label,
+            size: selectedOption?.label,
+            priceRange: selectedOption ? `${formatPrice(selectedOption.min)}-${formatPrice(selectedOption.max)}` : '',
+          }),
+        });
+        if (!response.ok) {
+          throw new Error('Request failed');
+        }
       }
     } catch {
       setSubmitting(false);

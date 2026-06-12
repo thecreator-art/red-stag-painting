@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import MeetTheOwner from '@/components/sections/MeetTheOwner';
@@ -8,18 +9,34 @@ import BrandStatement from '@/components/sections/BrandStatement';
 import Reviews from '@/components/sections/Reviews';
 import ContactForm from '@/components/sections/ContactForm';
 import { SITE_URL } from '@/lib/constants';
+import { generateAboutPageSchema, generateBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'About Red Stag Painting',
-  description: 'Meet the owner, see the Red Stag difference, and understand how the company approaches residential painting in Los Angeles.',
+  title: 'About Red Stag Painting | Los Angeles House Painting Company',
+  description:
+    'Owner-led residential painting in Los Angeles since 2011. Meet Israel Aquino, the Red Stag crews, and the standards behind every project.',
   alternates: {
     canonical: `${SITE_URL}/about`,
   },
 };
 
+const ABOUT_SCHEMA = [
+  ...generateAboutPageSchema(),
+  generateBreadcrumbSchema([
+    { name: 'Home', url: SITE_URL },
+    { name: 'About', url: `${SITE_URL}/about` },
+  ]),
+];
+
 export default function AboutPage() {
   return (
     <>
+      <Script
+        id="ld-about"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ABOUT_SCHEMA) }}
+      />
       <div className="mx-auto max-w-[1200px] px-6 pt-6 md:px-10">
         <Breadcrumbs items={[{ label: 'About' }]} />
       </div>

@@ -8,6 +8,11 @@ import Footer from '@/components/layout/Footer';
 import ScrollProgress from '@/components/ui/ScrollProgress';
 import BackToTop from '@/components/ui/BackToTop';
 import { GA_MEASUREMENT_ID, GTM_ID, SITE_URL } from '@/lib/constants';
+import {
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+  generateLocalBusinessSchema,
+} from '@/lib/schema';
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -30,14 +35,49 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  formatDetection: {
+    telephone: false,
+    email: false,
+    address: false,
+  },
   openGraph: {
     title: 'House Painter Los Angeles | Red Stag Painting',
     description:
       'Professional house painting in Los Angeles. Interior, exterior, and cabinet painting. Free estimates.',
     url: SITE_URL,
     siteName: 'Red Stag Painting',
+    locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/images/hero.png',
+        width: 1200,
+        height: 630,
+        alt: 'Red Stag Painting — Los Angeles house painting contractor',
+      },
+    ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'House Painter Los Angeles | Red Stag Painting',
+    description:
+      'Professional house painting in Los Angeles. Free estimates within 24 hours.',
+    images: ['/images/hero.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
+export const viewport = {
+  themeColor: '#C23B2B',
 };
 
 export default function RootLayout({
@@ -74,6 +114,24 @@ export default function RootLayout({
         ) : null}
       </head>
       <body className="min-h-screen font-body text-text-body bg-bg-primary antialiased pb-[60px] md:pb-0">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-sm focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white focus:outline-none focus:ring-2 focus:ring-white"
+        >
+          Skip to main content
+        </a>
+        <Script
+          id="ld-organization"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              generateOrganizationSchema(),
+              generateWebSiteSchema(),
+              generateLocalBusinessSchema(),
+            ]),
+          }}
+        />
         {GTM_ID ? (
           <noscript>
             <iframe
@@ -86,7 +144,7 @@ export default function RootLayout({
         ) : null}
         <ScrollProgress />
         <SiteHeader />
-        <main>{children}</main>
+        <main id="main">{children}</main>
         <Footer />
         <StickyMobileBar />
         <BackToTop />
